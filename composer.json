@@ -1,5 +1,5 @@
 {
-  "name": "abryb/e-nadawca-client",
+  "name": "webhdx/e-nadawca-client",
   "type": "library",
   "description": "simple soap client for https://e-nadawca.poczta-polska.pl/",
   "license": "MIT",
@@ -8,10 +8,17 @@
     "e-nadawca",
     "poczta-polska"
   ],
+  "replace": {
+    "abryb/e-nadawca-client": "self.version"
+  },
   "authors": [
     {
       "name": "Błażej Rybarkiewicz",
       "email": "b.rybarkiewicz@cogitech.pl"
+    },
+    {
+      "name": "Maciej Kobus",
+      "email": "webhdx@gmail.com"
     }
   ],
   "autoload": {
@@ -25,11 +32,17 @@
     }
   },
   "require": {
-    "php": "^7.2",
+    "php": ">=8.0",
     "ext-soap": "*",
     "ext-dom": "*"
   },
   "require-dev": {
-    "goetas-webservices/xsd2php": "^0.3.10"
+    "goetas-webservices/xsd2php": "^0.4.12",
+    "phpunit/phpunit": "^10.5"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
   }
 }
