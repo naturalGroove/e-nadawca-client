@@ -1,5 +1,5 @@
 {
-  "name": "webhdx/e-nadawca-client",
+  "name": "naturalgroove/e-nadawca-client",
   "type": "library",
   "description": "simple soap client for https://e-nadawca.poczta-polska.pl/",
   "license": "MIT",
@@ -19,6 +19,10 @@
     {
       "name": "Maciej Kobus",
       "email": "webhdx@gmail.com"
+    },
+    {
+      "name": "Grzegorz Adamczyk",
+      "email": "grzegorz@netseven.pl"
     }
   ],
   "autoload": {
@@ -32,7 +36,7 @@
     }
   },
   "require": {
-    "php": ">=8.0",
+    "php": "^8.0",
     "ext-soap": "*",
     "ext-dom": "*"
   },
