@@ -7,5 +7,5 @@ class FormatPocztex2021Type {
     const M = 'M';
     const L = 'L';
     const XL = 'XL';
-    const 2XL = '2XL';
+    const _2XL = '2XL';
 }
