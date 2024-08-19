@@ -1,0 +1,9 @@
+<?php
+
+namespace Abryb\ENadawca\Enum;
+
+class ZwrotDokumentowPocztex2021Enum {
+    const POCZTEX_KURIER = 'POCZTEX_KURIER';
+    const LIST_POLECONY_PRIORYTETOWY = 'LIST_POLECONY_PRIORYTETOWY';
+    const LIST_POLECONY_EKONOMICZNY = 'LIST_POLECONY_EKONOMICZNY';
+}
