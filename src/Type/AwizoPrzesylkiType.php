@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing AwizoPrzesylkiType
+ *
  *
  * XSD Type: awizoPrzesylkiType
  */
@@ -14,22 +13,22 @@ class AwizoPrzesylkiType
     /**
      * @var \DateTime $dataPierwszegoAwizowania
      */
-    protected $dataPierwszegoAwizowania;
+    protected $dataPierwszegoAwizowania = null;
 
     /**
      * @var \DateTime $dataDrugiegoAwizowania
      */
-    protected $dataDrugiegoAwizowania;
+    protected $dataDrugiegoAwizowania = null;
 
     /**
      * @var string $miejscePozostawienia
      */
-    protected $miejscePozostawienia;
+    protected $miejscePozostawienia = null;
 
     /**
      * @var int $idPlacowkaPocztowaWydajaca
      */
-    protected $idPlacowkaPocztowaWydajaca;
+    protected $idPlacowkaPocztowaWydajaca = null;
 
     /**
      * Gets as dataPierwszegoAwizowania
@@ -44,12 +43,12 @@ class AwizoPrzesylkiType
     /**
      * Sets a new dataPierwszegoAwizowania
      *
+     * @param \DateTime $dataPierwszegoAwizowania
      * @return self
      */
     public function setDataPierwszegoAwizowania(\DateTime $dataPierwszegoAwizowania)
     {
         $this->dataPierwszegoAwizowania = $dataPierwszegoAwizowania;
-
         return $this;
     }
 
@@ -66,12 +65,12 @@ class AwizoPrzesylkiType
     /**
      * Sets a new dataDrugiegoAwizowania
      *
+     * @param \DateTime $dataDrugiegoAwizowania
      * @return self
      */
     public function setDataDrugiegoAwizowania(\DateTime $dataDrugiegoAwizowania)
     {
         $this->dataDrugiegoAwizowania = $dataDrugiegoAwizowania;
-
         return $this;
     }
 
@@ -89,13 +88,11 @@ class AwizoPrzesylkiType
      * Sets a new miejscePozostawienia
      *
      * @param string $miejscePozostawienia
-     *
      * @return self
      */
     public function setMiejscePozostawienia($miejscePozostawienia)
     {
         $this->miejscePozostawienia = $miejscePozostawienia;
-
         return $this;
     }
 
@@ -113,13 +110,12 @@ class AwizoPrzesylkiType
      * Sets a new idPlacowkaPocztowaWydajaca
      *
      * @param int $idPlacowkaPocztowaWydajaca
-     *
      * @return self
      */
     public function setIdPlacowkaPocztowaWydajaca($idPlacowkaPocztowaWydajaca)
     {
         $this->idPlacowkaPocztowaWydajaca = $idPlacowkaPocztowaWydajaca;
-
         return $this;
     }
 }
+

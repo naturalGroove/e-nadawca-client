@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ListZwyklyFirmowyType
+ *
  *
  * XSD Type: listZwyklyFirmowyType
  */
@@ -14,47 +13,37 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var bool $miejscowa
      */
-    protected $miejscowa;
+    protected $miejscowa = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
-
-    /**
-     * @var bool $egzemplarzBiblioteczny
-     */
-    protected $egzemplarzBiblioteczny;
-
-    /**
-     * @var bool $dlaOciemnialych
-     */
-    protected $dlaOciemnialych;
+    protected $masa = null;
 
     /**
      * @var bool $obszarMiasto
      */
-    protected $obszarMiasto;
+    protected $obszarMiasto = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $adres
      */
-    protected $adres;
+    protected $adres = null;
 
     /**
      * Gets as posteRestante
@@ -70,13 +59,11 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -94,13 +81,11 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
      * Sets a new miejscowa
      *
      * @param bool $miejscowa
-     *
      * @return self
      */
     public function setMiejscowa($miejscowa)
     {
         $this->miejscowa = $miejscowa;
-
         return $this;
     }
 
@@ -118,61 +103,11 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
-        return $this;
-    }
-
-    /**
-     * Gets as egzemplarzBiblioteczny
-     *
-     * @return bool
-     */
-    public function getEgzemplarzBiblioteczny()
-    {
-        return $this->egzemplarzBiblioteczny;
-    }
-
-    /**
-     * Sets a new egzemplarzBiblioteczny
-     *
-     * @param bool $egzemplarzBiblioteczny
-     *
-     * @return self
-     */
-    public function setEgzemplarzBiblioteczny($egzemplarzBiblioteczny)
-    {
-        $this->egzemplarzBiblioteczny = $egzemplarzBiblioteczny;
-
-        return $this;
-    }
-
-    /**
-     * Gets as dlaOciemnialych
-     *
-     * @return bool
-     */
-    public function getDlaOciemnialych()
-    {
-        return $this->dlaOciemnialych;
-    }
-
-    /**
-     * Sets a new dlaOciemnialych
-     *
-     * @param bool $dlaOciemnialych
-     *
-     * @return self
-     */
-    public function setDlaOciemnialych($dlaOciemnialych)
-    {
-        $this->dlaOciemnialych = $dlaOciemnialych;
-
         return $this;
     }
 
@@ -190,13 +125,11 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
      * Sets a new obszarMiasto
      *
      * @param bool $obszarMiasto
-     *
      * @return self
      */
     public function setObszarMiasto($obszarMiasto)
     {
         $this->obszarMiasto = $obszarMiasto;
-
         return $this;
     }
 
@@ -214,13 +147,11 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -238,13 +169,11 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -262,13 +191,12 @@ class ListZwyklyFirmowyType extends PrzesylkaNieRejestrowanaType
      * Sets a new adres
      *
      * @param \Abryb\ENadawca\Type\AdresType $adres
-     *
      * @return self
      */
-    public function setAdres(AdresType $adres)
+    public function setAdres(?\Abryb\ENadawca\Type\AdresType $adres = null)
     {
         $this->adres = $adres;
-
         return $this;
     }
 }
+

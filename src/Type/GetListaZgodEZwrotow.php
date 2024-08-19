@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetListaZgodEZwrotow\GetListaZgodEZwrotowAType;
 
 /**
  * Class representing GetListaZgodEZwrotow
  */
-class GetListaZgodEZwrotow
+class GetListaZgodEZwrotow extends GetListaZgodEZwrotowAType
 {
-    /**
-     * @var string $status
-     */
-    protected $status;
-
-    /**
-     * Gets as status
-     *
-     * @return string
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
-     * Sets a new status
-     *
-     * @param string $status
-     *
-     * @return self
-     */
-    public function setStatus($status)
-    {
-        $this->status = $status;
-
-        return $this;
-    }
 }
+

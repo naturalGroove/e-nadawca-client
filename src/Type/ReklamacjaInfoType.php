@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ReklamacjaInfoType
+ *
  *
  * XSD Type: reklamacjaInfoType
  */
@@ -14,12 +13,12 @@ class ReklamacjaInfoType
     /**
      * @var string $idReklamacja
      */
-    protected $idReklamacja;
+    protected $idReklamacja = null;
 
     /**
      * @var string $guidPrzesylki
      */
-    protected $guidPrzesylki;
+    protected $guidPrzesylki = null;
 
     /**
      * Gets as idReklamacja
@@ -35,13 +34,11 @@ class ReklamacjaInfoType
      * Sets a new idReklamacja
      *
      * @param string $idReklamacja
-     *
      * @return self
      */
     public function setIdReklamacja($idReklamacja)
     {
         $this->idReklamacja = $idReklamacja;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class ReklamacjaInfoType
      * Sets a new guidPrzesylki
      *
      * @param string $guidPrzesylki
-     *
      * @return self
      */
     public function setGuidPrzesylki($guidPrzesylki)
     {
         $this->guidPrzesylki = $guidPrzesylki;
-
         return $this;
     }
 }
+

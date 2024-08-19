@@ -1,102 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\DownloadIWDContentResponse\DownloadIWDContentResponseAType;
 
 /**
  * Class representing DownloadIWDContentResponse
  */
-class DownloadIWDContentResponse
+class DownloadIWDContentResponse extends DownloadIWDContentResponseAType
 {
-    /**
-     * @var mixed $iWDContent
-     */
-    protected $iWDContent;
-
-    /**
-     * @var \Abryb\ENadawca\Type\ErrorType[] $error
-     */
-    protected $error = [
-    ];
-
-    /**
-     * Gets as iWDContent
-     */
-    public function getIWDContent()
-    {
-        return $this->iWDContent;
-    }
-
-    /**
-     * Sets a new iWDContent
-     *
-     * @return self
-     */
-    public function setIWDContent($iWDContent)
-    {
-        $this->iWDContent = $iWDContent;
-
-        return $this;
-    }
-
-    /**
-     * Adds as error
-     *
-     * @param \Abryb\ENadawca\Type\ErrorType $error
-     *
-     * @return self
-     */
-    public function addToError(ErrorType $error)
-    {
-        $this->error[] = $error;
-
-        return $this;
-    }
-
-    /**
-     * isset error
-     *
-     * @param int|string $index
-     *
-     * @return bool
-     */
-    public function issetError($index)
-    {
-        return isset($this->error[$index]);
-    }
-
-    /**
-     * unset error
-     *
-     * @param int|string $index
-     */
-    public function unsetError($index)
-    {
-        unset($this->error[$index]);
-    }
-
-    /**
-     * Gets as error
-     *
-     * @return \Abryb\ENadawca\Type\ErrorType[]
-     */
-    public function getError()
-    {
-        return $this->error;
-    }
-
-    /**
-     * Sets a new error
-     *
-     * @param \Abryb\ENadawca\Type\ErrorType[] $error
-     *
-     * @return self
-     */
-    public function setError(array $error)
-    {
-        $this->error = $error;
-
-        return $this;
-    }
 }
+

@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ObszarAdresowyType
+ *
  *
  * XSD Type: obszarAdresowyType
  */
@@ -14,27 +13,27 @@ class ObszarAdresowyType
     /**
      * @var string $kodPocztowy
      */
-    protected $kodPocztowy;
+    protected $kodPocztowy = null;
 
     /**
      * @var string $miejscowosc
      */
-    protected $miejscowosc;
+    protected $miejscowosc = null;
 
     /**
      * @var string $ulica
      */
-    protected $ulica;
+    protected $ulica = null;
 
     /**
      * @var string $numerDomu
      */
-    protected $numerDomu;
+    protected $numerDomu = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * Gets as kodPocztowy
@@ -50,13 +49,11 @@ class ObszarAdresowyType
      * Sets a new kodPocztowy
      *
      * @param string $kodPocztowy
-     *
      * @return self
      */
     public function setKodPocztowy($kodPocztowy)
     {
         $this->kodPocztowy = $kodPocztowy;
-
         return $this;
     }
 
@@ -74,13 +71,11 @@ class ObszarAdresowyType
      * Sets a new miejscowosc
      *
      * @param string $miejscowosc
-     *
      * @return self
      */
     public function setMiejscowosc($miejscowosc)
     {
         $this->miejscowosc = $miejscowosc;
-
         return $this;
     }
 
@@ -98,13 +93,11 @@ class ObszarAdresowyType
      * Sets a new ulica
      *
      * @param string $ulica
-     *
      * @return self
      */
     public function setUlica($ulica)
     {
         $this->ulica = $ulica;
-
         return $this;
     }
 
@@ -122,13 +115,11 @@ class ObszarAdresowyType
      * Sets a new numerDomu
      *
      * @param string $numerDomu
-     *
      * @return self
      */
     public function setNumerDomu($numerDomu)
     {
         $this->numerDomu = $numerDomu;
-
         return $this;
     }
 
@@ -146,13 +137,12 @@ class ObszarAdresowyType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 }
+

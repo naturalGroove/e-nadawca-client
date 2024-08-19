@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PaletaType
+ *
  *
  * XSD Type: paletaType
  */
@@ -14,22 +13,22 @@ class PaletaType
     /**
      * @var string $rodzajPalety
      */
-    protected $rodzajPalety;
+    protected $rodzajPalety = null;
 
     /**
      * @var int $szerokosc
      */
-    protected $szerokosc;
+    protected $szerokosc = null;
 
     /**
      * @var string $dlugosc
      */
-    protected $dlugosc;
+    protected $dlugosc = null;
 
     /**
      * @var string $wysokosc
      */
-    protected $wysokosc;
+    protected $wysokosc = null;
 
     /**
      * Gets as rodzajPalety
@@ -45,13 +44,11 @@ class PaletaType
      * Sets a new rodzajPalety
      *
      * @param string $rodzajPalety
-     *
      * @return self
      */
     public function setRodzajPalety($rodzajPalety)
     {
         $this->rodzajPalety = $rodzajPalety;
-
         return $this;
     }
 
@@ -69,13 +66,11 @@ class PaletaType
      * Sets a new szerokosc
      *
      * @param int $szerokosc
-     *
      * @return self
      */
     public function setSzerokosc($szerokosc)
     {
         $this->szerokosc = $szerokosc;
-
         return $this;
     }
 
@@ -93,13 +88,11 @@ class PaletaType
      * Sets a new dlugosc
      *
      * @param string $dlugosc
-     *
      * @return self
      */
     public function setDlugosc($dlugosc)
     {
         $this->dlugosc = $dlugosc;
-
         return $this;
     }
 
@@ -117,13 +110,12 @@ class PaletaType
      * Sets a new wysokosc
      *
      * @param string $wysokosc
-     *
      * @return self
      */
     public function setWysokosc($wysokosc)
     {
         $this->wysokosc = $wysokosc;
-
         return $this;
     }
 }
+

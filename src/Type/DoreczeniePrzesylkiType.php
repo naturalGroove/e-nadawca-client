@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DoreczeniePrzesylkiType
+ *
  *
  * XSD Type: doreczeniePrzesylkiType
  */
@@ -14,37 +13,37 @@ class DoreczeniePrzesylkiType
     /**
      * @var \DateTime $data
      */
-    protected $data;
+    protected $data = null;
 
     /**
      * @var string $osobaOdbierajaca
      */
-    protected $osobaOdbierajaca;
+    protected $osobaOdbierajaca = null;
 
     /**
      * @var string $podmiotDoreczenia
      */
-    protected $podmiotDoreczenia;
+    protected $podmiotDoreczenia = null;
 
     /**
      * @var \DateTime $dataPelnomocnictwa
      */
-    protected $dataPelnomocnictwa;
+    protected $dataPelnomocnictwa = null;
 
     /**
      * @var string $numerPelnomocnictwa
      */
-    protected $numerPelnomocnictwa;
+    protected $numerPelnomocnictwa = null;
 
     /**
      * @var bool $pieczecFirmowa
      */
-    protected $pieczecFirmowa;
+    protected $pieczecFirmowa = null;
 
     /**
      * @var string $miejscePozostawieniaZawiadomieniaODoreczeniu
      */
-    protected $miejscePozostawieniaZawiadomieniaODoreczeniu;
+    protected $miejscePozostawieniaZawiadomieniaODoreczeniu = null;
 
     /**
      * Gets as data
@@ -59,12 +58,12 @@ class DoreczeniePrzesylkiType
     /**
      * Sets a new data
      *
+     * @param \DateTime $data
      * @return self
      */
     public function setData(\DateTime $data)
     {
         $this->data = $data;
-
         return $this;
     }
 
@@ -82,13 +81,11 @@ class DoreczeniePrzesylkiType
      * Sets a new osobaOdbierajaca
      *
      * @param string $osobaOdbierajaca
-     *
      * @return self
      */
     public function setOsobaOdbierajaca($osobaOdbierajaca)
     {
         $this->osobaOdbierajaca = $osobaOdbierajaca;
-
         return $this;
     }
 
@@ -106,13 +103,11 @@ class DoreczeniePrzesylkiType
      * Sets a new podmiotDoreczenia
      *
      * @param string $podmiotDoreczenia
-     *
      * @return self
      */
     public function setPodmiotDoreczenia($podmiotDoreczenia)
     {
         $this->podmiotDoreczenia = $podmiotDoreczenia;
-
         return $this;
     }
 
@@ -129,12 +124,12 @@ class DoreczeniePrzesylkiType
     /**
      * Sets a new dataPelnomocnictwa
      *
+     * @param \DateTime $dataPelnomocnictwa
      * @return self
      */
     public function setDataPelnomocnictwa(\DateTime $dataPelnomocnictwa)
     {
         $this->dataPelnomocnictwa = $dataPelnomocnictwa;
-
         return $this;
     }
 
@@ -152,13 +147,11 @@ class DoreczeniePrzesylkiType
      * Sets a new numerPelnomocnictwa
      *
      * @param string $numerPelnomocnictwa
-     *
      * @return self
      */
     public function setNumerPelnomocnictwa($numerPelnomocnictwa)
     {
         $this->numerPelnomocnictwa = $numerPelnomocnictwa;
-
         return $this;
     }
 
@@ -176,13 +169,11 @@ class DoreczeniePrzesylkiType
      * Sets a new pieczecFirmowa
      *
      * @param bool $pieczecFirmowa
-     *
      * @return self
      */
     public function setPieczecFirmowa($pieczecFirmowa)
     {
         $this->pieczecFirmowa = $pieczecFirmowa;
-
         return $this;
     }
 
@@ -200,13 +191,12 @@ class DoreczeniePrzesylkiType
      * Sets a new miejscePozostawieniaZawiadomieniaODoreczeniu
      *
      * @param string $miejscePozostawieniaZawiadomieniaODoreczeniu
-     *
      * @return self
      */
     public function setMiejscePozostawieniaZawiadomieniaODoreczeniu($miejscePozostawieniaZawiadomieniaODoreczeniu)
     {
         $this->miejscePozostawieniaZawiadomieniaODoreczeniu = $miejscePozostawieniaZawiadomieniaODoreczeniu;
-
         return $this;
     }
 }
+

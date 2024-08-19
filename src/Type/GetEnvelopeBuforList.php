@@ -1,12 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetEnvelopeBuforList\GetEnvelopeBuforListAType;
 
 /**
  * Class representing GetEnvelopeBuforList
  */
-class GetEnvelopeBuforList
+class GetEnvelopeBuforList extends GetEnvelopeBuforListAType
 {
 }
+

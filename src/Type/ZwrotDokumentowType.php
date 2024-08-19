@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ZwrotDokumentowType
+ *
  *
  * XSD Type: zwrotDokumentowType
  */
@@ -14,17 +13,17 @@ class ZwrotDokumentowType
     /**
      * @var int $odleglosc
      */
-    protected $odleglosc;
+    protected $odleglosc = null;
 
     /**
      * @var string $rodzajPocztex
      */
-    protected $rodzajPocztex;
+    protected $rodzajPocztex = null;
 
     /**
      * @var \Abryb\ENadawca\Type\RodzajListType $rodzajList
      */
-    protected $rodzajList;
+    protected $rodzajList = null;
 
     /**
      * Gets as odleglosc
@@ -40,13 +39,11 @@ class ZwrotDokumentowType
      * Sets a new odleglosc
      *
      * @param int $odleglosc
-     *
      * @return self
      */
     public function setOdleglosc($odleglosc)
     {
         $this->odleglosc = $odleglosc;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class ZwrotDokumentowType
      * Sets a new rodzajPocztex
      *
      * @param string $rodzajPocztex
-     *
      * @return self
      */
     public function setRodzajPocztex($rodzajPocztex)
     {
         $this->rodzajPocztex = $rodzajPocztex;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class ZwrotDokumentowType
      * Sets a new rodzajList
      *
      * @param \Abryb\ENadawca\Type\RodzajListType $rodzajList
-     *
      * @return self
      */
-    public function setRodzajList(RodzajListType $rodzajList)
+    public function setRodzajList(?\Abryb\ENadawca\Type\RodzajListType $rodzajList = null)
     {
         $this->rodzajList = $rodzajList;
-
         return $this;
     }
 }
+

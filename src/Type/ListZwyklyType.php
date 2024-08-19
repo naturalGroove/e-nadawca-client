@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ListZwyklyType
+ *
  *
  * XSD Type: listZwyklyType
  */
@@ -14,42 +13,50 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var bool $egzemplarzBiblioteczny
      */
-    protected $egzemplarzBiblioteczny;
+    protected $egzemplarzBiblioteczny = null;
 
     /**
      * @var bool $dlaOciemnialych
      */
-    protected $dlaOciemnialych;
+    protected $dlaOciemnialych = null;
 
     /**
      * @var bool $obszarMiasto
      */
-    protected $obszarMiasto;
+    protected $obszarMiasto = null;
 
     /**
      * @var bool $miejscowa
      */
-    protected $miejscowa;
+    protected $miejscowa = null;
+
+    /**
+     * Identifier library for legal deposit from
+     *  list downloaded using the getLibrariesForLegalDeposits method
+     *
+     * @var string $idLibraryForLegalDeposit
+     */
+    protected $idLibraryForLegalDeposit = null;
 
     /**
      * Gets as posteRestante
@@ -65,13 +72,11 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -89,13 +94,11 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -113,13 +116,11 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -137,13 +138,11 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -161,13 +160,11 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new egzemplarzBiblioteczny
      *
      * @param bool $egzemplarzBiblioteczny
-     *
      * @return self
      */
     public function setEgzemplarzBiblioteczny($egzemplarzBiblioteczny)
     {
         $this->egzemplarzBiblioteczny = $egzemplarzBiblioteczny;
-
         return $this;
     }
 
@@ -185,13 +182,11 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new dlaOciemnialych
      *
      * @param bool $dlaOciemnialych
-     *
      * @return self
      */
     public function setDlaOciemnialych($dlaOciemnialych)
     {
         $this->dlaOciemnialych = $dlaOciemnialych;
-
         return $this;
     }
 
@@ -209,13 +204,11 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new obszarMiasto
      *
      * @param bool $obszarMiasto
-     *
      * @return self
      */
     public function setObszarMiasto($obszarMiasto)
     {
         $this->obszarMiasto = $obszarMiasto;
-
         return $this;
     }
 
@@ -233,13 +226,40 @@ class ListZwyklyType extends PrzesylkaNieRejestrowanaType
      * Sets a new miejscowa
      *
      * @param bool $miejscowa
-     *
      * @return self
      */
     public function setMiejscowa($miejscowa)
     {
         $this->miejscowa = $miejscowa;
+        return $this;
+    }
 
+    /**
+     * Gets as idLibraryForLegalDeposit
+     *
+     * Identifier library for legal deposit from
+     *  list downloaded using the getLibrariesForLegalDeposits method
+     *
+     * @return string
+     */
+    public function getIdLibraryForLegalDeposit()
+    {
+        return $this->idLibraryForLegalDeposit;
+    }
+
+    /**
+     * Sets a new idLibraryForLegalDeposit
+     *
+     * Identifier library for legal deposit from
+     *  list downloaded using the getLibrariesForLegalDeposits method
+     *
+     * @param string $idLibraryForLegalDeposit
+     * @return self
+     */
+    public function setIdLibraryForLegalDeposit($idLibraryForLegalDeposit)
+    {
+        $this->idLibraryForLegalDeposit = $idLibraryForLegalDeposit;
         return $this;
     }
 }
+

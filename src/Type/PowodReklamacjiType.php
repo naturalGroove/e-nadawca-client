@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PowodReklamacjiType
+ *
  *
  * XSD Type: powodReklamacjiType
  */
@@ -14,17 +13,18 @@ class PowodReklamacjiType
     /**
      * @var int $idPowodGlowny
      */
-    protected $idPowodGlowny;
+    protected $idPowodGlowny = null;
 
     /**
      * @var string $powodGlownyOpis
      */
-    protected $powodGlownyOpis;
+    protected $powodGlownyOpis = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PowodSzczegolowyType[] $powodSzczegolowy
      */
     protected $powodSzczegolowy = [
+        
     ];
 
     /**
@@ -41,13 +41,11 @@ class PowodReklamacjiType
      * Sets a new idPowodGlowny
      *
      * @param int $idPowodGlowny
-     *
      * @return self
      */
     public function setIdPowodGlowny($idPowodGlowny)
     {
         $this->idPowodGlowny = $idPowodGlowny;
-
         return $this;
     }
 
@@ -65,27 +63,23 @@ class PowodReklamacjiType
      * Sets a new powodGlownyOpis
      *
      * @param string $powodGlownyOpis
-     *
      * @return self
      */
     public function setPowodGlownyOpis($powodGlownyOpis)
     {
         $this->powodGlownyOpis = $powodGlownyOpis;
-
         return $this;
     }
 
     /**
      * Adds as powodSzczegolowy
      *
-     * @param \Abryb\ENadawca\Type\PowodSzczegolowyType $powodSzczegolowy
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\PowodSzczegolowyType $powodSzczegolowy
      */
-    public function addToPowodSzczegolowy(PowodSzczegolowyType $powodSzczegolowy)
+    public function addToPowodSzczegolowy(\Abryb\ENadawca\Type\PowodSzczegolowyType $powodSzczegolowy)
     {
         $this->powodSzczegolowy[] = $powodSzczegolowy;
-
         return $this;
     }
 
@@ -93,7 +87,6 @@ class PowodReklamacjiType
      * isset powodSzczegolowy
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetPowodSzczegolowy($index)
@@ -105,6 +98,7 @@ class PowodReklamacjiType
      * unset powodSzczegolowy
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetPowodSzczegolowy($index)
     {
@@ -125,13 +119,12 @@ class PowodReklamacjiType
      * Sets a new powodSzczegolowy
      *
      * @param \Abryb\ENadawca\Type\PowodSzczegolowyType[] $powodSzczegolowy
-     *
      * @return self
      */
     public function setPowodSzczegolowy(array $powodSzczegolowy)
     {
         $this->powodSzczegolowy = $powodSzczegolowy;
-
         return $this;
     }
 }
+

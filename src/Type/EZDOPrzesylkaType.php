@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing EZDOPrzesylkaType
+ *
  *
  * XSD Type: EZDOPrzesylkaType
  */
@@ -14,42 +13,42 @@ class EZDOPrzesylkaType
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var string $rodzaj
      */
-    protected $rodzaj;
+    protected $rodzaj = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var int $kwotaPobrania
      */
-    protected $kwotaPobrania;
+    protected $kwotaPobrania = null;
 
     /**
      * @var string $numerWewnetrznyPrzesylki
      */
-    protected $numerWewnetrznyPrzesylki;
+    protected $numerWewnetrznyPrzesylki = null;
 
     /**
      * @var string $zwrot
      */
-    protected $zwrot;
+    protected $zwrot = null;
 
     /**
      * Gets as numerNadania
@@ -65,13 +64,11 @@ class EZDOPrzesylkaType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -89,13 +86,11 @@ class EZDOPrzesylkaType
      * Sets a new rodzaj
      *
      * @param string $rodzaj
-     *
      * @return self
      */
     public function setRodzaj($rodzaj)
     {
         $this->rodzaj = $rodzaj;
-
         return $this;
     }
 
@@ -113,13 +108,11 @@ class EZDOPrzesylkaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -137,13 +130,11 @@ class EZDOPrzesylkaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -161,13 +152,11 @@ class EZDOPrzesylkaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -185,13 +174,11 @@ class EZDOPrzesylkaType
      * Sets a new kwotaPobrania
      *
      * @param int $kwotaPobrania
-     *
      * @return self
      */
     public function setKwotaPobrania($kwotaPobrania)
     {
         $this->kwotaPobrania = $kwotaPobrania;
-
         return $this;
     }
 
@@ -209,13 +196,11 @@ class EZDOPrzesylkaType
      * Sets a new numerWewnetrznyPrzesylki
      *
      * @param string $numerWewnetrznyPrzesylki
-     *
      * @return self
      */
     public function setNumerWewnetrznyPrzesylki($numerWewnetrznyPrzesylki)
     {
         $this->numerWewnetrznyPrzesylki = $numerWewnetrznyPrzesylki;
-
         return $this;
     }
 
@@ -233,13 +218,12 @@ class EZDOPrzesylkaType
      * Sets a new zwrot
      *
      * @param string $zwrot
-     *
      * @return self
      */
     public function setZwrot($zwrot)
     {
         $this->zwrot = $zwrot;
-
         return $this;
     }
 }
+

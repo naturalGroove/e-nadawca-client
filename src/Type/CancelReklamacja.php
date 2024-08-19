@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\CancelReklamacja\CancelReklamacjaAType;
 
 /**
  * Class representing CancelReklamacja
  */
-class CancelReklamacja
+class CancelReklamacja extends CancelReklamacjaAType
 {
-    /**
-     * @var int $idRelkamacja
-     */
-    protected $idRelkamacja;
-
-    /**
-     * Gets as idRelkamacja
-     *
-     * @return int
-     */
-    public function getIdRelkamacja()
-    {
-        return $this->idRelkamacja;
-    }
-
-    /**
-     * Sets a new idRelkamacja
-     *
-     * @param int $idRelkamacja
-     *
-     * @return self
-     */
-    public function setIdRelkamacja($idRelkamacja)
-    {
-        $this->idRelkamacja = $idRelkamacja;
-
-        return $this;
-    }
 }
+

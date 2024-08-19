@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetKierunkiInfo\GetKierunkiInfoAType;
 
 /**
  * Class representing GetKierunkiInfo
  */
-class GetKierunkiInfo
+class GetKierunkiInfo extends GetKierunkiInfoAType
 {
-    /**
-     * @var string $plan
-     */
-    protected $plan;
-
-    /**
-     * Gets as plan
-     *
-     * @return string
-     */
-    public function getPlan()
-    {
-        return $this->plan;
-    }
-
-    /**
-     * Sets a new plan
-     *
-     * @param string $plan
-     *
-     * @return self
-     */
-    public function setPlan($plan)
-    {
-        $this->plan = $plan;
-
-        return $this;
-    }
 }
+

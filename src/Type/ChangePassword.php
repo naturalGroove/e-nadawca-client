@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\ChangePassword\ChangePasswordAType;
 
 /**
  * Class representing ChangePassword
  */
-class ChangePassword
+class ChangePassword extends ChangePasswordAType
 {
-    /**
-     * @var string $newPassword
-     */
-    protected $newPassword;
-
-    /**
-     * Gets as newPassword
-     *
-     * @return string
-     */
-    public function getNewPassword()
-    {
-        return $this->newPassword;
-    }
-
-    /**
-     * Sets a new newPassword
-     *
-     * @param string $newPassword
-     *
-     * @return self
-     */
-    public function setNewPassword($newPassword)
-    {
-        $this->newPassword = $newPassword;
-
-        return $this;
-    }
 }
+

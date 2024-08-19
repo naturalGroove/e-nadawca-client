@@ -1,77 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetKarty\GetKartyAType;
 
 /**
  * Class representing GetKarty
  */
-class GetKarty
+class GetKarty extends GetKartyAType
 {
-    /**
-     * @var int[] $idKarta
-     */
-    protected $idKarta = [
-    ];
-
-    /**
-     * Adds as idKarta
-     *
-     * @param int $idKarta
-     *
-     * @return self
-     */
-    public function addToIdKarta($idKarta)
-    {
-        $this->idKarta[] = $idKarta;
-
-        return $this;
-    }
-
-    /**
-     * isset idKarta
-     *
-     * @param int|string $index
-     *
-     * @return bool
-     */
-    public function issetIdKarta($index)
-    {
-        return isset($this->idKarta[$index]);
-    }
-
-    /**
-     * unset idKarta
-     *
-     * @param int|string $index
-     */
-    public function unsetIdKarta($index)
-    {
-        unset($this->idKarta[$index]);
-    }
-
-    /**
-     * Gets as idKarta
-     *
-     * @return int[]
-     */
-    public function getIdKarta()
-    {
-        return $this->idKarta;
-    }
-
-    /**
-     * Sets a new idKarta
-     *
-     * @param int[] $idKarta
-     *
-     * @return self
-     */
-    public function setIdKarta(array $idKarta)
-    {
-        $this->idKarta = $idKarta;
-
-        return $this;
-    }
 }
+

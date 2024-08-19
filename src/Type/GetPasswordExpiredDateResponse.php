@@ -1,38 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetPasswordExpiredDateResponse\GetPasswordExpiredDateResponseAType;
 
 /**
  * Class representing GetPasswordExpiredDateResponse
  */
-class GetPasswordExpiredDateResponse
+class GetPasswordExpiredDateResponse extends GetPasswordExpiredDateResponseAType
 {
-    /**
-     * @var \DateTime $dataWygasniecia
-     */
-    protected $dataWygasniecia;
-
-    /**
-     * Gets as dataWygasniecia
-     *
-     * @return \DateTime
-     */
-    public function getDataWygasniecia()
-    {
-        return $this->dataWygasniecia;
-    }
-
-    /**
-     * Sets a new dataWygasniecia
-     *
-     * @return self
-     */
-    public function setDataWygasniecia(\DateTime $dataWygasniecia)
-    {
-        $this->dataWygasniecia = $dataWygasniecia;
-
-        return $this;
-    }
 }
+

@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaZagranicznaType
+ *
  *
  * XSD Type: przesylkaZagranicznaType
  */
@@ -14,54 +13,54 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var bool $ekspres
      */
-    protected $ekspres;
+    protected $ekspres = null;
 
     /**
      * @var string $kraj
      */
-    protected $kraj;
+    protected $kraj = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $adres
      */
-    protected $adres;
+    protected $adres = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $nadawca
      */
-    protected $nadawca;
+    protected $nadawca = null;
 
     /**
      * @var \Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2
      */
-    protected $deklaracjaCelna2;
+    protected $deklaracjaCelna2 = null;
 
     /**
      * Element określający zawartość przesyłki.
-     * Aktualnie dopuszczalne wartości:
-     * KORESPONDENCJA
-     * DOKUMENTY_PONIZEJ_250G
-     * DOKUMENTY_POWYZEJ_250G
-     * TOWARY
+     *  Aktualnie dopuszczalne wartości:
+     *  KORESPONDENCJA
+     *  DOKUMENTY_PONIZEJ_250G
+     *  DOKUMENTY_POWYZEJ_250G
+     *  TOWARY
      *
      * @var string $zawartosc
      */
-    protected $zawartosc;
+    protected $zawartosc = null;
 
     /**
      * Gets as posteRestante
@@ -77,13 +76,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -101,13 +98,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -125,13 +120,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -149,13 +142,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new ekspres
      *
      * @param bool $ekspres
-     *
      * @return self
      */
     public function setEkspres($ekspres)
     {
         $this->ekspres = $ekspres;
-
         return $this;
     }
 
@@ -173,13 +164,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new kraj
      *
      * @param string $kraj
-     *
      * @return self
      */
     public function setKraj($kraj)
     {
         $this->kraj = $kraj;
-
         return $this;
     }
 
@@ -197,13 +186,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new adres
      *
      * @param \Abryb\ENadawca\Type\AdresType $adres
-     *
      * @return self
      */
-    public function setAdres(AdresType $adres)
+    public function setAdres(?\Abryb\ENadawca\Type\AdresType $adres = null)
     {
         $this->adres = $adres;
-
         return $this;
     }
 
@@ -221,13 +208,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new nadawca
      *
      * @param \Abryb\ENadawca\Type\AdresType $nadawca
-     *
      * @return self
      */
-    public function setNadawca(AdresType $nadawca)
+    public function setNadawca(?\Abryb\ENadawca\Type\AdresType $nadawca = null)
     {
         $this->nadawca = $nadawca;
-
         return $this;
     }
 
@@ -245,13 +230,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new deklaracjaCelna2
      *
      * @param \Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2
-     *
      * @return self
      */
-    public function setDeklaracjaCelna2(DeklaracjaCelna2Type $deklaracjaCelna2)
+    public function setDeklaracjaCelna2(?\Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2 = null)
     {
         $this->deklaracjaCelna2 = $deklaracjaCelna2;
-
         return $this;
     }
 
@@ -259,11 +242,11 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Gets as zawartosc
      *
      * Element określający zawartość przesyłki.
-     * Aktualnie dopuszczalne wartości:
-     * KORESPONDENCJA
-     * DOKUMENTY_PONIZEJ_250G
-     * DOKUMENTY_POWYZEJ_250G
-     * TOWARY
+     *  Aktualnie dopuszczalne wartości:
+     *  KORESPONDENCJA
+     *  DOKUMENTY_PONIZEJ_250G
+     *  DOKUMENTY_POWYZEJ_250G
+     *  TOWARY
      *
      * @return string
      */
@@ -276,20 +259,19 @@ class PrzesylkaZagranicznaType extends PrzesylkaNieRejestrowanaType
      * Sets a new zawartosc
      *
      * Element określający zawartość przesyłki.
-     * Aktualnie dopuszczalne wartości:
-     * KORESPONDENCJA
-     * DOKUMENTY_PONIZEJ_250G
-     * DOKUMENTY_POWYZEJ_250G
-     * TOWARY
+     *  Aktualnie dopuszczalne wartości:
+     *  KORESPONDENCJA
+     *  DOKUMENTY_PONIZEJ_250G
+     *  DOKUMENTY_POWYZEJ_250G
+     *  TOWARY
      *
      * @param string $zawartosc
-     *
      * @return self
      */
     public function setZawartosc($zawartosc)
     {
         $this->zawartosc = $zawartosc;
-
         return $this;
     }
 }
+

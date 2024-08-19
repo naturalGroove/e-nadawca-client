@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaFirmowaPoleconaType
+ *
  *
  * XSD Type: przesylkaFirmowaPoleconaType
  */
@@ -14,47 +13,52 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
     /**
      * @var string $zasadySpecjalne
      */
-    protected $zasadySpecjalne;
+    protected $zasadySpecjalne = null;
 
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $iloscPotwierdzenOdbioru
      */
-    protected $iloscPotwierdzenOdbioru;
+    protected $iloscPotwierdzenOdbioru = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var bool $miejscowa
      */
-    protected $miejscowa;
+    protected $miejscowa = null;
 
     /**
      * @var bool $obszarMiasto
      */
-    protected $obszarMiasto;
+    protected $obszarMiasto = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
+
+    /**
+     * @var string $numerPrzesylkiKlienta
+     */
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var \Abryb\ENadawca\Type\EPOType $epo
      */
-    protected $epo;
+    protected $epo = null;
 
     /**
      * Gets as zasadySpecjalne
@@ -70,13 +74,11 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new zasadySpecjalne
      *
      * @param string $zasadySpecjalne
-     *
      * @return self
      */
     public function setZasadySpecjalne($zasadySpecjalne)
     {
         $this->zasadySpecjalne = $zasadySpecjalne;
-
         return $this;
     }
 
@@ -94,13 +96,11 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -118,13 +118,11 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new iloscPotwierdzenOdbioru
      *
      * @param int $iloscPotwierdzenOdbioru
-     *
      * @return self
      */
     public function setIloscPotwierdzenOdbioru($iloscPotwierdzenOdbioru)
     {
         $this->iloscPotwierdzenOdbioru = $iloscPotwierdzenOdbioru;
-
         return $this;
     }
 
@@ -142,13 +140,11 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -166,13 +162,11 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new miejscowa
      *
      * @param bool $miejscowa
-     *
      * @return self
      */
     public function setMiejscowa($miejscowa)
     {
         $this->miejscowa = $miejscowa;
-
         return $this;
     }
 
@@ -190,13 +184,11 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new obszarMiasto
      *
      * @param bool $obszarMiasto
-     *
      * @return self
      */
     public function setObszarMiasto($obszarMiasto)
     {
         $this->obszarMiasto = $obszarMiasto;
-
         return $this;
     }
 
@@ -214,13 +206,33 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
+        return $this;
+    }
 
+    /**
+     * Gets as numerPrzesylkiKlienta
+     *
+     * @return string
+     */
+    public function getNumerPrzesylkiKlienta()
+    {
+        return $this->numerPrzesylkiKlienta;
+    }
+
+    /**
+     * Sets a new numerPrzesylkiKlienta
+     *
+     * @param string $numerPrzesylkiKlienta
+     * @return self
+     */
+    public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
+    {
+        $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
         return $this;
     }
 
@@ -238,13 +250,11 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -262,13 +272,12 @@ class PrzesylkaFirmowaPoleconaType extends PrzesylkaRejestrowanaType
      * Sets a new epo
      *
      * @param \Abryb\ENadawca\Type\EPOType $epo
-     *
      * @return self
      */
-    public function setEpo(EPOType $epo)
+    public function setEpo(?\Abryb\ENadawca\Type\EPOType $epo = null)
     {
         $this->epo = $epo;
-
         return $this;
     }
 }
+

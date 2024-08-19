@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing EnvelopeInfoType
+ *
  *
  * XSD Type: envelopeInfoType
  */
@@ -14,22 +13,30 @@ class EnvelopeInfoType
     /**
      * @var int $idEnvelope
      */
-    protected $idEnvelope;
+    protected $idEnvelope = null;
 
     /**
      * @var string $envelopeStatus
      */
-    protected $envelopeStatus;
+    protected $envelopeStatus = null;
 
     /**
      * @var \DateTime $dataTransmisji
      */
-    protected $dataTransmisji;
+    protected $dataTransmisji = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
     protected $error = [
+        
+    ];
+
+    /**
+     * @var string[] $envelopeFilename
+     */
+    protected $envelopeFilename = [
+        
     ];
 
     /**
@@ -46,13 +53,11 @@ class EnvelopeInfoType
      * Sets a new idEnvelope
      *
      * @param int $idEnvelope
-     *
      * @return self
      */
     public function setIdEnvelope($idEnvelope)
     {
         $this->idEnvelope = $idEnvelope;
-
         return $this;
     }
 
@@ -70,13 +75,11 @@ class EnvelopeInfoType
      * Sets a new envelopeStatus
      *
      * @param string $envelopeStatus
-     *
      * @return self
      */
     public function setEnvelopeStatus($envelopeStatus)
     {
         $this->envelopeStatus = $envelopeStatus;
-
         return $this;
     }
 
@@ -93,26 +96,24 @@ class EnvelopeInfoType
     /**
      * Sets a new dataTransmisji
      *
+     * @param \DateTime $dataTransmisji
      * @return self
      */
     public function setDataTransmisji(\DateTime $dataTransmisji)
     {
         $this->dataTransmisji = $dataTransmisji;
-
         return $this;
     }
 
     /**
      * Adds as error
      *
-     * @param \Abryb\ENadawca\Type\ErrorType $error
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\ErrorType $error
      */
-    public function addToError(ErrorType $error)
+    public function addToError(\Abryb\ENadawca\Type\ErrorType $error)
     {
         $this->error[] = $error;
-
         return $this;
     }
 
@@ -120,7 +121,6 @@ class EnvelopeInfoType
      * isset error
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetError($index)
@@ -132,6 +132,7 @@ class EnvelopeInfoType
      * unset error
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetError($index)
     {
@@ -152,13 +153,68 @@ class EnvelopeInfoType
      * Sets a new error
      *
      * @param \Abryb\ENadawca\Type\ErrorType[] $error
-     *
      * @return self
      */
-    public function setError(array $error)
+    public function setError(array $error = null)
     {
         $this->error = $error;
+        return $this;
+    }
 
+    /**
+     * Adds as envelopeFilename
+     *
+     * @return self
+     * @param string $envelopeFilename
+     */
+    public function addToEnvelopeFilename($envelopeFilename)
+    {
+        $this->envelopeFilename[] = $envelopeFilename;
+        return $this;
+    }
+
+    /**
+     * isset envelopeFilename
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetEnvelopeFilename($index)
+    {
+        return isset($this->envelopeFilename[$index]);
+    }
+
+    /**
+     * unset envelopeFilename
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetEnvelopeFilename($index)
+    {
+        unset($this->envelopeFilename[$index]);
+    }
+
+    /**
+     * Gets as envelopeFilename
+     *
+     * @return string[]
+     */
+    public function getEnvelopeFilename()
+    {
+        return $this->envelopeFilename;
+    }
+
+    /**
+     * Sets a new envelopeFilename
+     *
+     * @param string[] $envelopeFilename
+     * @return self
+     */
+    public function setEnvelopeFilename(array $envelopeFilename = null)
+    {
+        $this->envelopeFilename = $envelopeFilename;
         return $this;
     }
 }
+

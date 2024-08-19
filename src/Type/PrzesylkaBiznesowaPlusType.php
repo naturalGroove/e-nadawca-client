@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaBiznesowaPlusType
+ *
  *
  * XSD Type: przesylkaBiznesowaPlusType
  */
@@ -14,132 +13,130 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var int $kwotaTranzakcji
      */
-    protected $kwotaTranzakcji;
+    protected $kwotaTranzakcji = null;
 
     /**
      * @var bool $ostroznie
      */
-    protected $ostroznie;
+    protected $ostroznie = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * atrybut nieużywany, użyj potwierdzenieOdbioru
      *
      * @var int $iloscPotwierdzenOdbioru
      */
-    protected $iloscPotwierdzenOdbioru;
-
-    /**
-     * @var bool $zwrotDoslanie
-     */
-    protected $zwrotDoslanie;
+    protected $iloscPotwierdzenOdbioru = null;
 
     /**
      * @var string $eKontaktAdresata
      */
-    protected $eKontaktAdresata;
+    protected $eKontaktAdresata = null;
 
     /**
      * @var string $eSposobPowiadomieniaAdresata
      */
-    protected $eSposobPowiadomieniaAdresata;
+    protected $eSposobPowiadomieniaAdresata = null;
 
     /**
      * @var string $numerPrzesylkiKlienta
      */
-    protected $numerPrzesylkiKlienta;
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var int $iloscDniOczekiwaniaNaWydanie
      */
-    protected $iloscDniOczekiwaniaNaWydanie;
+    protected $iloscDniOczekiwaniaNaWydanie = null;
 
     /**
      * @var \DateTime $oczekiwanyTerminDoreczenia
      */
-    protected $oczekiwanyTerminDoreczenia;
+    protected $oczekiwanyTerminDoreczenia = null;
 
     /**
      * @var string $terminRodzajPlus
      */
-    protected $terminRodzajPlus;
+    protected $terminRodzajPlus = null;
 
     /**
      * @var string $numerTransakcjiOdbioru
      */
-    protected $numerTransakcjiOdbioru;
+    protected $numerTransakcjiOdbioru = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PobranieType $pobranie
      */
-    protected $pobranie;
+    protected $pobranie = null;
 
     /**
-     * Wystarczy przesłac obiekt z ustawionym id reszta pól moż ezostać pominięta (aby zmniejszyć ilośc danych do tansmisji)
+     * Wystarczy przesłac obiekt z ustawionym id
+     *  reszta pól moż ezostać pominięta (aby zmniejszyć ilośc danych
+     *  do tansmisji)
      *
      * @var \Abryb\ENadawca\Type\PlacowkaPocztowaType $urzadWydaniaPrzesylki
      */
-    protected $urzadWydaniaPrzesylki;
+    protected $urzadWydaniaPrzesylki = null;
 
     /**
      * @var \Abryb\ENadawca\Type\SubPrzesylkaBiznesowaPlusType[] $subPrzesylka
      */
     protected $subPrzesylka = [
+        
     ];
 
     /**
      * @var \DateTime $dataDrugiejProbyDoreczenia
      */
-    protected $dataDrugiejProbyDoreczenia;
+    protected $dataDrugiejProbyDoreczenia = null;
 
     /**
      * @var int $drugaProbaDoreczeniaPoLiczbieDni
      */
-    protected $drugaProbaDoreczeniaPoLiczbieDni;
+    protected $drugaProbaDoreczeniaPoLiczbieDni = null;
 
     /**
      * @var bool $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce
      */
-    protected $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce;
+    protected $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PotwierdzenieOdbioruBiznesowaType $potwierdzenieOdbioru
      */
-    protected $potwierdzenieOdbioru;
+    protected $potwierdzenieOdbioru = null;
 
     /**
      * @var \Abryb\ENadawca\Type\DoreczenieBiznesowaType $doreczenie
      */
-    protected $doreczenie;
+    protected $doreczenie = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ZwrotDokumentowBiznesowaType $zwrotDokumentow
      */
-    protected $zwrotDokumentow;
+    protected $zwrotDokumentow = null;
 
     /**
      * Gets as posteRestante
@@ -155,13 +152,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -179,13 +174,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -203,13 +196,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -227,13 +218,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -251,13 +240,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new kwotaTranzakcji
      *
      * @param int $kwotaTranzakcji
-     *
      * @return self
      */
     public function setKwotaTranzakcji($kwotaTranzakcji)
     {
         $this->kwotaTranzakcji = $kwotaTranzakcji;
-
         return $this;
     }
 
@@ -275,13 +262,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new ostroznie
      *
      * @param bool $ostroznie
-     *
      * @return self
      */
     public function setOstroznie($ostroznie)
     {
         $this->ostroznie = $ostroznie;
-
         return $this;
     }
 
@@ -299,13 +284,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -327,37 +310,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * atrybut nieużywany, użyj potwierdzenieOdbioru
      *
      * @param int $iloscPotwierdzenOdbioru
-     *
      * @return self
      */
     public function setIloscPotwierdzenOdbioru($iloscPotwierdzenOdbioru)
     {
         $this->iloscPotwierdzenOdbioru = $iloscPotwierdzenOdbioru;
-
-        return $this;
-    }
-
-    /**
-     * Gets as zwrotDoslanie
-     *
-     * @return bool
-     */
-    public function getZwrotDoslanie()
-    {
-        return $this->zwrotDoslanie;
-    }
-
-    /**
-     * Sets a new zwrotDoslanie
-     *
-     * @param bool $zwrotDoslanie
-     *
-     * @return self
-     */
-    public function setZwrotDoslanie($zwrotDoslanie)
-    {
-        $this->zwrotDoslanie = $zwrotDoslanie;
-
         return $this;
     }
 
@@ -375,13 +332,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new eKontaktAdresata
      *
      * @param string $eKontaktAdresata
-     *
      * @return self
      */
     public function setEKontaktAdresata($eKontaktAdresata)
     {
         $this->eKontaktAdresata = $eKontaktAdresata;
-
         return $this;
     }
 
@@ -399,13 +354,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new eSposobPowiadomieniaAdresata
      *
      * @param string $eSposobPowiadomieniaAdresata
-     *
      * @return self
      */
     public function setESposobPowiadomieniaAdresata($eSposobPowiadomieniaAdresata)
     {
         $this->eSposobPowiadomieniaAdresata = $eSposobPowiadomieniaAdresata;
-
         return $this;
     }
 
@@ -423,13 +376,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new numerPrzesylkiKlienta
      *
      * @param string $numerPrzesylkiKlienta
-     *
      * @return self
      */
     public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
     {
         $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
-
         return $this;
     }
 
@@ -447,13 +398,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new iloscDniOczekiwaniaNaWydanie
      *
      * @param int $iloscDniOczekiwaniaNaWydanie
-     *
      * @return self
      */
     public function setIloscDniOczekiwaniaNaWydanie($iloscDniOczekiwaniaNaWydanie)
     {
         $this->iloscDniOczekiwaniaNaWydanie = $iloscDniOczekiwaniaNaWydanie;
-
         return $this;
     }
 
@@ -470,12 +419,12 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
     /**
      * Sets a new oczekiwanyTerminDoreczenia
      *
+     * @param \DateTime $oczekiwanyTerminDoreczenia
      * @return self
      */
     public function setOczekiwanyTerminDoreczenia(\DateTime $oczekiwanyTerminDoreczenia)
     {
         $this->oczekiwanyTerminDoreczenia = $oczekiwanyTerminDoreczenia;
-
         return $this;
     }
 
@@ -493,13 +442,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new terminRodzajPlus
      *
      * @param string $terminRodzajPlus
-     *
      * @return self
      */
     public function setTerminRodzajPlus($terminRodzajPlus)
     {
         $this->terminRodzajPlus = $terminRodzajPlus;
-
         return $this;
     }
 
@@ -517,13 +464,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new numerTransakcjiOdbioru
      *
      * @param string $numerTransakcjiOdbioru
-     *
      * @return self
      */
     public function setNumerTransakcjiOdbioru($numerTransakcjiOdbioru)
     {
         $this->numerTransakcjiOdbioru = $numerTransakcjiOdbioru;
-
         return $this;
     }
 
@@ -541,20 +486,20 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new pobranie
      *
      * @param \Abryb\ENadawca\Type\PobranieType $pobranie
-     *
      * @return self
      */
-    public function setPobranie(PobranieType $pobranie)
+    public function setPobranie(?\Abryb\ENadawca\Type\PobranieType $pobranie = null)
     {
         $this->pobranie = $pobranie;
-
         return $this;
     }
 
     /**
      * Gets as urzadWydaniaPrzesylki
      *
-     * Wystarczy przesłac obiekt z ustawionym id reszta pól moż ezostać pominięta (aby zmniejszyć ilośc danych do tansmisji)
+     * Wystarczy przesłac obiekt z ustawionym id
+     *  reszta pól moż ezostać pominięta (aby zmniejszyć ilośc danych
+     *  do tansmisji)
      *
      * @return \Abryb\ENadawca\Type\PlacowkaPocztowaType
      */
@@ -566,30 +511,28 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
     /**
      * Sets a new urzadWydaniaPrzesylki
      *
-     * Wystarczy przesłac obiekt z ustawionym id reszta pól moż ezostać pominięta (aby zmniejszyć ilośc danych do tansmisji)
+     * Wystarczy przesłac obiekt z ustawionym id
+     *  reszta pól moż ezostać pominięta (aby zmniejszyć ilośc danych
+     *  do tansmisji)
      *
      * @param \Abryb\ENadawca\Type\PlacowkaPocztowaType $urzadWydaniaPrzesylki
-     *
      * @return self
      */
-    public function setUrzadWydaniaPrzesylki(PlacowkaPocztowaType $urzadWydaniaPrzesylki)
+    public function setUrzadWydaniaPrzesylki(?\Abryb\ENadawca\Type\PlacowkaPocztowaType $urzadWydaniaPrzesylki = null)
     {
         $this->urzadWydaniaPrzesylki = $urzadWydaniaPrzesylki;
-
         return $this;
     }
 
     /**
      * Adds as subPrzesylka
      *
-     * @param \Abryb\ENadawca\Type\SubPrzesylkaBiznesowaPlusType $subPrzesylka
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\SubPrzesylkaBiznesowaPlusType $subPrzesylka
      */
-    public function addToSubPrzesylka(SubPrzesylkaBiznesowaPlusType $subPrzesylka)
+    public function addToSubPrzesylka(\Abryb\ENadawca\Type\SubPrzesylkaBiznesowaPlusType $subPrzesylka)
     {
         $this->subPrzesylka[] = $subPrzesylka;
-
         return $this;
     }
 
@@ -597,7 +540,6 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * isset subPrzesylka
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetSubPrzesylka($index)
@@ -609,6 +551,7 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * unset subPrzesylka
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetSubPrzesylka($index)
     {
@@ -629,13 +572,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new subPrzesylka
      *
      * @param \Abryb\ENadawca\Type\SubPrzesylkaBiznesowaPlusType[] $subPrzesylka
-     *
      * @return self
      */
-    public function setSubPrzesylka(array $subPrzesylka)
+    public function setSubPrzesylka(array $subPrzesylka = null)
     {
         $this->subPrzesylka = $subPrzesylka;
-
         return $this;
     }
 
@@ -652,12 +593,12 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
     /**
      * Sets a new dataDrugiejProbyDoreczenia
      *
+     * @param \DateTime $dataDrugiejProbyDoreczenia
      * @return self
      */
-    public function setDataDrugiejProbyDoreczenia(\DateTime $dataDrugiejProbyDoreczenia)
+    public function setDataDrugiejProbyDoreczenia(?\DateTime $dataDrugiejProbyDoreczenia = null)
     {
         $this->dataDrugiejProbyDoreczenia = $dataDrugiejProbyDoreczenia;
-
         return $this;
     }
 
@@ -675,13 +616,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new drugaProbaDoreczeniaPoLiczbieDni
      *
      * @param int $drugaProbaDoreczeniaPoLiczbieDni
-     *
      * @return self
      */
     public function setDrugaProbaDoreczeniaPoLiczbieDni($drugaProbaDoreczeniaPoLiczbieDni)
     {
         $this->drugaProbaDoreczeniaPoLiczbieDni = $drugaProbaDoreczeniaPoLiczbieDni;
-
         return $this;
     }
 
@@ -699,13 +638,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new sprawdzenieZawartosciPrzesylkiPrzezOdbiorce
      *
      * @param bool $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce
-     *
      * @return self
      */
     public function setSprawdzenieZawartosciPrzesylkiPrzezOdbiorce($sprawdzenieZawartosciPrzesylkiPrzezOdbiorce)
     {
         $this->sprawdzenieZawartosciPrzesylkiPrzezOdbiorce = $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce;
-
         return $this;
     }
 
@@ -723,13 +660,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new potwierdzenieOdbioru
      *
      * @param \Abryb\ENadawca\Type\PotwierdzenieOdbioruBiznesowaType $potwierdzenieOdbioru
-     *
      * @return self
      */
-    public function setPotwierdzenieOdbioru(PotwierdzenieOdbioruBiznesowaType $potwierdzenieOdbioru)
+    public function setPotwierdzenieOdbioru(?\Abryb\ENadawca\Type\PotwierdzenieOdbioruBiznesowaType $potwierdzenieOdbioru = null)
     {
         $this->potwierdzenieOdbioru = $potwierdzenieOdbioru;
-
         return $this;
     }
 
@@ -747,13 +682,11 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new doreczenie
      *
      * @param \Abryb\ENadawca\Type\DoreczenieBiznesowaType $doreczenie
-     *
      * @return self
      */
-    public function setDoreczenie(DoreczenieBiznesowaType $doreczenie)
+    public function setDoreczenie(?\Abryb\ENadawca\Type\DoreczenieBiznesowaType $doreczenie = null)
     {
         $this->doreczenie = $doreczenie;
-
         return $this;
     }
 
@@ -771,13 +704,12 @@ class PrzesylkaBiznesowaPlusType extends PrzesylkaRejestrowanaType
      * Sets a new zwrotDokumentow
      *
      * @param \Abryb\ENadawca\Type\ZwrotDokumentowBiznesowaType $zwrotDokumentow
-     *
      * @return self
      */
-    public function setZwrotDokumentow(ZwrotDokumentowBiznesowaType $zwrotDokumentow)
+    public function setZwrotDokumentow(?\Abryb\ENadawca\Type\ZwrotDokumentowBiznesowaType $zwrotDokumentow = null)
     {
         $this->zwrotDokumentow = $zwrotDokumentow;
-
         return $this;
     }
 }
+

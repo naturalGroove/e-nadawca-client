@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DoreczenieBiznesowaType
+ *
  *
  * XSD Type: doreczenieBiznesowaType
  */
@@ -14,7 +13,7 @@ class DoreczenieBiznesowaType
     /**
      * @var bool $doRakWlasnych
      */
-    protected $doRakWlasnych;
+    protected $doRakWlasnych = null;
 
     /**
      * Gets as doRakWlasnych
@@ -30,13 +29,12 @@ class DoreczenieBiznesowaType
      * Sets a new doRakWlasnych
      *
      * @param bool $doRakWlasnych
-     *
      * @return self
      */
     public function setDoRakWlasnych($doRakWlasnych)
     {
         $this->doRakWlasnych = $doRakWlasnych;
-
         return $this;
     }
 }
+

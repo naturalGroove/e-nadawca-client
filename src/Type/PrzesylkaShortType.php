@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaShortType
+ *
  *
  * XSD Type: przesylkaShortType
  */
@@ -14,37 +13,38 @@ class PrzesylkaShortType
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * @var \DateTime $dataNadania
      */
-    protected $dataNadania;
+    protected $dataNadania = null;
 
     /**
      * @var int $razem
      */
-    protected $razem;
+    protected $razem = null;
 
     /**
      * @var int $pobranie
      */
-    protected $pobranie;
+    protected $pobranie = null;
 
     /**
      * @var string $status
      */
-    protected $status;
+    protected $status = null;
 
     /**
      * @var string[] $czynnosciUpustowe
      */
     protected $czynnosciUpustowe = [
+        
     ];
 
     /**
@@ -61,13 +61,11 @@ class PrzesylkaShortType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -85,13 +83,11 @@ class PrzesylkaShortType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 
@@ -108,12 +104,12 @@ class PrzesylkaShortType
     /**
      * Sets a new dataNadania
      *
+     * @param \DateTime $dataNadania
      * @return self
      */
     public function setDataNadania(\DateTime $dataNadania)
     {
         $this->dataNadania = $dataNadania;
-
         return $this;
     }
 
@@ -131,13 +127,11 @@ class PrzesylkaShortType
      * Sets a new razem
      *
      * @param int $razem
-     *
      * @return self
      */
     public function setRazem($razem)
     {
         $this->razem = $razem;
-
         return $this;
     }
 
@@ -155,13 +149,11 @@ class PrzesylkaShortType
      * Sets a new pobranie
      *
      * @param int $pobranie
-     *
      * @return self
      */
     public function setPobranie($pobranie)
     {
         $this->pobranie = $pobranie;
-
         return $this;
     }
 
@@ -179,27 +171,23 @@ class PrzesylkaShortType
      * Sets a new status
      *
      * @param string $status
-     *
      * @return self
      */
     public function setStatus($status)
     {
         $this->status = $status;
-
         return $this;
     }
 
     /**
      * Adds as czynnosciUpustowe
      *
-     * @param string $czynnosciUpustowe
-     *
      * @return self
+     * @param string $czynnosciUpustowe
      */
     public function addToCzynnosciUpustowe($czynnosciUpustowe)
     {
         $this->czynnosciUpustowe[] = $czynnosciUpustowe;
-
         return $this;
     }
 
@@ -207,7 +195,6 @@ class PrzesylkaShortType
      * isset czynnosciUpustowe
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetCzynnosciUpustowe($index)
@@ -219,6 +206,7 @@ class PrzesylkaShortType
      * unset czynnosciUpustowe
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetCzynnosciUpustowe($index)
     {
@@ -239,13 +227,12 @@ class PrzesylkaShortType
      * Sets a new czynnosciUpustowe
      *
      * @param string $czynnosciUpustowe
-     *
      * @return self
      */
-    public function setCzynnosciUpustowe(array $czynnosciUpustowe)
+    public function setCzynnosciUpustowe(array $czynnosciUpustowe = null)
     {
         $this->czynnosciUpustowe = $czynnosciUpustowe;
-
         return $this;
     }
 }
+

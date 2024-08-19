@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ProfilType
+ *
  *
  * XSD Type: profilType
  */
@@ -14,17 +13,17 @@ class ProfilType extends AdresType
     /**
      * @var int $idProfil
      */
-    protected $idProfil;
+    protected $idProfil = null;
 
     /**
      * @var string $nazwaSkrocona
      */
-    protected $nazwaSkrocona;
+    protected $nazwaSkrocona = null;
 
     /**
      * @var string $fax
      */
-    protected $fax;
+    protected $fax = null;
 
     /**
      * Gets as idProfil
@@ -40,13 +39,11 @@ class ProfilType extends AdresType
      * Sets a new idProfil
      *
      * @param int $idProfil
-     *
      * @return self
      */
     public function setIdProfil($idProfil)
     {
         $this->idProfil = $idProfil;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class ProfilType extends AdresType
      * Sets a new nazwaSkrocona
      *
      * @param string $nazwaSkrocona
-     *
      * @return self
      */
     public function setNazwaSkrocona($nazwaSkrocona)
     {
         $this->nazwaSkrocona = $nazwaSkrocona;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class ProfilType extends AdresType
      * Sets a new fax
      *
      * @param string $fax
-     *
      * @return self
      */
     public function setFax($fax)
     {
         $this->fax = $fax;
-
         return $this;
     }
 }
+

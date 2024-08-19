@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ErrorType
+ *
  *
  * XSD Type: errorType
  */
@@ -14,17 +13,17 @@ class ErrorType
     /**
      * @var int $errorNumber
      */
-    protected $errorNumber;
+    protected $errorNumber = null;
 
     /**
      * @var string $errorDesc
      */
-    protected $errorDesc;
+    protected $errorDesc = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * Gets as errorNumber
@@ -40,13 +39,11 @@ class ErrorType
      * Sets a new errorNumber
      *
      * @param int $errorNumber
-     *
      * @return self
      */
     public function setErrorNumber($errorNumber)
     {
         $this->errorNumber = $errorNumber;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class ErrorType
      * Sets a new errorDesc
      *
      * @param string $errorDesc
-     *
      * @return self
      */
     public function setErrorDesc($errorDesc)
     {
         $this->errorDesc = $errorDesc;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class ErrorType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 }
+

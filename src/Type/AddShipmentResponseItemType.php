@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing AddShipmentResponseItemType
+ *
  *
  * XSD Type: addShipmentResponseItemType
  */
@@ -14,22 +13,28 @@ class AddShipmentResponseItemType
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * @var string $numerTransakcjiOdbioru
      */
-    protected $numerTransakcjiOdbioru;
+    protected $numerTransakcjiOdbioru = null;
+
+    /**
+     * @var string $numerListuPrzewozowego
+     */
+    protected $numerListuPrzewozowego = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
     protected $error = [
+        
     ];
 
     /**
@@ -46,13 +51,11 @@ class AddShipmentResponseItemType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -70,13 +73,11 @@ class AddShipmentResponseItemType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 
@@ -94,27 +95,45 @@ class AddShipmentResponseItemType
      * Sets a new numerTransakcjiOdbioru
      *
      * @param string $numerTransakcjiOdbioru
-     *
      * @return self
      */
     public function setNumerTransakcjiOdbioru($numerTransakcjiOdbioru)
     {
         $this->numerTransakcjiOdbioru = $numerTransakcjiOdbioru;
+        return $this;
+    }
 
+    /**
+     * Gets as numerListuPrzewozowego
+     *
+     * @return string
+     */
+    public function getNumerListuPrzewozowego()
+    {
+        return $this->numerListuPrzewozowego;
+    }
+
+    /**
+     * Sets a new numerListuPrzewozowego
+     *
+     * @param string $numerListuPrzewozowego
+     * @return self
+     */
+    public function setNumerListuPrzewozowego($numerListuPrzewozowego)
+    {
+        $this->numerListuPrzewozowego = $numerListuPrzewozowego;
         return $this;
     }
 
     /**
      * Adds as error
      *
-     * @param \Abryb\ENadawca\Type\ErrorType $error
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\ErrorType $error
      */
-    public function addToError(ErrorType $error)
+    public function addToError(\Abryb\ENadawca\Type\ErrorType $error)
     {
         $this->error[] = $error;
-
         return $this;
     }
 
@@ -122,7 +141,6 @@ class AddShipmentResponseItemType
      * isset error
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetError($index)
@@ -134,6 +152,7 @@ class AddShipmentResponseItemType
      * unset error
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetError($index)
     {
@@ -154,13 +173,12 @@ class AddShipmentResponseItemType
      * Sets a new error
      *
      * @param \Abryb\ENadawca\Type\ErrorType[] $error
-     *
      * @return self
      */
-    public function setError(array $error)
+    public function setError(array $error = null)
     {
         $this->error = $error;
-
         return $this;
     }
 }
+

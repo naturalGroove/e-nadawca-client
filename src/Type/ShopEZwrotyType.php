@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ShopEZwrotyType
+ *
  *
  * XSD Type: shopEZwrotyType
  */
@@ -14,123 +13,124 @@ class ShopEZwrotyType
     /**
      * @var int $idShop
      */
-    protected $idShop;
+    protected $idShop = null;
 
     /**
      * @var string $nazwa
      */
-    protected $nazwa;
+    protected $nazwa = null;
 
     /**
      * @var string $nazwa2
      */
-    protected $nazwa2;
+    protected $nazwa2 = null;
 
     /**
      * @var string $przyjaznaNazwa
      */
-    protected $przyjaznaNazwa;
+    protected $przyjaznaNazwa = null;
 
     /**
      * @var string $ulica
      */
-    protected $ulica;
+    protected $ulica = null;
 
     /**
      * @var string $numerDomu
      */
-    protected $numerDomu;
+    protected $numerDomu = null;
 
     /**
      * @var string $numerLokalu
      */
-    protected $numerLokalu;
+    protected $numerLokalu = null;
 
     /**
      * @var string $miejscowosc
      */
-    protected $miejscowosc;
+    protected $miejscowosc = null;
 
     /**
      * @var string $kodPocztowy
      */
-    protected $kodPocztowy;
+    protected $kodPocztowy = null;
 
     /**
      * @var string $mobile
      */
-    protected $mobile;
+    protected $mobile = null;
 
     /**
      * @var string $email
      */
-    protected $email;
+    protected $email = null;
 
     /**
      * @var string $nip
      */
-    protected $nip;
+    protected $nip = null;
 
     /**
      * @var string $regon
      */
-    protected $regon;
+    protected $regon = null;
 
     /**
      * @var string $krs
      */
-    protected $krs;
+    protected $krs = null;
 
     /**
      * @var string $eZwrotTyp
      */
-    protected $eZwrotTyp;
+    protected $eZwrotTyp = null;
 
     /**
      * @var string $wymagalnoscNumeruIdentyfikujacegoPrzesylke
      */
-    protected $wymagalnoscNumeruIdentyfikujacegoPrzesylke;
+    protected $wymagalnoscNumeruIdentyfikujacegoPrzesylke = null;
 
     /**
      * @var bool $availableOnWebsite
      */
-    protected $availableOnWebsite;
+    protected $availableOnWebsite = null;
 
     /**
      * @var string $emailForEZwrot
      */
-    protected $emailForEZwrot;
+    protected $emailForEZwrot = null;
 
     /**
      * @var bool $paid
      */
-    protected $paid;
+    protected $paid = null;
 
     /**
      * @var int $consentValidFor
      */
-    protected $consentValidFor;
+    protected $consentValidFor = null;
 
     /**
      * @var int $contractorCost
      */
-    protected $contractorCost;
+    protected $contractorCost = null;
 
     /**
      * @var string $infoForClient
      */
-    protected $infoForClient;
+    protected $infoForClient = null;
 
     /**
      * @var string[] $eZwrotPrzesylki
      */
     protected $eZwrotPrzesylki = [
+        
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\EZwrotKartaType $eZwrotKarta
      */
-    protected $eZwrotKarta;
+    protected $eZwrotKarta = null;
 
     /**
      * Gets as idShop
@@ -146,13 +146,11 @@ class ShopEZwrotyType
      * Sets a new idShop
      *
      * @param int $idShop
-     *
      * @return self
      */
     public function setIdShop($idShop)
     {
         $this->idShop = $idShop;
-
         return $this;
     }
 
@@ -170,13 +168,11 @@ class ShopEZwrotyType
      * Sets a new nazwa
      *
      * @param string $nazwa
-     *
      * @return self
      */
     public function setNazwa($nazwa)
     {
         $this->nazwa = $nazwa;
-
         return $this;
     }
 
@@ -194,13 +190,11 @@ class ShopEZwrotyType
      * Sets a new nazwa2
      *
      * @param string $nazwa2
-     *
      * @return self
      */
     public function setNazwa2($nazwa2)
     {
         $this->nazwa2 = $nazwa2;
-
         return $this;
     }
 
@@ -218,13 +212,11 @@ class ShopEZwrotyType
      * Sets a new przyjaznaNazwa
      *
      * @param string $przyjaznaNazwa
-     *
      * @return self
      */
     public function setPrzyjaznaNazwa($przyjaznaNazwa)
     {
         $this->przyjaznaNazwa = $przyjaznaNazwa;
-
         return $this;
     }
 
@@ -242,13 +234,11 @@ class ShopEZwrotyType
      * Sets a new ulica
      *
      * @param string $ulica
-     *
      * @return self
      */
     public function setUlica($ulica)
     {
         $this->ulica = $ulica;
-
         return $this;
     }
 
@@ -266,13 +256,11 @@ class ShopEZwrotyType
      * Sets a new numerDomu
      *
      * @param string $numerDomu
-     *
      * @return self
      */
     public function setNumerDomu($numerDomu)
     {
         $this->numerDomu = $numerDomu;
-
         return $this;
     }
 
@@ -290,13 +278,11 @@ class ShopEZwrotyType
      * Sets a new numerLokalu
      *
      * @param string $numerLokalu
-     *
      * @return self
      */
     public function setNumerLokalu($numerLokalu)
     {
         $this->numerLokalu = $numerLokalu;
-
         return $this;
     }
 
@@ -314,13 +300,11 @@ class ShopEZwrotyType
      * Sets a new miejscowosc
      *
      * @param string $miejscowosc
-     *
      * @return self
      */
     public function setMiejscowosc($miejscowosc)
     {
         $this->miejscowosc = $miejscowosc;
-
         return $this;
     }
 
@@ -338,13 +322,11 @@ class ShopEZwrotyType
      * Sets a new kodPocztowy
      *
      * @param string $kodPocztowy
-     *
      * @return self
      */
     public function setKodPocztowy($kodPocztowy)
     {
         $this->kodPocztowy = $kodPocztowy;
-
         return $this;
     }
 
@@ -362,13 +344,11 @@ class ShopEZwrotyType
      * Sets a new mobile
      *
      * @param string $mobile
-     *
      * @return self
      */
     public function setMobile($mobile)
     {
         $this->mobile = $mobile;
-
         return $this;
     }
 
@@ -386,13 +366,11 @@ class ShopEZwrotyType
      * Sets a new email
      *
      * @param string $email
-     *
      * @return self
      */
     public function setEmail($email)
     {
         $this->email = $email;
-
         return $this;
     }
 
@@ -410,13 +388,11 @@ class ShopEZwrotyType
      * Sets a new nip
      *
      * @param string $nip
-     *
      * @return self
      */
     public function setNip($nip)
     {
         $this->nip = $nip;
-
         return $this;
     }
 
@@ -434,13 +410,11 @@ class ShopEZwrotyType
      * Sets a new regon
      *
      * @param string $regon
-     *
      * @return self
      */
     public function setRegon($regon)
     {
         $this->regon = $regon;
-
         return $this;
     }
 
@@ -458,13 +432,11 @@ class ShopEZwrotyType
      * Sets a new krs
      *
      * @param string $krs
-     *
      * @return self
      */
     public function setKrs($krs)
     {
         $this->krs = $krs;
-
         return $this;
     }
 
@@ -482,13 +454,11 @@ class ShopEZwrotyType
      * Sets a new eZwrotTyp
      *
      * @param string $eZwrotTyp
-     *
      * @return self
      */
     public function setEZwrotTyp($eZwrotTyp)
     {
         $this->eZwrotTyp = $eZwrotTyp;
-
         return $this;
     }
 
@@ -506,13 +476,11 @@ class ShopEZwrotyType
      * Sets a new wymagalnoscNumeruIdentyfikujacegoPrzesylke
      *
      * @param string $wymagalnoscNumeruIdentyfikujacegoPrzesylke
-     *
      * @return self
      */
     public function setWymagalnoscNumeruIdentyfikujacegoPrzesylke($wymagalnoscNumeruIdentyfikujacegoPrzesylke)
     {
         $this->wymagalnoscNumeruIdentyfikujacegoPrzesylke = $wymagalnoscNumeruIdentyfikujacegoPrzesylke;
-
         return $this;
     }
 
@@ -530,13 +498,11 @@ class ShopEZwrotyType
      * Sets a new availableOnWebsite
      *
      * @param bool $availableOnWebsite
-     *
      * @return self
      */
     public function setAvailableOnWebsite($availableOnWebsite)
     {
         $this->availableOnWebsite = $availableOnWebsite;
-
         return $this;
     }
 
@@ -554,13 +520,11 @@ class ShopEZwrotyType
      * Sets a new emailForEZwrot
      *
      * @param string $emailForEZwrot
-     *
      * @return self
      */
     public function setEmailForEZwrot($emailForEZwrot)
     {
         $this->emailForEZwrot = $emailForEZwrot;
-
         return $this;
     }
 
@@ -578,13 +542,11 @@ class ShopEZwrotyType
      * Sets a new paid
      *
      * @param bool $paid
-     *
      * @return self
      */
     public function setPaid($paid)
     {
         $this->paid = $paid;
-
         return $this;
     }
 
@@ -602,13 +564,11 @@ class ShopEZwrotyType
      * Sets a new consentValidFor
      *
      * @param int $consentValidFor
-     *
      * @return self
      */
     public function setConsentValidFor($consentValidFor)
     {
         $this->consentValidFor = $consentValidFor;
-
         return $this;
     }
 
@@ -626,13 +586,11 @@ class ShopEZwrotyType
      * Sets a new contractorCost
      *
      * @param int $contractorCost
-     *
      * @return self
      */
     public function setContractorCost($contractorCost)
     {
         $this->contractorCost = $contractorCost;
-
         return $this;
     }
 
@@ -650,27 +608,23 @@ class ShopEZwrotyType
      * Sets a new infoForClient
      *
      * @param string $infoForClient
-     *
      * @return self
      */
     public function setInfoForClient($infoForClient)
     {
         $this->infoForClient = $infoForClient;
-
         return $this;
     }
 
     /**
      * Adds as eZwrotPrzesylki
      *
-     * @param string $eZwrotPrzesylki
-     *
      * @return self
+     * @param string $eZwrotPrzesylki
      */
     public function addToEZwrotPrzesylki($eZwrotPrzesylki)
     {
         $this->eZwrotPrzesylki[] = $eZwrotPrzesylki;
-
         return $this;
     }
 
@@ -678,7 +632,6 @@ class ShopEZwrotyType
      * isset eZwrotPrzesylki
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetEZwrotPrzesylki($index)
@@ -690,6 +643,7 @@ class ShopEZwrotyType
      * unset eZwrotPrzesylki
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetEZwrotPrzesylki($index)
     {
@@ -710,13 +664,11 @@ class ShopEZwrotyType
      * Sets a new eZwrotPrzesylki
      *
      * @param string $eZwrotPrzesylki
-     *
      * @return self
      */
     public function setEZwrotPrzesylki(array $eZwrotPrzesylki)
     {
         $this->eZwrotPrzesylki = $eZwrotPrzesylki;
-
         return $this;
     }
 
@@ -734,13 +686,12 @@ class ShopEZwrotyType
      * Sets a new eZwrotKarta
      *
      * @param \Abryb\ENadawca\Type\EZwrotKartaType $eZwrotKarta
-     *
      * @return self
      */
-    public function setEZwrotKarta(EZwrotKartaType $eZwrotKarta)
+    public function setEZwrotKarta(?\Abryb\ENadawca\Type\EZwrotKartaType $eZwrotKarta = null)
     {
         $this->eZwrotKarta = $eZwrotKarta;
-
         return $this;
     }
 }
+

@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DeklaracjaCelnaType
+ *
  *
  * XSD Type: deklaracjaCelnaType
  */
@@ -14,82 +13,83 @@ class DeklaracjaCelnaType
     /**
      * @var bool $podarunek
      */
-    protected $podarunek;
+    protected $podarunek = null;
 
     /**
      * @var bool $dokument
      */
-    protected $dokument;
+    protected $dokument = null;
 
     /**
      * @var bool $probkaHandlowa
      */
-    protected $probkaHandlowa;
+    protected $probkaHandlowa = null;
 
     /**
      * @var bool $zwrotTowaru
      */
-    protected $zwrotTowaru;
+    protected $zwrotTowaru = null;
 
     /**
      * @var bool $towary
      */
-    protected $towary;
+    protected $towary = null;
 
     /**
      * @var bool $inny
      */
-    protected $inny;
+    protected $inny = null;
 
     /**
      * @var string $wyjasnienie
      */
-    protected $wyjasnienie;
+    protected $wyjasnienie = null;
 
     /**
      * @var string $oplatyPocztowe
      */
-    protected $oplatyPocztowe;
+    protected $oplatyPocztowe = null;
 
     /**
      * @var string $uwagi
      */
-    protected $uwagi;
+    protected $uwagi = null;
 
     /**
      * @var string $licencja
      */
-    protected $licencja;
+    protected $licencja = null;
 
     /**
      * @var string $swiadectwo
      */
-    protected $swiadectwo;
+    protected $swiadectwo = null;
 
     /**
      * @var string $faktura
      */
-    protected $faktura;
+    protected $faktura = null;
 
     /**
      * @var string $numerReferencyjnyImportera
      */
-    protected $numerReferencyjnyImportera;
+    protected $numerReferencyjnyImportera = null;
 
     /**
      * @var string $numerTelefonuImportera
      */
-    protected $numerTelefonuImportera;
+    protected $numerTelefonuImportera = null;
 
     /**
      * @var string $waluta
      */
-    protected $waluta;
+    protected $waluta = null;
 
     /**
      * @var \Abryb\ENadawca\Type\SzczegolyDeklaracjiCelnejType[] $szczegoly
      */
     protected $szczegoly = [
+        
     ];
 
     /**
@@ -106,13 +106,11 @@ class DeklaracjaCelnaType
      * Sets a new podarunek
      *
      * @param bool $podarunek
-     *
      * @return self
      */
     public function setPodarunek($podarunek)
     {
         $this->podarunek = $podarunek;
-
         return $this;
     }
 
@@ -130,13 +128,11 @@ class DeklaracjaCelnaType
      * Sets a new dokument
      *
      * @param bool $dokument
-     *
      * @return self
      */
     public function setDokument($dokument)
     {
         $this->dokument = $dokument;
-
         return $this;
     }
 
@@ -154,13 +150,11 @@ class DeklaracjaCelnaType
      * Sets a new probkaHandlowa
      *
      * @param bool $probkaHandlowa
-     *
      * @return self
      */
     public function setProbkaHandlowa($probkaHandlowa)
     {
         $this->probkaHandlowa = $probkaHandlowa;
-
         return $this;
     }
 
@@ -178,13 +172,11 @@ class DeklaracjaCelnaType
      * Sets a new zwrotTowaru
      *
      * @param bool $zwrotTowaru
-     *
      * @return self
      */
     public function setZwrotTowaru($zwrotTowaru)
     {
         $this->zwrotTowaru = $zwrotTowaru;
-
         return $this;
     }
 
@@ -202,13 +194,11 @@ class DeklaracjaCelnaType
      * Sets a new towary
      *
      * @param bool $towary
-     *
      * @return self
      */
     public function setTowary($towary)
     {
         $this->towary = $towary;
-
         return $this;
     }
 
@@ -226,13 +216,11 @@ class DeklaracjaCelnaType
      * Sets a new inny
      *
      * @param bool $inny
-     *
      * @return self
      */
     public function setInny($inny)
     {
         $this->inny = $inny;
-
         return $this;
     }
 
@@ -250,13 +238,11 @@ class DeklaracjaCelnaType
      * Sets a new wyjasnienie
      *
      * @param string $wyjasnienie
-     *
      * @return self
      */
     public function setWyjasnienie($wyjasnienie)
     {
         $this->wyjasnienie = $wyjasnienie;
-
         return $this;
     }
 
@@ -274,13 +260,11 @@ class DeklaracjaCelnaType
      * Sets a new oplatyPocztowe
      *
      * @param string $oplatyPocztowe
-     *
      * @return self
      */
     public function setOplatyPocztowe($oplatyPocztowe)
     {
         $this->oplatyPocztowe = $oplatyPocztowe;
-
         return $this;
     }
 
@@ -298,13 +282,11 @@ class DeklaracjaCelnaType
      * Sets a new uwagi
      *
      * @param string $uwagi
-     *
      * @return self
      */
     public function setUwagi($uwagi)
     {
         $this->uwagi = $uwagi;
-
         return $this;
     }
 
@@ -322,13 +304,11 @@ class DeklaracjaCelnaType
      * Sets a new licencja
      *
      * @param string $licencja
-     *
      * @return self
      */
     public function setLicencja($licencja)
     {
         $this->licencja = $licencja;
-
         return $this;
     }
 
@@ -346,13 +326,11 @@ class DeklaracjaCelnaType
      * Sets a new swiadectwo
      *
      * @param string $swiadectwo
-     *
      * @return self
      */
     public function setSwiadectwo($swiadectwo)
     {
         $this->swiadectwo = $swiadectwo;
-
         return $this;
     }
 
@@ -370,13 +348,11 @@ class DeklaracjaCelnaType
      * Sets a new faktura
      *
      * @param string $faktura
-     *
      * @return self
      */
     public function setFaktura($faktura)
     {
         $this->faktura = $faktura;
-
         return $this;
     }
 
@@ -394,13 +370,11 @@ class DeklaracjaCelnaType
      * Sets a new numerReferencyjnyImportera
      *
      * @param string $numerReferencyjnyImportera
-     *
      * @return self
      */
     public function setNumerReferencyjnyImportera($numerReferencyjnyImportera)
     {
         $this->numerReferencyjnyImportera = $numerReferencyjnyImportera;
-
         return $this;
     }
 
@@ -418,13 +392,11 @@ class DeklaracjaCelnaType
      * Sets a new numerTelefonuImportera
      *
      * @param string $numerTelefonuImportera
-     *
      * @return self
      */
     public function setNumerTelefonuImportera($numerTelefonuImportera)
     {
         $this->numerTelefonuImportera = $numerTelefonuImportera;
-
         return $this;
     }
 
@@ -442,27 +414,23 @@ class DeklaracjaCelnaType
      * Sets a new waluta
      *
      * @param string $waluta
-     *
      * @return self
      */
     public function setWaluta($waluta)
     {
         $this->waluta = $waluta;
-
         return $this;
     }
 
     /**
      * Adds as szczegoly
      *
-     * @param \Abryb\ENadawca\Type\SzczegolyDeklaracjiCelnejType $szczegoly
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\SzczegolyDeklaracjiCelnejType $szczegoly
      */
-    public function addToSzczegoly(SzczegolyDeklaracjiCelnejType $szczegoly)
+    public function addToSzczegoly(\Abryb\ENadawca\Type\SzczegolyDeklaracjiCelnejType $szczegoly)
     {
         $this->szczegoly[] = $szczegoly;
-
         return $this;
     }
 
@@ -470,7 +438,6 @@ class DeklaracjaCelnaType
      * isset szczegoly
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetSzczegoly($index)
@@ -482,6 +449,7 @@ class DeklaracjaCelnaType
      * unset szczegoly
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetSzczegoly($index)
     {
@@ -502,13 +470,12 @@ class DeklaracjaCelnaType
      * Sets a new szczegoly
      *
      * @param \Abryb\ENadawca\Type\SzczegolyDeklaracjiCelnejType[] $szczegoly
-     *
      * @return self
      */
     public function setSzczegoly(array $szczegoly)
     {
         $this->szczegoly = $szczegoly;
-
         return $this;
     }
 }
+

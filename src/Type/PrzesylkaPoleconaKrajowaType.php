@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaPoleconaKrajowaType
+ *
  *
  * XSD Type: przesylkaPoleconaKrajowaType
  */
@@ -14,66 +13,87 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
     /**
      * @var string $zasadySpecjalne
      */
-    protected $zasadySpecjalne;
+    protected $zasadySpecjalne = null;
 
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $iloscPotwierdzenOdbioru
      */
-    protected $iloscPotwierdzenOdbioru;
+    protected $iloscPotwierdzenOdbioru = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * Gabaryt przesyłki
      *
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * Format przesyłki
      *
      * @var string $format
      */
-    protected $format;
+    protected $format = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var bool $egzemplarzBiblioteczny
      */
-    protected $egzemplarzBiblioteczny;
+    protected $egzemplarzBiblioteczny = null;
 
     /**
      * @var bool $dlaOciemnialych
      */
-    protected $dlaOciemnialych;
+    protected $dlaOciemnialych = null;
 
     /**
      * @var bool $obszarMiasto
      */
-    protected $obszarMiasto;
+    protected $obszarMiasto = null;
 
     /**
      * @var bool $miejscowa
      */
-    protected $miejscowa;
+    protected $miejscowa = null;
+
+    /**
+     * @var string $numerPrzesylkiKlienta
+     */
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var \Abryb\ENadawca\Type\EPOType $epo
      */
-    protected $epo;
+    protected $epo = null;
+
+    /**
+     * @var \Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia
+     */
+    protected $potwierdzenieDoreczenia = null;
+
+    /**
+     * Identifier library for legal
+     *  deposit from list downloaded
+     *  using the
+     *  getLibrariesForLegalDeposits
+     *  method
+     *
+     * @var string $idLibraryForLegalDeposit
+     */
+    protected $idLibraryForLegalDeposit = null;
 
     /**
      * Gets as zasadySpecjalne
@@ -89,13 +109,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new zasadySpecjalne
      *
      * @param string $zasadySpecjalne
-     *
      * @return self
      */
     public function setZasadySpecjalne($zasadySpecjalne)
     {
         $this->zasadySpecjalne = $zasadySpecjalne;
-
         return $this;
     }
 
@@ -113,13 +131,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -137,13 +153,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new iloscPotwierdzenOdbioru
      *
      * @param int $iloscPotwierdzenOdbioru
-     *
      * @return self
      */
     public function setIloscPotwierdzenOdbioru($iloscPotwierdzenOdbioru)
     {
         $this->iloscPotwierdzenOdbioru = $iloscPotwierdzenOdbioru;
-
         return $this;
     }
 
@@ -161,13 +175,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -189,13 +201,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Gabaryt przesyłki
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -217,13 +227,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Format przesyłki
      *
      * @param string $format
-     *
      * @return self
      */
     public function setFormat($format)
     {
         $this->format = $format;
-
         return $this;
     }
 
@@ -241,13 +249,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -265,13 +271,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new egzemplarzBiblioteczny
      *
      * @param bool $egzemplarzBiblioteczny
-     *
      * @return self
      */
     public function setEgzemplarzBiblioteczny($egzemplarzBiblioteczny)
     {
         $this->egzemplarzBiblioteczny = $egzemplarzBiblioteczny;
-
         return $this;
     }
 
@@ -289,13 +293,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new dlaOciemnialych
      *
      * @param bool $dlaOciemnialych
-     *
      * @return self
      */
     public function setDlaOciemnialych($dlaOciemnialych)
     {
         $this->dlaOciemnialych = $dlaOciemnialych;
-
         return $this;
     }
 
@@ -313,13 +315,11 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new obszarMiasto
      *
      * @param bool $obszarMiasto
-     *
      * @return self
      */
     public function setObszarMiasto($obszarMiasto)
     {
         $this->obszarMiasto = $obszarMiasto;
-
         return $this;
     }
 
@@ -337,13 +337,33 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new miejscowa
      *
      * @param bool $miejscowa
-     *
      * @return self
      */
     public function setMiejscowa($miejscowa)
     {
         $this->miejscowa = $miejscowa;
+        return $this;
+    }
 
+    /**
+     * Gets as numerPrzesylkiKlienta
+     *
+     * @return string
+     */
+    public function getNumerPrzesylkiKlienta()
+    {
+        return $this->numerPrzesylkiKlienta;
+    }
+
+    /**
+     * Sets a new numerPrzesylkiKlienta
+     *
+     * @param string $numerPrzesylkiKlienta
+     * @return self
+     */
+    public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
+    {
+        $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
         return $this;
     }
 
@@ -361,13 +381,68 @@ class PrzesylkaPoleconaKrajowaType extends PrzesylkaRejestrowanaType
      * Sets a new epo
      *
      * @param \Abryb\ENadawca\Type\EPOType $epo
-     *
      * @return self
      */
-    public function setEpo(EPOType $epo)
+    public function setEpo(?\Abryb\ENadawca\Type\EPOType $epo = null)
     {
         $this->epo = $epo;
+        return $this;
+    }
 
+    /**
+     * Gets as potwierdzenieDoreczenia
+     *
+     * @return \Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType
+     */
+    public function getPotwierdzenieDoreczenia()
+    {
+        return $this->potwierdzenieDoreczenia;
+    }
+
+    /**
+     * Sets a new potwierdzenieDoreczenia
+     *
+     * @param \Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia
+     * @return self
+     */
+    public function setPotwierdzenieDoreczenia(?\Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia = null)
+    {
+        $this->potwierdzenieDoreczenia = $potwierdzenieDoreczenia;
+        return $this;
+    }
+
+    /**
+     * Gets as idLibraryForLegalDeposit
+     *
+     * Identifier library for legal
+     *  deposit from list downloaded
+     *  using the
+     *  getLibrariesForLegalDeposits
+     *  method
+     *
+     * @return string
+     */
+    public function getIdLibraryForLegalDeposit()
+    {
+        return $this->idLibraryForLegalDeposit;
+    }
+
+    /**
+     * Sets a new idLibraryForLegalDeposit
+     *
+     * Identifier library for legal
+     *  deposit from list downloaded
+     *  using the
+     *  getLibrariesForLegalDeposits
+     *  method
+     *
+     * @param string $idLibraryForLegalDeposit
+     * @return self
+     */
+    public function setIdLibraryForLegalDeposit($idLibraryForLegalDeposit)
+    {
+        $this->idLibraryForLegalDeposit = $idLibraryForLegalDeposit;
         return $this;
     }
 }
+

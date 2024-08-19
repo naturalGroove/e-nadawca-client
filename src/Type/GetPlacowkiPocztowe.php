@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetPlacowkiPocztowe\GetPlacowkiPocztoweAType;
 
 /**
  * Class representing GetPlacowkiPocztowe
  */
-class GetPlacowkiPocztowe
+class GetPlacowkiPocztowe extends GetPlacowkiPocztoweAType
 {
-    /**
-     * @var string $idWojewodztwo
-     */
-    protected $idWojewodztwo;
-
-    /**
-     * Gets as idWojewodztwo
-     *
-     * @return string
-     */
-    public function getIdWojewodztwo()
-    {
-        return $this->idWojewodztwo;
-    }
-
-    /**
-     * Sets a new idWojewodztwo
-     *
-     * @param string $idWojewodztwo
-     *
-     * @return self
-     */
-    public function setIdWojewodztwo($idWojewodztwo)
-    {
-        $this->idWojewodztwo = $idWojewodztwo;
-
-        return $this;
-    }
 }
+

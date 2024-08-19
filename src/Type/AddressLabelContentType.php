@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing AddressLabelContentType
+ *
  *
  * XSD Type: addressLabelContent
  */
@@ -14,17 +13,17 @@ class AddressLabelContentType
     /**
      * @var string $nrNadania
      */
-    protected $nrNadania;
+    protected $nrNadania = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
-     * @var mixed $pdfContent
+     * @var string $pdfContent
      */
-    protected $pdfContent;
+    protected $pdfContent = null;
 
     /**
      * Gets as nrNadania
@@ -40,13 +39,11 @@ class AddressLabelContentType
      * Sets a new nrNadania
      *
      * @param string $nrNadania
-     *
      * @return self
      */
     public function setNrNadania($nrNadania)
     {
         $this->nrNadania = $nrNadania;
-
         return $this;
     }
 
@@ -64,18 +61,18 @@ class AddressLabelContentType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 
     /**
      * Gets as pdfContent
+     *
+     * @return string
      */
     public function getPdfContent()
     {
@@ -85,12 +82,13 @@ class AddressLabelContentType
     /**
      * Sets a new pdfContent
      *
+     * @param string $pdfContent
      * @return self
      */
     public function setPdfContent($pdfContent)
     {
         $this->pdfContent = $pdfContent;
-
         return $this;
     }
 }
+

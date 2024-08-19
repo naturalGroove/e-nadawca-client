@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing EMSType
+ *
  *
  * XSD Type: EMSType
  */
@@ -14,56 +13,57 @@ class EMSType extends PrzesylkaRejestrowanaType
     /**
      * @var string $typOpakowania
      */
-    protected $typOpakowania;
+    protected $typOpakowania = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var bool $zalaczoneDokumenty
      */
-    protected $zalaczoneDokumenty;
+    protected $zalaczoneDokumenty = null;
 
     /**
      * @var string $numerPrzesylkiKlienta
      */
-    protected $numerPrzesylkiKlienta;
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
      */
-    protected $ubezpieczenie;
+    protected $ubezpieczenie = null;
 
     /**
      * Deklaracja celna - "deprecated"
-     *  - zalecane jest ustawianie
+     *  - zalecane
+     *  jest ustawianie
      *  elementu deklaracjaCelna2
      *
      * @var \Abryb\ENadawca\Type\DeklaracjaCelnaType $deklaracjaCelna
      */
-    protected $deklaracjaCelna;
+    protected $deklaracjaCelna = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia
      */
-    protected $potwierdzenieDoreczenia;
+    protected $potwierdzenieDoreczenia = null;
 
     /**
      * @var \Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2
      */
-    protected $deklaracjaCelna2;
+    protected $deklaracjaCelna2 = null;
 
     /**
      * @var string $sposobNadaniaInterconnect
      */
-    protected $sposobNadaniaInterconnect;
+    protected $sposobNadaniaInterconnect = null;
 
     /**
      * @var \Abryb\ENadawca\Type\SposobDoreczeniaType $sposobDoreczenia
      */
-    protected $sposobDoreczenia;
+    protected $sposobDoreczenia = null;
 
     /**
      * Gets as typOpakowania
@@ -79,13 +79,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new typOpakowania
      *
      * @param string $typOpakowania
-     *
      * @return self
      */
     public function setTypOpakowania($typOpakowania)
     {
         $this->typOpakowania = $typOpakowania;
-
         return $this;
     }
 
@@ -103,13 +101,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -127,13 +123,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new zalaczoneDokumenty
      *
      * @param bool $zalaczoneDokumenty
-     *
      * @return self
      */
     public function setZalaczoneDokumenty($zalaczoneDokumenty)
     {
         $this->zalaczoneDokumenty = $zalaczoneDokumenty;
-
         return $this;
     }
 
@@ -151,13 +145,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new numerPrzesylkiKlienta
      *
      * @param string $numerPrzesylkiKlienta
-     *
      * @return self
      */
     public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
     {
         $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
-
         return $this;
     }
 
@@ -175,13 +167,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new ubezpieczenie
      *
      * @param \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
-     *
      * @return self
      */
-    public function setUbezpieczenie(UbezpieczenieType $ubezpieczenie)
+    public function setUbezpieczenie(?\Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie = null)
     {
         $this->ubezpieczenie = $ubezpieczenie;
-
         return $this;
     }
 
@@ -189,7 +179,8 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Gets as deklaracjaCelna
      *
      * Deklaracja celna - "deprecated"
-     *  - zalecane jest ustawianie
+     *  - zalecane
+     *  jest ustawianie
      *  elementu deklaracjaCelna2
      *
      * @return \Abryb\ENadawca\Type\DeklaracjaCelnaType
@@ -203,17 +194,16 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new deklaracjaCelna
      *
      * Deklaracja celna - "deprecated"
-     *  - zalecane jest ustawianie
+     *  - zalecane
+     *  jest ustawianie
      *  elementu deklaracjaCelna2
      *
      * @param \Abryb\ENadawca\Type\DeklaracjaCelnaType $deklaracjaCelna
-     *
      * @return self
      */
-    public function setDeklaracjaCelna(DeklaracjaCelnaType $deklaracjaCelna)
+    public function setDeklaracjaCelna(?\Abryb\ENadawca\Type\DeklaracjaCelnaType $deklaracjaCelna = null)
     {
         $this->deklaracjaCelna = $deklaracjaCelna;
-
         return $this;
     }
 
@@ -231,13 +221,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new potwierdzenieDoreczenia
      *
      * @param \Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia
-     *
      * @return self
      */
-    public function setPotwierdzenieDoreczenia(PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia)
+    public function setPotwierdzenieDoreczenia(?\Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia = null)
     {
         $this->potwierdzenieDoreczenia = $potwierdzenieDoreczenia;
-
         return $this;
     }
 
@@ -255,13 +243,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new deklaracjaCelna2
      *
      * @param \Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2
-     *
      * @return self
      */
-    public function setDeklaracjaCelna2(DeklaracjaCelna2Type $deklaracjaCelna2)
+    public function setDeklaracjaCelna2(?\Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2 = null)
     {
         $this->deklaracjaCelna2 = $deklaracjaCelna2;
-
         return $this;
     }
 
@@ -279,13 +265,11 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new sposobNadaniaInterconnect
      *
      * @param string $sposobNadaniaInterconnect
-     *
      * @return self
      */
     public function setSposobNadaniaInterconnect($sposobNadaniaInterconnect)
     {
         $this->sposobNadaniaInterconnect = $sposobNadaniaInterconnect;
-
         return $this;
     }
 
@@ -303,13 +287,12 @@ class EMSType extends PrzesylkaRejestrowanaType
      * Sets a new sposobDoreczenia
      *
      * @param \Abryb\ENadawca\Type\SposobDoreczeniaType $sposobDoreczenia
-     *
      * @return self
      */
-    public function setSposobDoreczenia(SposobDoreczeniaType $sposobDoreczenia)
+    public function setSposobDoreczenia(?\Abryb\ENadawca\Type\SposobDoreczeniaType $sposobDoreczenia = null)
     {
         $this->sposobDoreczenia = $sposobDoreczenia;
-
         return $this;
     }
 }
+

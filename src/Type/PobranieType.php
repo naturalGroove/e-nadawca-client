@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PobranieType
+ *
  *
  * XSD Type: pobranieType
  */
@@ -14,27 +13,27 @@ class PobranieType
     /**
      * @var string $sposobPobrania
      */
-    protected $sposobPobrania;
+    protected $sposobPobrania = null;
 
     /**
      * @var int $kwotaPobrania
      */
-    protected $kwotaPobrania;
+    protected $kwotaPobrania = null;
 
     /**
      * @var string $nrb
      */
-    protected $nrb;
+    protected $nrb = null;
 
     /**
      * @var string $tytulem
      */
-    protected $tytulem;
+    protected $tytulem = null;
 
     /**
      * @var bool $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce
      */
-    protected $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce;
+    protected $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce = null;
 
     /**
      * Gets as sposobPobrania
@@ -50,13 +49,11 @@ class PobranieType
      * Sets a new sposobPobrania
      *
      * @param string $sposobPobrania
-     *
      * @return self
      */
     public function setSposobPobrania($sposobPobrania)
     {
         $this->sposobPobrania = $sposobPobrania;
-
         return $this;
     }
 
@@ -74,13 +71,11 @@ class PobranieType
      * Sets a new kwotaPobrania
      *
      * @param int $kwotaPobrania
-     *
      * @return self
      */
     public function setKwotaPobrania($kwotaPobrania)
     {
         $this->kwotaPobrania = $kwotaPobrania;
-
         return $this;
     }
 
@@ -98,13 +93,11 @@ class PobranieType
      * Sets a new nrb
      *
      * @param string $nrb
-     *
      * @return self
      */
     public function setNrb($nrb)
     {
         $this->nrb = $nrb;
-
         return $this;
     }
 
@@ -122,13 +115,11 @@ class PobranieType
      * Sets a new tytulem
      *
      * @param string $tytulem
-     *
      * @return self
      */
     public function setTytulem($tytulem)
     {
         $this->tytulem = $tytulem;
-
         return $this;
     }
 
@@ -146,13 +137,12 @@ class PobranieType
      * Sets a new sprawdzenieZawartosciPrzesylkiPrzezOdbiorce
      *
      * @param bool $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce
-     *
      * @return self
      */
     public function setSprawdzenieZawartosciPrzesylkiPrzezOdbiorce($sprawdzenieZawartosciPrzesylkiPrzezOdbiorce)
     {
         $this->sprawdzenieZawartosciPrzesylkiPrzezOdbiorce = $sprawdzenieZawartosciPrzesylkiPrzezOdbiorce;
-
         return $this;
     }
 }
+

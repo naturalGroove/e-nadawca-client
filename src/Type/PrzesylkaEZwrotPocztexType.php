@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaEZwrotPocztexType
+ *
  *
  * XSD Type: przesylkaEZwrotPocztexType
  */
@@ -14,12 +13,12 @@ class PrzesylkaEZwrotPocztexType extends PrzesylkaRejestrowanaType
     /**
      * @var string $numerNadaniaZwrot
      */
-    protected $numerNadaniaZwrot;
+    protected $numerNadaniaZwrot = null;
 
     /**
      * @var int $idSklepEZwrot
      */
-    protected $idSklepEZwrot;
+    protected $idSklepEZwrot = null;
 
     /**
      * Gets as numerNadaniaZwrot
@@ -35,13 +34,11 @@ class PrzesylkaEZwrotPocztexType extends PrzesylkaRejestrowanaType
      * Sets a new numerNadaniaZwrot
      *
      * @param string $numerNadaniaZwrot
-     *
      * @return self
      */
     public function setNumerNadaniaZwrot($numerNadaniaZwrot)
     {
         $this->numerNadaniaZwrot = $numerNadaniaZwrot;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class PrzesylkaEZwrotPocztexType extends PrzesylkaRejestrowanaType
      * Sets a new idSklepEZwrot
      *
      * @param int $idSklepEZwrot
-     *
      * @return self
      */
     public function setIdSklepEZwrot($idSklepEZwrot)
     {
         $this->idSklepEZwrot = $idSklepEZwrot;
-
         return $this;
     }
 }
+

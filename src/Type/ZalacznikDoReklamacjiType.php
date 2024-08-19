@@ -1,33 +1,34 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ZalacznikDoReklamacjiType
+ *
  *
  * XSD Type: zalacznikDoReklamacjiType
  */
 class ZalacznikDoReklamacjiType
 {
     /**
-     * @var mixed $fileContent
+     * @var string $fileContent
      */
-    protected $fileContent;
+    protected $fileContent = null;
 
     /**
      * @var string $fileName
      */
-    protected $fileName;
+    protected $fileName = null;
 
     /**
      * @var string $fileDesc
      */
-    protected $fileDesc;
+    protected $fileDesc = null;
 
     /**
      * Gets as fileContent
+     *
+     * @return string
      */
     public function getFileContent()
     {
@@ -37,12 +38,12 @@ class ZalacznikDoReklamacjiType
     /**
      * Sets a new fileContent
      *
+     * @param string $fileContent
      * @return self
      */
     public function setFileContent($fileContent)
     {
         $this->fileContent = $fileContent;
-
         return $this;
     }
 
@@ -60,13 +61,11 @@ class ZalacznikDoReklamacjiType
      * Sets a new fileName
      *
      * @param string $fileName
-     *
      * @return self
      */
     public function setFileName($fileName)
     {
         $this->fileName = $fileName;
-
         return $this;
     }
 
@@ -84,13 +83,12 @@ class ZalacznikDoReklamacjiType
      * Sets a new fileDesc
      *
      * @param string $fileDesc
-     *
      * @return self
      */
     public function setFileDesc($fileDesc)
     {
         $this->fileDesc = $fileDesc;
-
         return $this;
     }
 }
+

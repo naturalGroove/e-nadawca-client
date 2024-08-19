@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing WplataCKPType
+ *
  *
  * XSD Type: wplataCKPType
  */
@@ -14,39 +13,44 @@ class WplataCKPType
     /**
      * @var string $unikalnyIdentyfikatorWplaty
      */
-    protected $unikalnyIdentyfikatorWplaty;
+    protected $unikalnyIdentyfikatorWplaty = null;
 
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * Kwota w groszach
      *
      * @var int $kwota
      */
-    protected $kwota;
+    protected $kwota = null;
 
     /**
      * @var \DateTime $dataPobrania
      */
-    protected $dataPobrania;
+    protected $dataPobrania = null;
 
     /**
      * @var \DateTime $dataPrzelewu
      */
-    protected $dataPrzelewu;
+    protected $dataPrzelewu = null;
 
     /**
      * @var int $idUmowy
      */
-    protected $idUmowy;
+    protected $idUmowy = null;
 
     /**
      * @var string $tytulPrzelewuZbiorczego
      */
-    protected $tytulPrzelewuZbiorczego;
+    protected $tytulPrzelewuZbiorczego = null;
+
+    /**
+     * @var string $tytulPobrania
+     */
+    protected $tytulPobrania = null;
 
     /**
      * Gets as unikalnyIdentyfikatorWplaty
@@ -62,13 +66,11 @@ class WplataCKPType
      * Sets a new unikalnyIdentyfikatorWplaty
      *
      * @param string $unikalnyIdentyfikatorWplaty
-     *
      * @return self
      */
     public function setUnikalnyIdentyfikatorWplaty($unikalnyIdentyfikatorWplaty)
     {
         $this->unikalnyIdentyfikatorWplaty = $unikalnyIdentyfikatorWplaty;
-
         return $this;
     }
 
@@ -86,13 +88,11 @@ class WplataCKPType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -114,13 +114,11 @@ class WplataCKPType
      * Kwota w groszach
      *
      * @param int $kwota
-     *
      * @return self
      */
     public function setKwota($kwota)
     {
         $this->kwota = $kwota;
-
         return $this;
     }
 
@@ -137,12 +135,12 @@ class WplataCKPType
     /**
      * Sets a new dataPobrania
      *
+     * @param \DateTime $dataPobrania
      * @return self
      */
     public function setDataPobrania(\DateTime $dataPobrania)
     {
         $this->dataPobrania = $dataPobrania;
-
         return $this;
     }
 
@@ -159,12 +157,12 @@ class WplataCKPType
     /**
      * Sets a new dataPrzelewu
      *
+     * @param \DateTime $dataPrzelewu
      * @return self
      */
     public function setDataPrzelewu(\DateTime $dataPrzelewu)
     {
         $this->dataPrzelewu = $dataPrzelewu;
-
         return $this;
     }
 
@@ -182,13 +180,11 @@ class WplataCKPType
      * Sets a new idUmowy
      *
      * @param int $idUmowy
-     *
      * @return self
      */
     public function setIdUmowy($idUmowy)
     {
         $this->idUmowy = $idUmowy;
-
         return $this;
     }
 
@@ -206,13 +202,34 @@ class WplataCKPType
      * Sets a new tytulPrzelewuZbiorczego
      *
      * @param string $tytulPrzelewuZbiorczego
-     *
      * @return self
      */
     public function setTytulPrzelewuZbiorczego($tytulPrzelewuZbiorczego)
     {
         $this->tytulPrzelewuZbiorczego = $tytulPrzelewuZbiorczego;
+        return $this;
+    }
 
+    /**
+     * Gets as tytulPobrania
+     *
+     * @return string
+     */
+    public function getTytulPobrania()
+    {
+        return $this->tytulPobrania;
+    }
+
+    /**
+     * Sets a new tytulPobrania
+     *
+     * @param string $tytulPobrania
+     * @return self
+     */
+    public function setTytulPobrania($tytulPobrania)
+    {
+        $this->tytulPobrania = $tytulPobrania;
         return $this;
     }
 }
+

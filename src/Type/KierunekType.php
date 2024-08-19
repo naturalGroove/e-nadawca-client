@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing KierunekType
+ *
  *
  * XSD Type: kierunekType
  */
@@ -14,22 +13,23 @@ class KierunekType
     /**
      * @var int $id
      */
-    protected $id;
+    protected $id = null;
 
     /**
      * @var string $opis
      */
-    protected $opis;
+    protected $opis = null;
 
     /**
      * @var string $pna
      */
-    protected $pna;
+    protected $pna = null;
 
     /**
      * @var string[] $kodPocztowy
      */
     protected $kodPocztowy = [
+        
     ];
 
     /**
@@ -46,13 +46,11 @@ class KierunekType
      * Sets a new id
      *
      * @param int $id
-     *
      * @return self
      */
     public function setId($id)
     {
         $this->id = $id;
-
         return $this;
     }
 
@@ -70,13 +68,11 @@ class KierunekType
      * Sets a new opis
      *
      * @param string $opis
-     *
      * @return self
      */
     public function setOpis($opis)
     {
         $this->opis = $opis;
-
         return $this;
     }
 
@@ -94,27 +90,23 @@ class KierunekType
      * Sets a new pna
      *
      * @param string $pna
-     *
      * @return self
      */
     public function setPna($pna)
     {
         $this->pna = $pna;
-
         return $this;
     }
 
     /**
      * Adds as kodPocztowy
      *
-     * @param string $kodPocztowy
-     *
      * @return self
+     * @param string $kodPocztowy
      */
     public function addToKodPocztowy($kodPocztowy)
     {
         $this->kodPocztowy[] = $kodPocztowy;
-
         return $this;
     }
 
@@ -122,7 +114,6 @@ class KierunekType
      * isset kodPocztowy
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetKodPocztowy($index)
@@ -134,6 +125,7 @@ class KierunekType
      * unset kodPocztowy
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetKodPocztowy($index)
     {
@@ -154,13 +146,12 @@ class KierunekType
      * Sets a new kodPocztowy
      *
      * @param string $kodPocztowy
-     *
      * @return self
      */
-    public function setKodPocztowy(array $kodPocztowy)
+    public function setKodPocztowy(array $kodPocztowy = null)
     {
         $this->kodPocztowy = $kodPocztowy;
-
         return $this;
     }
 }
+

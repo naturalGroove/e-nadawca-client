@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PlatnikType
+ *
  *
  * XSD Type: platnikType
  */
@@ -14,12 +13,12 @@ class PlatnikType
     /**
      * @var string $uiszczaOplate
      */
-    protected $uiszczaOplate;
+    protected $uiszczaOplate = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $adresPlatnika
      */
-    protected $adresPlatnika;
+    protected $adresPlatnika = null;
 
     /**
      * Gets as uiszczaOplate
@@ -35,13 +34,11 @@ class PlatnikType
      * Sets a new uiszczaOplate
      *
      * @param string $uiszczaOplate
-     *
      * @return self
      */
     public function setUiszczaOplate($uiszczaOplate)
     {
         $this->uiszczaOplate = $uiszczaOplate;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class PlatnikType
      * Sets a new adresPlatnika
      *
      * @param \Abryb\ENadawca\Type\AdresType $adresPlatnika
-     *
      * @return self
      */
-    public function setAdresPlatnika(AdresType $adresPlatnika)
+    public function setAdresPlatnika(?\Abryb\ENadawca\Type\AdresType $adresPlatnika = null)
     {
         $this->adresPlatnika = $adresPlatnika;
-
         return $this;
     }
 }
+

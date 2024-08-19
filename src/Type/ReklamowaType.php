@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ReklamowaType
+ *
  *
  * XSD Type: reklamowaType
  */
@@ -14,12 +13,12 @@ class ReklamowaType extends PrzesylkaNieRejestrowanaType
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * Gets as masa
@@ -35,13 +34,11 @@ class ReklamowaType extends PrzesylkaNieRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class ReklamowaType extends PrzesylkaNieRejestrowanaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 }
+

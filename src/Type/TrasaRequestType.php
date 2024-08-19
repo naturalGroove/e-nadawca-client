@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing TrasaRequestType
+ *
  *
  * XSD Type: trasaRequestType
  */
@@ -14,17 +13,17 @@ class TrasaRequestType
     /**
      * @var int $fromUrzadNadania
      */
-    protected $fromUrzadNadania;
+    protected $fromUrzadNadania = null;
 
     /**
      * @var string $toKodPocztowy
      */
-    protected $toKodPocztowy;
+    protected $toKodPocztowy = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * Gets as fromUrzadNadania
@@ -40,13 +39,11 @@ class TrasaRequestType
      * Sets a new fromUrzadNadania
      *
      * @param int $fromUrzadNadania
-     *
      * @return self
      */
     public function setFromUrzadNadania($fromUrzadNadania)
     {
         $this->fromUrzadNadania = $fromUrzadNadania;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class TrasaRequestType
      * Sets a new toKodPocztowy
      *
      * @param string $toKodPocztowy
-     *
      * @return self
      */
     public function setToKodPocztowy($toKodPocztowy)
     {
         $this->toKodPocztowy = $toKodPocztowy;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class TrasaRequestType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 }
+

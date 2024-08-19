@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaHandlowaType
+ *
  *
  * XSD Type: przesylkaHandlowaType
  */
@@ -14,12 +13,12 @@ class PrzesylkaHandlowaType extends PrzesylkaRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * Gets as posteRestante
@@ -35,13 +34,11 @@ class PrzesylkaHandlowaType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class PrzesylkaHandlowaType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 }
+

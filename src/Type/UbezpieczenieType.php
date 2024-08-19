@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing UbezpieczenieType
+ *
  *
  * XSD Type: ubezpieczenieType
  */
@@ -14,17 +13,17 @@ class UbezpieczenieType
     /**
      * @var string $rodzaj
      */
-    protected $rodzaj;
+    protected $rodzaj = null;
 
     /**
      * @var float $kwota
      */
-    protected $kwota;
+    protected $kwota = null;
 
     /**
      * @var bool $akceptacjaOWU
      */
-    protected $akceptacjaOWU;
+    protected $akceptacjaOWU = null;
 
     /**
      * Gets as rodzaj
@@ -40,13 +39,11 @@ class UbezpieczenieType
      * Sets a new rodzaj
      *
      * @param string $rodzaj
-     *
      * @return self
      */
     public function setRodzaj($rodzaj)
     {
         $this->rodzaj = $rodzaj;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class UbezpieczenieType
      * Sets a new kwota
      *
      * @param float $kwota
-     *
      * @return self
      */
     public function setKwota($kwota)
     {
         $this->kwota = $kwota;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class UbezpieczenieType
      * Sets a new akceptacjaOWU
      *
      * @param bool $akceptacjaOWU
-     *
      * @return self
      */
     public function setAkceptacjaOWU($akceptacjaOWU)
     {
         $this->akceptacjaOWU = $akceptacjaOWU;
-
         return $this;
     }
 }
+

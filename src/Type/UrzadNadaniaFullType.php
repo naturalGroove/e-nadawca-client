@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing UrzadNadaniaFullType
+ *
  *
  * XSD Type: urzadNadaniaFullType
  */
@@ -14,17 +13,17 @@ class UrzadNadaniaFullType
     /**
      * @var int $urzadNadania
      */
-    protected $urzadNadania;
+    protected $urzadNadania = null;
 
     /**
      * @var string $opis
      */
-    protected $opis;
+    protected $opis = null;
 
     /**
      * @var string $nazwaWydruk
      */
-    protected $nazwaWydruk;
+    protected $nazwaWydruk = null;
 
     /**
      * Gets as urzadNadania
@@ -40,13 +39,11 @@ class UrzadNadaniaFullType
      * Sets a new urzadNadania
      *
      * @param int $urzadNadania
-     *
      * @return self
      */
     public function setUrzadNadania($urzadNadania)
     {
         $this->urzadNadania = $urzadNadania;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class UrzadNadaniaFullType
      * Sets a new opis
      *
      * @param string $opis
-     *
      * @return self
      */
     public function setOpis($opis)
     {
         $this->opis = $opis;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class UrzadNadaniaFullType
      * Sets a new nazwaWydruk
      *
      * @param string $nazwaWydruk
-     *
      * @return self
      */
     public function setNazwaWydruk($nazwaWydruk)
     {
         $this->nazwaWydruk = $nazwaWydruk;
-
         return $this;
     }
 }
+

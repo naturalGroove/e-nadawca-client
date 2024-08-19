@@ -1,12 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetUrzedyWydajaceEPrzesylki\GetUrzedyWydajaceEPrzesylkiAType;
 
 /**
  * Class representing GetUrzedyWydajaceEPrzesylki
  */
-class GetUrzedyWydajaceEPrzesylki
+class GetUrzedyWydajaceEPrzesylki extends GetUrzedyWydajaceEPrzesylkiAType
 {
 }
+

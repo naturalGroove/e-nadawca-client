@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PowodSzczegolowyType
+ *
  *
  * XSD Type: powodSzczegolowyType
  */
@@ -14,12 +13,12 @@ class PowodSzczegolowyType
     /**
      * @var int $idPowodSzczegolowy
      */
-    protected $idPowodSzczegolowy;
+    protected $idPowodSzczegolowy = null;
 
     /**
      * @var string $powodSzczegolowyOpis
      */
-    protected $powodSzczegolowyOpis;
+    protected $powodSzczegolowyOpis = null;
 
     /**
      * Gets as idPowodSzczegolowy
@@ -35,13 +34,11 @@ class PowodSzczegolowyType
      * Sets a new idPowodSzczegolowy
      *
      * @param int $idPowodSzczegolowy
-     *
      * @return self
      */
     public function setIdPowodSzczegolowy($idPowodSzczegolowy)
     {
         $this->idPowodSzczegolowy = $idPowodSzczegolowy;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class PowodSzczegolowyType
      * Sets a new powodSzczegolowyOpis
      *
      * @param string $powodSzczegolowyOpis
-     *
      * @return self
      */
     public function setPowodSzczegolowyOpis($powodSzczegolowyOpis)
     {
         $this->powodSzczegolowyOpis = $powodSzczegolowyOpis;
-
         return $this;
     }
 }
+

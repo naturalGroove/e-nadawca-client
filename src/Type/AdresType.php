@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing AdresType
+ *
  *
  * XSD Type: adresType
  */
@@ -14,67 +13,67 @@ class AdresType
     /**
      * @var string $nazwa
      */
-    protected $nazwa;
+    protected $nazwa = null;
 
     /**
      * @var string $nazwa2
      */
-    protected $nazwa2;
+    protected $nazwa2 = null;
 
     /**
      * @var string $ulica
      */
-    protected $ulica;
+    protected $ulica = null;
 
     /**
      * @var string $numerDomu
      */
-    protected $numerDomu;
+    protected $numerDomu = null;
 
     /**
      * @var string $numerLokalu
      */
-    protected $numerLokalu;
+    protected $numerLokalu = null;
 
     /**
      * @var string $miejscowosc
      */
-    protected $miejscowosc;
+    protected $miejscowosc = null;
 
     /**
      * @var string $kodPocztowy
      */
-    protected $kodPocztowy;
+    protected $kodPocztowy = null;
 
     /**
      * @var string $kraj
      */
-    protected $kraj;
+    protected $kraj = null;
 
     /**
      * @var string $telefon
      */
-    protected $telefon;
+    protected $telefon = null;
 
     /**
      * @var string $email
      */
-    protected $email;
+    protected $email = null;
 
     /**
      * @var string $mobile
      */
-    protected $mobile;
+    protected $mobile = null;
 
     /**
      * @var string $osobaKontaktowa
      */
-    protected $osobaKontaktowa;
+    protected $osobaKontaktowa = null;
 
     /**
      * @var string $nip
      */
-    protected $nip;
+    protected $nip = null;
 
     /**
      * Gets as nazwa
@@ -90,13 +89,11 @@ class AdresType
      * Sets a new nazwa
      *
      * @param string $nazwa
-     *
      * @return self
      */
     public function setNazwa($nazwa)
     {
         $this->nazwa = $nazwa;
-
         return $this;
     }
 
@@ -114,13 +111,11 @@ class AdresType
      * Sets a new nazwa2
      *
      * @param string $nazwa2
-     *
      * @return self
      */
     public function setNazwa2($nazwa2)
     {
         $this->nazwa2 = $nazwa2;
-
         return $this;
     }
 
@@ -138,13 +133,11 @@ class AdresType
      * Sets a new ulica
      *
      * @param string $ulica
-     *
      * @return self
      */
     public function setUlica($ulica)
     {
         $this->ulica = $ulica;
-
         return $this;
     }
 
@@ -162,13 +155,11 @@ class AdresType
      * Sets a new numerDomu
      *
      * @param string $numerDomu
-     *
      * @return self
      */
     public function setNumerDomu($numerDomu)
     {
         $this->numerDomu = $numerDomu;
-
         return $this;
     }
 
@@ -186,13 +177,11 @@ class AdresType
      * Sets a new numerLokalu
      *
      * @param string $numerLokalu
-     *
      * @return self
      */
     public function setNumerLokalu($numerLokalu)
     {
         $this->numerLokalu = $numerLokalu;
-
         return $this;
     }
 
@@ -210,13 +199,11 @@ class AdresType
      * Sets a new miejscowosc
      *
      * @param string $miejscowosc
-     *
      * @return self
      */
     public function setMiejscowosc($miejscowosc)
     {
         $this->miejscowosc = $miejscowosc;
-
         return $this;
     }
 
@@ -234,13 +221,11 @@ class AdresType
      * Sets a new kodPocztowy
      *
      * @param string $kodPocztowy
-     *
      * @return self
      */
     public function setKodPocztowy($kodPocztowy)
     {
         $this->kodPocztowy = $kodPocztowy;
-
         return $this;
     }
 
@@ -258,13 +243,11 @@ class AdresType
      * Sets a new kraj
      *
      * @param string $kraj
-     *
      * @return self
      */
     public function setKraj($kraj)
     {
         $this->kraj = $kraj;
-
         return $this;
     }
 
@@ -282,13 +265,11 @@ class AdresType
      * Sets a new telefon
      *
      * @param string $telefon
-     *
      * @return self
      */
     public function setTelefon($telefon)
     {
         $this->telefon = $telefon;
-
         return $this;
     }
 
@@ -306,13 +287,11 @@ class AdresType
      * Sets a new email
      *
      * @param string $email
-     *
      * @return self
      */
     public function setEmail($email)
     {
         $this->email = $email;
-
         return $this;
     }
 
@@ -330,13 +309,11 @@ class AdresType
      * Sets a new mobile
      *
      * @param string $mobile
-     *
      * @return self
      */
     public function setMobile($mobile)
     {
         $this->mobile = $mobile;
-
         return $this;
     }
 
@@ -354,13 +331,11 @@ class AdresType
      * Sets a new osobaKontaktowa
      *
      * @param string $osobaKontaktowa
-     *
      * @return self
      */
     public function setOsobaKontaktowa($osobaKontaktowa)
     {
         $this->osobaKontaktowa = $osobaKontaktowa;
-
         return $this;
     }
 
@@ -378,13 +353,12 @@ class AdresType
      * Sets a new nip
      *
      * @param string $nip
-     *
      * @return self
      */
     public function setNip($nip)
     {
         $this->nip = $nip;
-
         return $this;
     }
 }
+

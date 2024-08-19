@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing SubPrzesylkaBiznesowaPlusType
+ *
  *
  * XSD Type: subPrzesylkaBiznesowaPlusType
  */
@@ -14,47 +13,47 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var bool $ostroznie
      */
-    protected $ostroznie;
+    protected $ostroznie = null;
 
     /**
      * @var string $numerPrzesylkiKlienta
      */
-    protected $numerPrzesylkiKlienta;
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var int $kwotaTranzakcji
      */
-    protected $kwotaTranzakcji;
+    protected $kwotaTranzakcji = null;
 
     /**
      * @var string $numerTransakcjiOdbioru
      */
-    protected $numerTransakcjiOdbioru;
+    protected $numerTransakcjiOdbioru = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PobranieType $pobranie
      */
-    protected $pobranie;
+    protected $pobranie = null;
 
     /**
      * Gets as numerNadania
@@ -70,13 +69,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -94,13 +91,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -118,13 +113,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -142,13 +135,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -166,13 +157,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new ostroznie
      *
      * @param bool $ostroznie
-     *
      * @return self
      */
     public function setOstroznie($ostroznie)
     {
         $this->ostroznie = $ostroznie;
-
         return $this;
     }
 
@@ -190,13 +179,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new numerPrzesylkiKlienta
      *
      * @param string $numerPrzesylkiKlienta
-     *
      * @return self
      */
     public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
     {
         $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
-
         return $this;
     }
 
@@ -214,13 +201,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new kwotaTranzakcji
      *
      * @param int $kwotaTranzakcji
-     *
      * @return self
      */
     public function setKwotaTranzakcji($kwotaTranzakcji)
     {
         $this->kwotaTranzakcji = $kwotaTranzakcji;
-
         return $this;
     }
 
@@ -238,13 +223,11 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new numerTransakcjiOdbioru
      *
      * @param string $numerTransakcjiOdbioru
-     *
      * @return self
      */
     public function setNumerTransakcjiOdbioru($numerTransakcjiOdbioru)
     {
         $this->numerTransakcjiOdbioru = $numerTransakcjiOdbioru;
-
         return $this;
     }
 
@@ -262,13 +245,12 @@ class SubPrzesylkaBiznesowaPlusType extends PrzesylkaType
      * Sets a new pobranie
      *
      * @param \Abryb\ENadawca\Type\PobranieType $pobranie
-     *
      * @return self
      */
-    public function setPobranie(PobranieType $pobranie)
+    public function setPobranie(?\Abryb\ENadawca\Type\PobranieType $pobranie = null)
     {
         $this->pobranie = $pobranie;
-
         return $this;
     }
 }
+

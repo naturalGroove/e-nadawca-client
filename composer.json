@@ -36,13 +36,13 @@
     }
   },
   "require": {
-    "php": "^8.0",
+    "php": "^7.4 | ^8.0",
     "ext-soap": "*",
     "ext-dom": "*"
   },
   "require-dev": {
     "goetas-webservices/xsd2php": "^0.4.12",
-    "phpunit/phpunit": "^10.5"
+    "phpunit/phpunit": "^9.0 | ^10.5"
   },
   "extra": {
     "branch-alias": {

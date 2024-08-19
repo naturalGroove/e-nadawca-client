@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing AdresKorespondencyjnyType
+ *
  *
  * XSD Type: adresKorespondencyjny
  */
@@ -16,7 +15,7 @@ class AdresKorespondencyjnyType extends AdresType
      *
      * @var int $id
      */
-    protected $id;
+    protected $id = null;
 
     /**
      * Gets as id
@@ -36,13 +35,12 @@ class AdresKorespondencyjnyType extends AdresType
      * Identyfikator adresu korespondencyjnego
      *
      * @param int $id
-     *
      * @return self
      */
     public function setId($id)
     {
         $this->id = $id;
-
         return $this;
     }
 }
+

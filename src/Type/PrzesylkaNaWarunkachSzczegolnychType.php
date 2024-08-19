@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaNaWarunkachSzczegolnychType
+ *
  *
  * XSD Type: przesylkaNaWarunkachSzczegolnychType
  */
@@ -14,27 +13,27 @@ class PrzesylkaNaWarunkachSzczegolnychType extends PrzesylkaRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $iloscPotwierdzenOdbioru
      */
-    protected $iloscPotwierdzenOdbioru;
+    protected $iloscPotwierdzenOdbioru = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * Gets as posteRestante
@@ -50,13 +49,11 @@ class PrzesylkaNaWarunkachSzczegolnychType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -74,13 +71,11 @@ class PrzesylkaNaWarunkachSzczegolnychType extends PrzesylkaRejestrowanaType
      * Sets a new iloscPotwierdzenOdbioru
      *
      * @param int $iloscPotwierdzenOdbioru
-     *
      * @return self
      */
     public function setIloscPotwierdzenOdbioru($iloscPotwierdzenOdbioru)
     {
         $this->iloscPotwierdzenOdbioru = $iloscPotwierdzenOdbioru;
-
         return $this;
     }
 
@@ -98,13 +93,11 @@ class PrzesylkaNaWarunkachSzczegolnychType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -122,13 +115,11 @@ class PrzesylkaNaWarunkachSzczegolnychType extends PrzesylkaRejestrowanaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -146,13 +137,12 @@ class PrzesylkaNaWarunkachSzczegolnychType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 }
+

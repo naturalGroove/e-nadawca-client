@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing AccountType
+ *
  *
  * XSD Type: accountType
  */
@@ -14,66 +13,88 @@ class AccountType
     /**
      * @var string $userName
      */
-    protected $userName;
+    protected $userName = null;
 
     /**
      * @var string $firstName
      */
-    protected $firstName;
+    protected $firstName = null;
 
     /**
      * @var string $lastName
      */
-    protected $lastName;
+    protected $lastName = null;
 
     /**
      * @var string $email
      */
-    protected $email;
+    protected $email = null;
 
     /**
      * @var string $status
      */
-    protected $status;
+    protected $status = null;
 
     /**
      * @var \Abryb\ENadawca\Type\KartaType[] $karta
      */
     protected $karta = [
+        
     ];
 
     /**
      * @var string[] $permision
      */
     protected $permision = [
+        
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ProfilType[] $profil
      */
     protected $profil = [
+        
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType[] $jednostka
      */
     protected $jednostka = [
+        
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $domyslnaJednostka
      */
-    protected $domyslnaJednostka;
+    protected $domyslnaJednostka = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ProfilType $domyslnyProfil
      */
-    protected $domyslnyProfil;
+    protected $domyslnyProfil = null;
 
     /**
      * @var string[] $dostepPoAdresieIP
      */
     protected $dostepPoAdresieIP = [
+        
+    ];
+
+    /**
+     * @var int $idDomyslnyProfilDokZwrKlient
+     */
+    protected $idDomyslnyProfilDokZwrKlient = null;
+
+    /**
+     * @var int $idDomyslnyProfilDokZwrUzytk
+     */
+    protected $idDomyslnyProfilDokZwrUzytk = null;
+
+    /**
+     * @var string[] $rodzajPrzypisania
+     */
+    protected $rodzajPrzypisania = [
+        
     ];
 
     /**
@@ -90,13 +111,11 @@ class AccountType
      * Sets a new userName
      *
      * @param string $userName
-     *
      * @return self
      */
     public function setUserName($userName)
     {
         $this->userName = $userName;
-
         return $this;
     }
 
@@ -114,13 +133,11 @@ class AccountType
      * Sets a new firstName
      *
      * @param string $firstName
-     *
      * @return self
      */
     public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
-
         return $this;
     }
 
@@ -138,13 +155,11 @@ class AccountType
      * Sets a new lastName
      *
      * @param string $lastName
-     *
      * @return self
      */
     public function setLastName($lastName)
     {
         $this->lastName = $lastName;
-
         return $this;
     }
 
@@ -162,13 +177,11 @@ class AccountType
      * Sets a new email
      *
      * @param string $email
-     *
      * @return self
      */
     public function setEmail($email)
     {
         $this->email = $email;
-
         return $this;
     }
 
@@ -186,27 +199,23 @@ class AccountType
      * Sets a new status
      *
      * @param string $status
-     *
      * @return self
      */
     public function setStatus($status)
     {
         $this->status = $status;
-
         return $this;
     }
 
     /**
      * Adds as karta
      *
-     * @param \Abryb\ENadawca\Type\KartaType $karta
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\KartaType $karta
      */
-    public function addToKarta(KartaType $karta)
+    public function addToKarta(\Abryb\ENadawca\Type\KartaType $karta)
     {
         $this->karta[] = $karta;
-
         return $this;
     }
 
@@ -214,7 +223,6 @@ class AccountType
      * isset karta
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetKarta($index)
@@ -226,6 +234,7 @@ class AccountType
      * unset karta
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetKarta($index)
     {
@@ -246,27 +255,23 @@ class AccountType
      * Sets a new karta
      *
      * @param \Abryb\ENadawca\Type\KartaType[] $karta
-     *
      * @return self
      */
-    public function setKarta(array $karta)
+    public function setKarta(array $karta = null)
     {
         $this->karta = $karta;
-
         return $this;
     }
 
     /**
      * Adds as permision
      *
-     * @param string $permision
-     *
      * @return self
+     * @param string $permision
      */
     public function addToPermision($permision)
     {
         $this->permision[] = $permision;
-
         return $this;
     }
 
@@ -274,7 +279,6 @@ class AccountType
      * isset permision
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetPermision($index)
@@ -286,6 +290,7 @@ class AccountType
      * unset permision
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetPermision($index)
     {
@@ -306,27 +311,23 @@ class AccountType
      * Sets a new permision
      *
      * @param string $permision
-     *
      * @return self
      */
-    public function setPermision(array $permision)
+    public function setPermision(array $permision = null)
     {
         $this->permision = $permision;
-
         return $this;
     }
 
     /**
      * Adds as profil
      *
-     * @param \Abryb\ENadawca\Type\ProfilType $profil
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\ProfilType $profil
      */
-    public function addToProfil(ProfilType $profil)
+    public function addToProfil(\Abryb\ENadawca\Type\ProfilType $profil)
     {
         $this->profil[] = $profil;
-
         return $this;
     }
 
@@ -334,7 +335,6 @@ class AccountType
      * isset profil
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetProfil($index)
@@ -346,6 +346,7 @@ class AccountType
      * unset profil
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetProfil($index)
     {
@@ -366,27 +367,23 @@ class AccountType
      * Sets a new profil
      *
      * @param \Abryb\ENadawca\Type\ProfilType[] $profil
-     *
      * @return self
      */
     public function setProfil(array $profil)
     {
         $this->profil = $profil;
-
         return $this;
     }
 
     /**
      * Adds as jednostka
      *
-     * @param \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $jednostka
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $jednostka
      */
-    public function addToJednostka(JednostkaOrganizacyjnaType $jednostka)
+    public function addToJednostka(\Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $jednostka)
     {
         $this->jednostka[] = $jednostka;
-
         return $this;
     }
 
@@ -394,7 +391,6 @@ class AccountType
      * isset jednostka
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetJednostka($index)
@@ -406,6 +402,7 @@ class AccountType
      * unset jednostka
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetJednostka($index)
     {
@@ -426,13 +423,11 @@ class AccountType
      * Sets a new jednostka
      *
      * @param \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType[] $jednostka
-     *
      * @return self
      */
-    public function setJednostka(array $jednostka)
+    public function setJednostka(array $jednostka = null)
     {
         $this->jednostka = $jednostka;
-
         return $this;
     }
 
@@ -450,13 +445,11 @@ class AccountType
      * Sets a new domyslnaJednostka
      *
      * @param \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $domyslnaJednostka
-     *
      * @return self
      */
-    public function setDomyslnaJednostka(JednostkaOrganizacyjnaType $domyslnaJednostka)
+    public function setDomyslnaJednostka(?\Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $domyslnaJednostka = null)
     {
         $this->domyslnaJednostka = $domyslnaJednostka;
-
         return $this;
     }
 
@@ -474,27 +467,23 @@ class AccountType
      * Sets a new domyslnyProfil
      *
      * @param \Abryb\ENadawca\Type\ProfilType $domyslnyProfil
-     *
      * @return self
      */
-    public function setDomyslnyProfil(ProfilType $domyslnyProfil)
+    public function setDomyslnyProfil(?\Abryb\ENadawca\Type\ProfilType $domyslnyProfil = null)
     {
         $this->domyslnyProfil = $domyslnyProfil;
-
         return $this;
     }
 
     /**
      * Adds as dostepPoAdresieIP
      *
-     * @param string $dostepPoAdresieIP
-     *
      * @return self
+     * @param string $dostepPoAdresieIP
      */
     public function addToDostepPoAdresieIP($dostepPoAdresieIP)
     {
         $this->dostepPoAdresieIP[] = $dostepPoAdresieIP;
-
         return $this;
     }
 
@@ -502,7 +491,6 @@ class AccountType
      * isset dostepPoAdresieIP
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetDostepPoAdresieIP($index)
@@ -514,6 +502,7 @@ class AccountType
      * unset dostepPoAdresieIP
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetDostepPoAdresieIP($index)
     {
@@ -534,13 +523,112 @@ class AccountType
      * Sets a new dostepPoAdresieIP
      *
      * @param string[] $dostepPoAdresieIP
-     *
      * @return self
      */
-    public function setDostepPoAdresieIP(array $dostepPoAdresieIP)
+    public function setDostepPoAdresieIP(array $dostepPoAdresieIP = null)
     {
         $this->dostepPoAdresieIP = $dostepPoAdresieIP;
+        return $this;
+    }
 
+    /**
+     * Gets as idDomyslnyProfilDokZwrKlient
+     *
+     * @return int
+     */
+    public function getIdDomyslnyProfilDokZwrKlient()
+    {
+        return $this->idDomyslnyProfilDokZwrKlient;
+    }
+
+    /**
+     * Sets a new idDomyslnyProfilDokZwrKlient
+     *
+     * @param int $idDomyslnyProfilDokZwrKlient
+     * @return self
+     */
+    public function setIdDomyslnyProfilDokZwrKlient($idDomyslnyProfilDokZwrKlient)
+    {
+        $this->idDomyslnyProfilDokZwrKlient = $idDomyslnyProfilDokZwrKlient;
+        return $this;
+    }
+
+    /**
+     * Gets as idDomyslnyProfilDokZwrUzytk
+     *
+     * @return int
+     */
+    public function getIdDomyslnyProfilDokZwrUzytk()
+    {
+        return $this->idDomyslnyProfilDokZwrUzytk;
+    }
+
+    /**
+     * Sets a new idDomyslnyProfilDokZwrUzytk
+     *
+     * @param int $idDomyslnyProfilDokZwrUzytk
+     * @return self
+     */
+    public function setIdDomyslnyProfilDokZwrUzytk($idDomyslnyProfilDokZwrUzytk)
+    {
+        $this->idDomyslnyProfilDokZwrUzytk = $idDomyslnyProfilDokZwrUzytk;
+        return $this;
+    }
+
+    /**
+     * Adds as rodzajPrzypisania
+     *
+     * @return self
+     * @param string $rodzajPrzypisania
+     */
+    public function addToRodzajPrzypisania($rodzajPrzypisania)
+    {
+        $this->rodzajPrzypisania[] = $rodzajPrzypisania;
+        return $this;
+    }
+
+    /**
+     * isset rodzajPrzypisania
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetRodzajPrzypisania($index)
+    {
+        return isset($this->rodzajPrzypisania[$index]);
+    }
+
+    /**
+     * unset rodzajPrzypisania
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetRodzajPrzypisania($index)
+    {
+        unset($this->rodzajPrzypisania[$index]);
+    }
+
+    /**
+     * Gets as rodzajPrzypisania
+     *
+     * @return string[]
+     */
+    public function getRodzajPrzypisania()
+    {
+        return $this->rodzajPrzypisania;
+    }
+
+    /**
+     * Sets a new rodzajPrzypisania
+     *
+     * @param string $rodzajPrzypisania
+     * @return self
+     */
+    public function setRodzajPrzypisania(array $rodzajPrzypisania = null)
+    {
+        $this->rodzajPrzypisania = $rodzajPrzypisania;
         return $this;
     }
 }
+

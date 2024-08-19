@@ -1,12 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetPasswordExpiredDate\GetPasswordExpiredDateAType;
 
 /**
  * Class representing GetPasswordExpiredDate
  */
-class GetPasswordExpiredDate
+class GetPasswordExpiredDate extends GetPasswordExpiredDateAType
 {
 }
+

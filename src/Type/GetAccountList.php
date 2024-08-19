@@ -1,12 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetAccountList\GetAccountListAType;
 
 /**
  * Class representing GetAccountList
  */
-class GetAccountList
+class GetAccountList extends GetAccountListAType
 {
 }
+

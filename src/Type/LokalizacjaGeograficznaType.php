@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing LokalizacjaGeograficznaType
+ *
  *
  * XSD Type: lokalizacjaGeograficznaType
  */
@@ -14,12 +13,12 @@ class LokalizacjaGeograficznaType
     /**
      * @var \Abryb\ENadawca\Type\WspolrzednaGeograficznaType $dlugosc
      */
-    protected $dlugosc;
+    protected $dlugosc = null;
 
     /**
      * @var \Abryb\ENadawca\Type\WspolrzednaGeograficznaType $szerokosc
      */
-    protected $szerokosc;
+    protected $szerokosc = null;
 
     /**
      * Gets as dlugosc
@@ -35,13 +34,11 @@ class LokalizacjaGeograficznaType
      * Sets a new dlugosc
      *
      * @param \Abryb\ENadawca\Type\WspolrzednaGeograficznaType $dlugosc
-     *
      * @return self
      */
-    public function setDlugosc(WspolrzednaGeograficznaType $dlugosc)
+    public function setDlugosc(\Abryb\ENadawca\Type\WspolrzednaGeograficznaType $dlugosc)
     {
         $this->dlugosc = $dlugosc;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class LokalizacjaGeograficznaType
      * Sets a new szerokosc
      *
      * @param \Abryb\ENadawca\Type\WspolrzednaGeograficznaType $szerokosc
-     *
      * @return self
      */
-    public function setSzerokosc(WspolrzednaGeograficznaType $szerokosc)
+    public function setSzerokosc(\Abryb\ENadawca\Type\WspolrzednaGeograficznaType $szerokosc)
     {
         $this->szerokosc = $szerokosc;
-
         return $this;
     }
 }
+

@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrintResultType
+ *
  *
  * XSD Type: PrintResultType
  */
@@ -14,12 +13,12 @@ class PrintResultType
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
-     * @var mixed $print
+     * @var string $print
      */
-    protected $print;
+    protected $print = null;
 
     /**
      * Gets as guid
@@ -35,18 +34,18 @@ class PrintResultType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 
     /**
      * Gets as print
+     *
+     * @return string
      */
     public function getPrint()
     {
@@ -56,12 +55,13 @@ class PrintResultType
     /**
      * Sets a new print
      *
+     * @param string $print
      * @return self
      */
     public function setPrint($print)
     {
         $this->print = $print;
-
         return $this;
     }
 }
+

@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaFullType
+ *
  *
  * XSD Type: przesylkaFullType
  */
@@ -14,12 +13,12 @@ class PrzesylkaFullType
     /**
      * @var \Abryb\ENadawca\Type\PrzesylkaShortType $przesylkaShort
      */
-    protected $przesylkaShort;
+    protected $przesylkaShort = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PrzesylkaType $przesylkaFull
      */
-    protected $przesylkaFull;
+    protected $przesylkaFull = null;
 
     /**
      * Gets as przesylkaShort
@@ -35,13 +34,11 @@ class PrzesylkaFullType
      * Sets a new przesylkaShort
      *
      * @param \Abryb\ENadawca\Type\PrzesylkaShortType $przesylkaShort
-     *
      * @return self
      */
-    public function setPrzesylkaShort(PrzesylkaShortType $przesylkaShort)
+    public function setPrzesylkaShort(\Abryb\ENadawca\Type\PrzesylkaShortType $przesylkaShort)
     {
         $this->przesylkaShort = $przesylkaShort;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class PrzesylkaFullType
      * Sets a new przesylkaFull
      *
      * @param \Abryb\ENadawca\Type\PrzesylkaType $przesylkaFull
-     *
      * @return self
      */
-    public function setPrzesylkaFull(PrzesylkaType $przesylkaFull)
+    public function setPrzesylkaFull(\Abryb\ENadawca\Type\PrzesylkaType $przesylkaFull)
     {
         $this->przesylkaFull = $przesylkaFull;
-
         return $this;
     }
 }
+

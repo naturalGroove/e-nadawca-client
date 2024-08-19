@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ObszarAdresowyResponseType
+ *
  *
  * XSD Type: obszarAdresowyResponseType
  */
@@ -14,12 +13,12 @@ class ObszarAdresowyResponseType
     /**
      * @var bool $isObszarMiasto
      */
-    protected $isObszarMiasto;
+    protected $isObszarMiasto = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * Gets as isObszarMiasto
@@ -35,13 +34,11 @@ class ObszarAdresowyResponseType
      * Sets a new isObszarMiasto
      *
      * @param bool $isObszarMiasto
-     *
      * @return self
      */
     public function setIsObszarMiasto($isObszarMiasto)
     {
         $this->isObszarMiasto = $isObszarMiasto;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class ObszarAdresowyResponseType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 }
+

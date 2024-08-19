@@ -1,12 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetProfilList\GetProfilListAType;
 
 /**
  * Class representing GetProfilList
  */
-class GetProfilList
+class GetProfilList extends GetProfilListAType
 {
 }
+

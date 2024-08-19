@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing OdbiorPrzesylkiOdNadawcyType
+ *
  *
  * XSD Type: odbiorPrzesylkiOdNadawcyType
  */
@@ -14,17 +13,17 @@ class OdbiorPrzesylkiOdNadawcyType
     /**
      * @var bool $wSobote
      */
-    protected $wSobote;
+    protected $wSobote = null;
 
     /**
      * @var bool $wNiedzieleLubSwieto
      */
-    protected $wNiedzieleLubSwieto;
+    protected $wNiedzieleLubSwieto = null;
 
     /**
      * @var bool $wGodzinachOd20Do7
      */
-    protected $wGodzinachOd20Do7;
+    protected $wGodzinachOd20Do7 = null;
 
     /**
      * Gets as wSobote
@@ -40,13 +39,11 @@ class OdbiorPrzesylkiOdNadawcyType
      * Sets a new wSobote
      *
      * @param bool $wSobote
-     *
      * @return self
      */
     public function setWSobote($wSobote)
     {
         $this->wSobote = $wSobote;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class OdbiorPrzesylkiOdNadawcyType
      * Sets a new wNiedzieleLubSwieto
      *
      * @param bool $wNiedzieleLubSwieto
-     *
      * @return self
      */
     public function setWNiedzieleLubSwieto($wNiedzieleLubSwieto)
     {
         $this->wNiedzieleLubSwieto = $wNiedzieleLubSwieto;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class OdbiorPrzesylkiOdNadawcyType
      * Sets a new wGodzinachOd20Do7
      *
      * @param bool $wGodzinachOd20Do7
-     *
      * @return self
      */
     public function setWGodzinachOd20Do7($wGodzinachOd20Do7)
     {
         $this->wGodzinachOd20Do7 = $wGodzinachOd20Do7;
-
         return $this;
     }
 }
+

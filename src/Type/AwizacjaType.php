@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing AwizacjaType
+ *
  *
  * XSD Type: awizacjaType
  */
@@ -14,12 +13,12 @@ class AwizacjaType
     /**
      * @var \DateTime $od
      */
-    protected $od;
+    protected $od = null;
 
     /**
      * @var \DateTime $do
      */
-    protected $do;
+    protected $do = null;
 
     /**
      * Gets as od
@@ -34,12 +33,12 @@ class AwizacjaType
     /**
      * Sets a new od
      *
+     * @param \DateTime $od
      * @return self
      */
     public function setOd(\DateTime $od)
     {
         $this->od = $od;
-
         return $this;
     }
 
@@ -56,12 +55,13 @@ class AwizacjaType
     /**
      * Sets a new do
      *
+     * @param \DateTime $do
      * @return self
      */
     public function setDo(\DateTime $do)
     {
         $this->do = $do;
-
         return $this;
     }
 }
+

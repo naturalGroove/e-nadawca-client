@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\Hello\HelloAType;
 
 /**
  * Class representing Hello
  */
-class Hello
+class Hello extends HelloAType
 {
-    /**
-     * @var string $in
-     */
-    protected $in;
-
-    /**
-     * Gets as in
-     *
-     * @return string
-     */
-    public function getIn()
-    {
-        return $this->in;
-    }
-
-    /**
-     * Sets a new in
-     *
-     * @param string $in
-     *
-     * @return self
-     */
-    public function setIn($in)
-    {
-        $this->in = $in;
-
-        return $this;
-    }
 }
+

@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PotwierdzenieOdbioruPaczkowaType
+ *
  *
  * XSD Type: potwierdzenieOdbioruPaczkowaType
  */
@@ -14,12 +13,12 @@ class PotwierdzenieOdbioruPaczkowaType
     /**
      * @var int $ilosc
      */
-    protected $ilosc;
+    protected $ilosc = null;
 
     /**
      * @var string $sposob
      */
-    protected $sposob;
+    protected $sposob = null;
 
     /**
      * Gets as ilosc
@@ -35,13 +34,11 @@ class PotwierdzenieOdbioruPaczkowaType
      * Sets a new ilosc
      *
      * @param int $ilosc
-     *
      * @return self
      */
     public function setIlosc($ilosc)
     {
         $this->ilosc = $ilosc;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class PotwierdzenieOdbioruPaczkowaType
      * Sets a new sposob
      *
      * @param string $sposob
-     *
      * @return self
      */
     public function setSposob($sposob)
     {
         $this->sposob = $sposob;
-
         return $this;
     }
 }
+

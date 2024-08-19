@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing TrasaResponseType
+ *
  *
  * XSD Type: trasaResponseType
  */
@@ -14,12 +13,12 @@ class TrasaResponseType
     /**
      * @var bool $isMiejscowa
      */
-    protected $isMiejscowa;
+    protected $isMiejscowa = null;
 
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * Gets as isMiejscowa
@@ -35,13 +34,11 @@ class TrasaResponseType
      * Sets a new isMiejscowa
      *
      * @param bool $isMiejscowa
-     *
      * @return self
      */
     public function setIsMiejscowa($isMiejscowa)
     {
         $this->isMiejscowa = $isMiejscowa;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class TrasaResponseType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 }
+

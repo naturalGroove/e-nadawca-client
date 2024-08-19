@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing OczekujeNaZgodeEZwrotType
+ *
  *
  * XSD Type: oczekujeNaZgodeEZwrotType
  */
@@ -14,42 +13,42 @@ class OczekujeNaZgodeEZwrotType
     /**
      * @var int $idZgody
      */
-    protected $idZgody;
+    protected $idZgody = null;
 
     /**
      * @var string $nazwaProduktu
      */
-    protected $nazwaProduktu;
+    protected $nazwaProduktu = null;
 
     /**
      * @var string $numerZamowienia
      */
-    protected $numerZamowienia;
+    protected $numerZamowienia = null;
 
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var string $email
      */
-    protected $email;
+    protected $email = null;
 
     /**
      * @var \DateTime $dataNadania
      */
-    protected $dataNadania;
+    protected $dataNadania = null;
 
     /**
      * @var string $guidZgodaEZwrot
      */
-    protected $guidZgodaEZwrot;
+    protected $guidZgodaEZwrot = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ShopEZwrotyType $sklepEZwrot
      */
-    protected $sklepEZwrot;
+    protected $sklepEZwrot = null;
 
     /**
      * Gets as idZgody
@@ -65,13 +64,11 @@ class OczekujeNaZgodeEZwrotType
      * Sets a new idZgody
      *
      * @param int $idZgody
-     *
      * @return self
      */
     public function setIdZgody($idZgody)
     {
         $this->idZgody = $idZgody;
-
         return $this;
     }
 
@@ -89,13 +86,11 @@ class OczekujeNaZgodeEZwrotType
      * Sets a new nazwaProduktu
      *
      * @param string $nazwaProduktu
-     *
      * @return self
      */
     public function setNazwaProduktu($nazwaProduktu)
     {
         $this->nazwaProduktu = $nazwaProduktu;
-
         return $this;
     }
 
@@ -113,13 +108,11 @@ class OczekujeNaZgodeEZwrotType
      * Sets a new numerZamowienia
      *
      * @param string $numerZamowienia
-     *
      * @return self
      */
     public function setNumerZamowienia($numerZamowienia)
     {
         $this->numerZamowienia = $numerZamowienia;
-
         return $this;
     }
 
@@ -137,13 +130,11 @@ class OczekujeNaZgodeEZwrotType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -161,13 +152,11 @@ class OczekujeNaZgodeEZwrotType
      * Sets a new email
      *
      * @param string $email
-     *
      * @return self
      */
     public function setEmail($email)
     {
         $this->email = $email;
-
         return $this;
     }
 
@@ -184,12 +173,12 @@ class OczekujeNaZgodeEZwrotType
     /**
      * Sets a new dataNadania
      *
+     * @param \DateTime $dataNadania
      * @return self
      */
     public function setDataNadania(\DateTime $dataNadania)
     {
         $this->dataNadania = $dataNadania;
-
         return $this;
     }
 
@@ -207,13 +196,11 @@ class OczekujeNaZgodeEZwrotType
      * Sets a new guidZgodaEZwrot
      *
      * @param string $guidZgodaEZwrot
-     *
      * @return self
      */
     public function setGuidZgodaEZwrot($guidZgodaEZwrot)
     {
         $this->guidZgodaEZwrot = $guidZgodaEZwrot;
-
         return $this;
     }
 
@@ -231,13 +218,12 @@ class OczekujeNaZgodeEZwrotType
      * Sets a new sklepEZwrot
      *
      * @param \Abryb\ENadawca\Type\ShopEZwrotyType $sklepEZwrot
-     *
      * @return self
      */
-    public function setSklepEZwrot(ShopEZwrotyType $sklepEZwrot)
+    public function setSklepEZwrot(?\Abryb\ENadawca\Type\ShopEZwrotyType $sklepEZwrot = null)
     {
         $this->sklepEZwrot = $sklepEZwrot;
-
         return $this;
     }
 }
+

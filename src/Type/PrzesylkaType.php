@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaType
+ *
  *
  * XSD Type: przesylkaType
  */
@@ -14,32 +13,37 @@ class PrzesylkaType
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * @var string $pakietGuid
      */
-    protected $pakietGuid;
+    protected $pakietGuid = null;
 
     /**
      * @var string $opakowanieGuid
      */
-    protected $opakowanieGuid;
+    protected $opakowanieGuid = null;
 
     /**
      * @var string $opis
      */
-    protected $opis;
+    protected $opis = null;
 
     /**
      * @var \DateTime $planowanaDataNadania
      */
-    protected $planowanaDataNadania;
+    protected $planowanaDataNadania = null;
 
     /**
      * @var \Abryb\ENadawca\Type\OplacaOdbiorcaType $oplacaOdbiorca
      */
-    protected $oplacaOdbiorca;
+    protected $oplacaOdbiorca = null;
+
+    /**
+     * @var string $mpk
+     */
+    protected $mpk = null;
 
     /**
      * Gets as guid
@@ -55,13 +59,11 @@ class PrzesylkaType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 
@@ -79,13 +81,11 @@ class PrzesylkaType
      * Sets a new pakietGuid
      *
      * @param string $pakietGuid
-     *
      * @return self
      */
     public function setPakietGuid($pakietGuid)
     {
         $this->pakietGuid = $pakietGuid;
-
         return $this;
     }
 
@@ -103,13 +103,11 @@ class PrzesylkaType
      * Sets a new opakowanieGuid
      *
      * @param string $opakowanieGuid
-     *
      * @return self
      */
     public function setOpakowanieGuid($opakowanieGuid)
     {
         $this->opakowanieGuid = $opakowanieGuid;
-
         return $this;
     }
 
@@ -127,13 +125,11 @@ class PrzesylkaType
      * Sets a new opis
      *
      * @param string $opis
-     *
      * @return self
      */
     public function setOpis($opis)
     {
         $this->opis = $opis;
-
         return $this;
     }
 
@@ -150,12 +146,12 @@ class PrzesylkaType
     /**
      * Sets a new planowanaDataNadania
      *
+     * @param \DateTime $planowanaDataNadania
      * @return self
      */
     public function setPlanowanaDataNadania(\DateTime $planowanaDataNadania)
     {
         $this->planowanaDataNadania = $planowanaDataNadania;
-
         return $this;
     }
 
@@ -173,13 +169,34 @@ class PrzesylkaType
      * Sets a new oplacaOdbiorca
      *
      * @param \Abryb\ENadawca\Type\OplacaOdbiorcaType $oplacaOdbiorca
-     *
      * @return self
      */
-    public function setOplacaOdbiorca(OplacaOdbiorcaType $oplacaOdbiorca)
+    public function setOplacaOdbiorca(?\Abryb\ENadawca\Type\OplacaOdbiorcaType $oplacaOdbiorca = null)
     {
         $this->oplacaOdbiorca = $oplacaOdbiorca;
+        return $this;
+    }
 
+    /**
+     * Gets as mpk
+     *
+     * @return string
+     */
+    public function getMpk()
+    {
+        return $this->mpk;
+    }
+
+    /**
+     * Sets a new mpk
+     *
+     * @param string $mpk
+     * @return self
+     */
+    public function setMpk($mpk)
+    {
+        $this->mpk = $mpk;
         return $this;
     }
 }
+

@@ -1,12 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetUbezpieczeniaInfo\GetUbezpieczeniaInfoAType;
 
 /**
  * Class representing GetUbezpieczeniaInfo
  */
-class GetUbezpieczeniaInfo
+class GetUbezpieczeniaInfo extends GetUbezpieczeniaInfoAType
 {
 }
+

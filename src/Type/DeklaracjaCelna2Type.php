@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DeklaracjaCelna2Type
+ *
  *
  * XSD Type: deklaracjaCelna2Type
  */
@@ -14,61 +13,64 @@ class DeklaracjaCelna2Type
     /**
      * @var string $rodzaj
      */
-    protected $rodzaj;
+    protected $rodzaj = null;
 
     /**
      * @var string $zawartoscPrzesylki
      */
-    protected $zawartoscPrzesylki;
+    protected $zawartoscPrzesylki = null;
 
     /**
      * @var \Abryb\ENadawca\Type\DokumentyTowarzyszaceType[] $dokumentyTowarzyszace
      */
     protected $dokumentyTowarzyszace = [
+        
     ];
 
     /**
      * @var string $wyjasnienie
      */
-    protected $wyjasnienie;
+    protected $wyjasnienie = null;
 
     /**
      * @var string $oplatyPocztowe
      */
-    protected $oplatyPocztowe;
+    protected $oplatyPocztowe = null;
 
     /**
      * @var string $uwagi
      */
-    protected $uwagi;
+    protected $uwagi = null;
 
     /**
      * @var string $numerReferencyjnyImportera
      */
-    protected $numerReferencyjnyImportera;
+    protected $numerReferencyjnyImportera = null;
 
     /**
      * @var string $numerTelefonuImportera
      */
-    protected $numerTelefonuImportera;
+    protected $numerTelefonuImportera = null;
 
     /**
-     * Kod ISO waluty w której wyrażone są wartości pozycji podanych w elemencie szczegolyZawartosciPrzesylki
+     * Kod ISO waluty w której wyrażone są wartości
+     *  pozycji podanych w elemencie szczegolyZawartosciPrzesylki
      *
      * @var string $walutaKodISO
      */
-    protected $walutaKodISO;
+    protected $walutaKodISO = null;
 
     /**
      * @var \Abryb\ENadawca\Type\SzczegolyZawartosciPrzesylkiZagranicznejType[] $szczegolyZawartosciPrzesylki
      */
     protected $szczegolyZawartosciPrzesylki = [
+        
     ];
 
     /**
      * @var string $numerReferencyjnyCelny
      */
-    protected $numerReferencyjnyCelny;
+    protected $numerReferencyjnyCelny = null;
 
     /**
      * Gets as rodzaj
@@ -84,13 +86,11 @@ class DeklaracjaCelna2Type
      * Sets a new rodzaj
      *
      * @param string $rodzaj
-     *
      * @return self
      */
     public function setRodzaj($rodzaj)
     {
         $this->rodzaj = $rodzaj;
-
         return $this;
     }
 
@@ -108,27 +108,23 @@ class DeklaracjaCelna2Type
      * Sets a new zawartoscPrzesylki
      *
      * @param string $zawartoscPrzesylki
-     *
      * @return self
      */
     public function setZawartoscPrzesylki($zawartoscPrzesylki)
     {
         $this->zawartoscPrzesylki = $zawartoscPrzesylki;
-
         return $this;
     }
 
     /**
      * Adds as dokumentyTowarzyszace
      *
-     * @param \Abryb\ENadawca\Type\DokumentyTowarzyszaceType $dokumentyTowarzyszace
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\DokumentyTowarzyszaceType $dokumentyTowarzyszace
      */
-    public function addToDokumentyTowarzyszace(DokumentyTowarzyszaceType $dokumentyTowarzyszace)
+    public function addToDokumentyTowarzyszace(\Abryb\ENadawca\Type\DokumentyTowarzyszaceType $dokumentyTowarzyszace)
     {
         $this->dokumentyTowarzyszace[] = $dokumentyTowarzyszace;
-
         return $this;
     }
 
@@ -136,7 +132,6 @@ class DeklaracjaCelna2Type
      * isset dokumentyTowarzyszace
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetDokumentyTowarzyszace($index)
@@ -148,6 +143,7 @@ class DeklaracjaCelna2Type
      * unset dokumentyTowarzyszace
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetDokumentyTowarzyszace($index)
     {
@@ -168,13 +164,11 @@ class DeklaracjaCelna2Type
      * Sets a new dokumentyTowarzyszace
      *
      * @param \Abryb\ENadawca\Type\DokumentyTowarzyszaceType[] $dokumentyTowarzyszace
-     *
      * @return self
      */
-    public function setDokumentyTowarzyszace(array $dokumentyTowarzyszace)
+    public function setDokumentyTowarzyszace(array $dokumentyTowarzyszace = null)
     {
         $this->dokumentyTowarzyszace = $dokumentyTowarzyszace;
-
         return $this;
     }
 
@@ -192,13 +186,11 @@ class DeklaracjaCelna2Type
      * Sets a new wyjasnienie
      *
      * @param string $wyjasnienie
-     *
      * @return self
      */
     public function setWyjasnienie($wyjasnienie)
     {
         $this->wyjasnienie = $wyjasnienie;
-
         return $this;
     }
 
@@ -216,13 +208,11 @@ class DeklaracjaCelna2Type
      * Sets a new oplatyPocztowe
      *
      * @param string $oplatyPocztowe
-     *
      * @return self
      */
     public function setOplatyPocztowe($oplatyPocztowe)
     {
         $this->oplatyPocztowe = $oplatyPocztowe;
-
         return $this;
     }
 
@@ -240,13 +230,11 @@ class DeklaracjaCelna2Type
      * Sets a new uwagi
      *
      * @param string $uwagi
-     *
      * @return self
      */
     public function setUwagi($uwagi)
     {
         $this->uwagi = $uwagi;
-
         return $this;
     }
 
@@ -264,13 +252,11 @@ class DeklaracjaCelna2Type
      * Sets a new numerReferencyjnyImportera
      *
      * @param string $numerReferencyjnyImportera
-     *
      * @return self
      */
     public function setNumerReferencyjnyImportera($numerReferencyjnyImportera)
     {
         $this->numerReferencyjnyImportera = $numerReferencyjnyImportera;
-
         return $this;
     }
 
@@ -288,20 +274,19 @@ class DeklaracjaCelna2Type
      * Sets a new numerTelefonuImportera
      *
      * @param string $numerTelefonuImportera
-     *
      * @return self
      */
     public function setNumerTelefonuImportera($numerTelefonuImportera)
     {
         $this->numerTelefonuImportera = $numerTelefonuImportera;
-
         return $this;
     }
 
     /**
      * Gets as walutaKodISO
      *
-     * Kod ISO waluty w której wyrażone są wartości pozycji podanych w elemencie szczegolyZawartosciPrzesylki
+     * Kod ISO waluty w której wyrażone są wartości
+     *  pozycji podanych w elemencie szczegolyZawartosciPrzesylki
      *
      * @return string
      */
@@ -313,30 +298,27 @@ class DeklaracjaCelna2Type
     /**
      * Sets a new walutaKodISO
      *
-     * Kod ISO waluty w której wyrażone są wartości pozycji podanych w elemencie szczegolyZawartosciPrzesylki
+     * Kod ISO waluty w której wyrażone są wartości
+     *  pozycji podanych w elemencie szczegolyZawartosciPrzesylki
      *
      * @param string $walutaKodISO
-     *
      * @return self
      */
     public function setWalutaKodISO($walutaKodISO)
     {
         $this->walutaKodISO = $walutaKodISO;
-
         return $this;
     }
 
     /**
      * Adds as szczegolyZawartosciPrzesylki
      *
-     * @param \Abryb\ENadawca\Type\SzczegolyZawartosciPrzesylkiZagranicznejType $szczegolyZawartosciPrzesylki
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\SzczegolyZawartosciPrzesylkiZagranicznejType $szczegolyZawartosciPrzesylki
      */
-    public function addToSzczegolyZawartosciPrzesylki(SzczegolyZawartosciPrzesylkiZagranicznejType $szczegolyZawartosciPrzesylki)
+    public function addToSzczegolyZawartosciPrzesylki(\Abryb\ENadawca\Type\SzczegolyZawartosciPrzesylkiZagranicznejType $szczegolyZawartosciPrzesylki)
     {
         $this->szczegolyZawartosciPrzesylki[] = $szczegolyZawartosciPrzesylki;
-
         return $this;
     }
 
@@ -344,7 +326,6 @@ class DeklaracjaCelna2Type
      * isset szczegolyZawartosciPrzesylki
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetSzczegolyZawartosciPrzesylki($index)
@@ -356,6 +337,7 @@ class DeklaracjaCelna2Type
      * unset szczegolyZawartosciPrzesylki
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetSzczegolyZawartosciPrzesylki($index)
     {
@@ -376,13 +358,11 @@ class DeklaracjaCelna2Type
      * Sets a new szczegolyZawartosciPrzesylki
      *
      * @param \Abryb\ENadawca\Type\SzczegolyZawartosciPrzesylkiZagranicznejType[] $szczegolyZawartosciPrzesylki
-     *
      * @return self
      */
     public function setSzczegolyZawartosciPrzesylki(array $szczegolyZawartosciPrzesylki)
     {
         $this->szczegolyZawartosciPrzesylki = $szczegolyZawartosciPrzesylki;
-
         return $this;
     }
 
@@ -400,13 +380,12 @@ class DeklaracjaCelna2Type
      * Sets a new numerReferencyjnyCelny
      *
      * @param string $numerReferencyjnyCelny
-     *
      * @return self
      */
     public function setNumerReferencyjnyCelny($numerReferencyjnyCelny)
     {
         $this->numerReferencyjnyCelny = $numerReferencyjnyCelny;
-
         return $this;
     }
 }
+

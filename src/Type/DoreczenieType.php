@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DoreczenieType
+ *
  *
  * XSD Type: doreczenieType
  */
@@ -14,37 +13,37 @@ class DoreczenieType
     /**
      * @var \DateTime $oczekiwanyTerminDoreczenia
      */
-    protected $oczekiwanyTerminDoreczenia;
+    protected $oczekiwanyTerminDoreczenia = null;
 
     /**
      * @var string $oczekiwanaGodzinaDoreczenia
      */
-    protected $oczekiwanaGodzinaDoreczenia;
+    protected $oczekiwanaGodzinaDoreczenia = null;
 
     /**
      * @var bool $wSobote
      */
-    protected $wSobote;
+    protected $wSobote = null;
 
     /**
      * @var bool $w90Minut
      */
-    protected $w90Minut;
+    protected $w90Minut = null;
 
     /**
      * @var bool $wNiedzieleLubSwieto
      */
-    protected $wNiedzieleLubSwieto;
+    protected $wNiedzieleLubSwieto = null;
 
     /**
      * @var bool $doRakWlasnych
      */
-    protected $doRakWlasnych;
+    protected $doRakWlasnych = null;
 
     /**
      * @var bool $wGodzinachOd20Do7
      */
-    protected $wGodzinachOd20Do7;
+    protected $wGodzinachOd20Do7 = null;
 
     /**
      * Gets as oczekiwanyTerminDoreczenia
@@ -59,12 +58,12 @@ class DoreczenieType
     /**
      * Sets a new oczekiwanyTerminDoreczenia
      *
+     * @param \DateTime $oczekiwanyTerminDoreczenia
      * @return self
      */
     public function setOczekiwanyTerminDoreczenia(\DateTime $oczekiwanyTerminDoreczenia)
     {
         $this->oczekiwanyTerminDoreczenia = $oczekiwanyTerminDoreczenia;
-
         return $this;
     }
 
@@ -82,13 +81,11 @@ class DoreczenieType
      * Sets a new oczekiwanaGodzinaDoreczenia
      *
      * @param string $oczekiwanaGodzinaDoreczenia
-     *
      * @return self
      */
     public function setOczekiwanaGodzinaDoreczenia($oczekiwanaGodzinaDoreczenia)
     {
         $this->oczekiwanaGodzinaDoreczenia = $oczekiwanaGodzinaDoreczenia;
-
         return $this;
     }
 
@@ -106,13 +103,11 @@ class DoreczenieType
      * Sets a new wSobote
      *
      * @param bool $wSobote
-     *
      * @return self
      */
     public function setWSobote($wSobote)
     {
         $this->wSobote = $wSobote;
-
         return $this;
     }
 
@@ -130,13 +125,11 @@ class DoreczenieType
      * Sets a new w90Minut
      *
      * @param bool $w90Minut
-     *
      * @return self
      */
     public function setW90Minut($w90Minut)
     {
         $this->w90Minut = $w90Minut;
-
         return $this;
     }
 
@@ -154,13 +147,11 @@ class DoreczenieType
      * Sets a new wNiedzieleLubSwieto
      *
      * @param bool $wNiedzieleLubSwieto
-     *
      * @return self
      */
     public function setWNiedzieleLubSwieto($wNiedzieleLubSwieto)
     {
         $this->wNiedzieleLubSwieto = $wNiedzieleLubSwieto;
-
         return $this;
     }
 
@@ -178,13 +169,11 @@ class DoreczenieType
      * Sets a new doRakWlasnych
      *
      * @param bool $doRakWlasnych
-     *
      * @return self
      */
     public function setDoRakWlasnych($doRakWlasnych)
     {
         $this->doRakWlasnych = $doRakWlasnych;
-
         return $this;
     }
 
@@ -202,13 +191,12 @@ class DoreczenieType
      * Sets a new wGodzinachOd20Do7
      *
      * @param bool $wGodzinachOd20Do7
-     *
      * @return self
      */
     public function setWGodzinachOd20Do7($wGodzinachOd20Do7)
     {
         $this->wGodzinachOd20Do7 = $wGodzinachOd20Do7;
-
         return $this;
     }
 }
+

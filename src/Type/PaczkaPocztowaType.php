@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PaczkaPocztowaType
+ *
  *
  * XSD Type: paczkaPocztowaType
  */
@@ -14,57 +13,73 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
     /**
      * @var string $zasadySpecjalne
      */
-    protected $zasadySpecjalne;
+    protected $zasadySpecjalne = null;
 
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $iloscPotwierdzenOdbioru
      */
-    protected $iloscPotwierdzenOdbioru;
+    protected $iloscPotwierdzenOdbioru = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
-
-    /**
-     * @var bool $zwrotDoslanie
-     */
-    protected $zwrotDoslanie;
+    protected $wartosc = null;
 
     /**
      * @var bool $egzemplarzBiblioteczny
      */
-    protected $egzemplarzBiblioteczny;
+    protected $egzemplarzBiblioteczny = null;
 
     /**
      * @var bool $dlaOciemnialych
      */
-    protected $dlaOciemnialych;
+    protected $dlaOciemnialych = null;
+
+    /**
+     * @var string $numerPrzesylkiKlienta
+     */
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var \Abryb\ENadawca\Type\EPOType $epo
      */
-    protected $epo;
+    protected $epo = null;
+
+    /**
+     * @var \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
+     */
+    protected $ubezpieczenie = null;
+
+    /**
+     * Identifier library for legal
+     *  deposit from list downloaded
+     *  using the
+     *  getLibrariesForLegalDeposits
+     *  method
+     *
+     * @var string $idLibraryForLegalDeposit
+     */
+    protected $idLibraryForLegalDeposit = null;
 
     /**
      * Gets as zasadySpecjalne
@@ -80,13 +95,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new zasadySpecjalne
      *
      * @param string $zasadySpecjalne
-     *
      * @return self
      */
     public function setZasadySpecjalne($zasadySpecjalne)
     {
         $this->zasadySpecjalne = $zasadySpecjalne;
-
         return $this;
     }
 
@@ -104,13 +117,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -128,13 +139,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new iloscPotwierdzenOdbioru
      *
      * @param int $iloscPotwierdzenOdbioru
-     *
      * @return self
      */
     public function setIloscPotwierdzenOdbioru($iloscPotwierdzenOdbioru)
     {
         $this->iloscPotwierdzenOdbioru = $iloscPotwierdzenOdbioru;
-
         return $this;
     }
 
@@ -152,13 +161,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -176,13 +183,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -200,13 +205,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -224,37 +227,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
-        return $this;
-    }
-
-    /**
-     * Gets as zwrotDoslanie
-     *
-     * @return bool
-     */
-    public function getZwrotDoslanie()
-    {
-        return $this->zwrotDoslanie;
-    }
-
-    /**
-     * Sets a new zwrotDoslanie
-     *
-     * @param bool $zwrotDoslanie
-     *
-     * @return self
-     */
-    public function setZwrotDoslanie($zwrotDoslanie)
-    {
-        $this->zwrotDoslanie = $zwrotDoslanie;
-
         return $this;
     }
 
@@ -272,13 +249,11 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new egzemplarzBiblioteczny
      *
      * @param bool $egzemplarzBiblioteczny
-     *
      * @return self
      */
     public function setEgzemplarzBiblioteczny($egzemplarzBiblioteczny)
     {
         $this->egzemplarzBiblioteczny = $egzemplarzBiblioteczny;
-
         return $this;
     }
 
@@ -296,13 +271,33 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new dlaOciemnialych
      *
      * @param bool $dlaOciemnialych
-     *
      * @return self
      */
     public function setDlaOciemnialych($dlaOciemnialych)
     {
         $this->dlaOciemnialych = $dlaOciemnialych;
+        return $this;
+    }
 
+    /**
+     * Gets as numerPrzesylkiKlienta
+     *
+     * @return string
+     */
+    public function getNumerPrzesylkiKlienta()
+    {
+        return $this->numerPrzesylkiKlienta;
+    }
+
+    /**
+     * Sets a new numerPrzesylkiKlienta
+     *
+     * @param string $numerPrzesylkiKlienta
+     * @return self
+     */
+    public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
+    {
+        $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
         return $this;
     }
 
@@ -320,13 +315,68 @@ class PaczkaPocztowaType extends PrzesylkaRejestrowanaType
      * Sets a new epo
      *
      * @param \Abryb\ENadawca\Type\EPOType $epo
-     *
      * @return self
      */
-    public function setEpo(EPOType $epo)
+    public function setEpo(?\Abryb\ENadawca\Type\EPOType $epo = null)
     {
         $this->epo = $epo;
+        return $this;
+    }
 
+    /**
+     * Gets as ubezpieczenie
+     *
+     * @return \Abryb\ENadawca\Type\UbezpieczenieType
+     */
+    public function getUbezpieczenie()
+    {
+        return $this->ubezpieczenie;
+    }
+
+    /**
+     * Sets a new ubezpieczenie
+     *
+     * @param \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
+     * @return self
+     */
+    public function setUbezpieczenie(?\Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie = null)
+    {
+        $this->ubezpieczenie = $ubezpieczenie;
+        return $this;
+    }
+
+    /**
+     * Gets as idLibraryForLegalDeposit
+     *
+     * Identifier library for legal
+     *  deposit from list downloaded
+     *  using the
+     *  getLibrariesForLegalDeposits
+     *  method
+     *
+     * @return string
+     */
+    public function getIdLibraryForLegalDeposit()
+    {
+        return $this->idLibraryForLegalDeposit;
+    }
+
+    /**
+     * Sets a new idLibraryForLegalDeposit
+     *
+     * Identifier library for legal
+     *  deposit from list downloaded
+     *  using the
+     *  getLibrariesForLegalDeposits
+     *  method
+     *
+     * @param string $idLibraryForLegalDeposit
+     * @return self
+     */
+    public function setIdLibraryForLegalDeposit($idLibraryForLegalDeposit)
+    {
+        $this->idLibraryForLegalDeposit = $idLibraryForLegalDeposit;
         return $this;
     }
 }
+

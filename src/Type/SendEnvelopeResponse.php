@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
@@ -10,3 +8,4 @@ namespace Abryb\ENadawca\Type;
 class SendEnvelopeResponse extends SendEnvelopeResponseType
 {
 }
+

@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\ClearEnvelope\ClearEnvelopeAType;
 
 /**
  * Class representing ClearEnvelope
  */
-class ClearEnvelope
+class ClearEnvelope extends ClearEnvelopeAType
 {
-    /**
-     * @var int $idBufor
-     */
-    protected $idBufor;
-
-    /**
-     * Gets as idBufor
-     *
-     * @return int
-     */
-    public function getIdBufor()
-    {
-        return $this->idBufor;
-    }
-
-    /**
-     * Sets a new idBufor
-     *
-     * @param int $idBufor
-     *
-     * @return self
-     */
-    public function setIdBufor($idBufor)
-    {
-        $this->idBufor = $idBufor;
-
-        return $this;
-    }
 }
+

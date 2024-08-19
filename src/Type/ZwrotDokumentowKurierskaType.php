@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ZwrotDokumentowKurierskaType
+ *
  *
  * XSD Type: zwrotDokumentowKurierskaType
  */
@@ -14,17 +13,12 @@ class ZwrotDokumentowKurierskaType
     /**
      * @var string $rodzajPocztex
      */
-    protected $rodzajPocztex;
-
-    /**
-     * @var string $rodzajPaczka
-     */
-    protected $rodzajPaczka;
+    protected $rodzajPocztex = null;
 
     /**
      * @var \Abryb\ENadawca\Type\RodzajListType $rodzajList
      */
-    protected $rodzajList;
+    protected $rodzajList = null;
 
     /**
      * Gets as rodzajPocztex
@@ -40,37 +34,11 @@ class ZwrotDokumentowKurierskaType
      * Sets a new rodzajPocztex
      *
      * @param string $rodzajPocztex
-     *
      * @return self
      */
     public function setRodzajPocztex($rodzajPocztex)
     {
         $this->rodzajPocztex = $rodzajPocztex;
-
-        return $this;
-    }
-
-    /**
-     * Gets as rodzajPaczka
-     *
-     * @return string
-     */
-    public function getRodzajPaczka()
-    {
-        return $this->rodzajPaczka;
-    }
-
-    /**
-     * Sets a new rodzajPaczka
-     *
-     * @param string $rodzajPaczka
-     *
-     * @return self
-     */
-    public function setRodzajPaczka($rodzajPaczka)
-    {
-        $this->rodzajPaczka = $rodzajPaczka;
-
         return $this;
     }
 
@@ -88,13 +56,12 @@ class ZwrotDokumentowKurierskaType
      * Sets a new rodzajList
      *
      * @param \Abryb\ENadawca\Type\RodzajListType $rodzajList
-     *
      * @return self
      */
-    public function setRodzajList(RodzajListType $rodzajList)
+    public function setRodzajList(?\Abryb\ENadawca\Type\RodzajListType $rodzajList = null)
     {
         $this->rodzajList = $rodzajList;
-
         return $this;
     }
 }
+

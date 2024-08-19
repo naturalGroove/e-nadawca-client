@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DaneSentType
+ *
  *
  * XSD Type: daneSentType
  */
@@ -14,32 +13,32 @@ class DaneSentType
     /**
      * @var string $numer
      */
-    protected $numer;
+    protected $numer = null;
 
     /**
      * @var string $kluczPrzewoznika
      */
-    protected $kluczPrzewoznika;
+    protected $kluczPrzewoznika = null;
 
     /**
      * @var string $kodCN
      */
-    protected $kodCN;
+    protected $kodCN = null;
 
     /**
      * @var string $kodPKWiU
      */
-    protected $kodPKWiU;
+    protected $kodPKWiU = null;
 
     /**
      * @var float $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var bool $proceduraAwaryjna
      */
-    protected $proceduraAwaryjna;
+    protected $proceduraAwaryjna = null;
 
     /**
      * Gets as numer
@@ -55,13 +54,11 @@ class DaneSentType
      * Sets a new numer
      *
      * @param string $numer
-     *
      * @return self
      */
     public function setNumer($numer)
     {
         $this->numer = $numer;
-
         return $this;
     }
 
@@ -79,13 +76,11 @@ class DaneSentType
      * Sets a new kluczPrzewoznika
      *
      * @param string $kluczPrzewoznika
-     *
      * @return self
      */
     public function setKluczPrzewoznika($kluczPrzewoznika)
     {
         $this->kluczPrzewoznika = $kluczPrzewoznika;
-
         return $this;
     }
 
@@ -103,13 +98,11 @@ class DaneSentType
      * Sets a new kodCN
      *
      * @param string $kodCN
-     *
      * @return self
      */
     public function setKodCN($kodCN)
     {
         $this->kodCN = $kodCN;
-
         return $this;
     }
 
@@ -127,13 +120,11 @@ class DaneSentType
      * Sets a new kodPKWiU
      *
      * @param string $kodPKWiU
-     *
      * @return self
      */
     public function setKodPKWiU($kodPKWiU)
     {
         $this->kodPKWiU = $kodPKWiU;
-
         return $this;
     }
 
@@ -151,13 +142,11 @@ class DaneSentType
      * Sets a new masa
      *
      * @param float $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -175,13 +164,12 @@ class DaneSentType
      * Sets a new proceduraAwaryjna
      *
      * @param bool $proceduraAwaryjna
-     *
      * @return self
      */
     public function setProceduraAwaryjna($proceduraAwaryjna)
     {
         $this->proceduraAwaryjna = $proceduraAwaryjna;
-
         return $this;
     }
 }
+

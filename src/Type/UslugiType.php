@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing UslugiType
+ *
  *
  * XSD Type: uslugiType
  */
@@ -14,12 +13,12 @@ class UslugiType
     /**
      * @var string $id
      */
-    protected $id;
+    protected $id = null;
 
     /**
      * @var string $opis
      */
-    protected $opis;
+    protected $opis = null;
 
     /**
      * Gets as id
@@ -35,13 +34,11 @@ class UslugiType
      * Sets a new id
      *
      * @param string $id
-     *
      * @return self
      */
     public function setId($id)
     {
         $this->id = $id;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class UslugiType
      * Sets a new opis
      *
      * @param string $opis
-     *
      * @return self
      */
     public function setOpis($opis)
     {
         $this->opis = $opis;
-
         return $this;
     }
 }
+

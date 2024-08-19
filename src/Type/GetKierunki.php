@@ -1,69 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetKierunki\GetKierunkiAType;
 
 /**
  * Class representing GetKierunki
  */
-class GetKierunki
+class GetKierunki extends GetKierunkiAType
 {
-    /**
-     * @var string $plan
-     */
-    protected $plan;
-
-    /**
-     * @var string $prefixKodPocztowy
-     */
-    protected $prefixKodPocztowy;
-
-    /**
-     * Gets as plan
-     *
-     * @return string
-     */
-    public function getPlan()
-    {
-        return $this->plan;
-    }
-
-    /**
-     * Sets a new plan
-     *
-     * @param string $plan
-     *
-     * @return self
-     */
-    public function setPlan($plan)
-    {
-        $this->plan = $plan;
-
-        return $this;
-    }
-
-    /**
-     * Gets as prefixKodPocztowy
-     *
-     * @return string
-     */
-    public function getPrefixKodPocztowy()
-    {
-        return $this->prefixKodPocztowy;
-    }
-
-    /**
-     * Sets a new prefixKodPocztowy
-     *
-     * @param string $prefixKodPocztowy
-     *
-     * @return self
-     */
-    public function setPrefixKodPocztowy($prefixKodPocztowy)
-    {
-        $this->prefixKodPocztowy = $prefixKodPocztowy;
-
-        return $this;
-    }
 }
+

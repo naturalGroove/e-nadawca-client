@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing UbezpieczeniaInfoType
+ *
  *
  * XSD Type: ubezpieczeniaInfoType
  */
@@ -14,12 +13,12 @@ class UbezpieczeniaInfoType
     /**
      * @var string $typPrzesylki
      */
-    protected $typPrzesylki;
+    protected $typPrzesylki = null;
 
     /**
      * @var float $kwota
      */
-    protected $kwota;
+    protected $kwota = null;
 
     /**
      * Gets as typPrzesylki
@@ -35,13 +34,11 @@ class UbezpieczeniaInfoType
      * Sets a new typPrzesylki
      *
      * @param string $typPrzesylki
-     *
      * @return self
      */
     public function setTypPrzesylki($typPrzesylki)
     {
         $this->typPrzesylki = $typPrzesylki;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class UbezpieczeniaInfoType
      * Sets a new kwota
      *
      * @param float $kwota
-     *
      * @return self
      */
     public function setKwota($kwota)
     {
         $this->kwota = $kwota;
-
         return $this;
     }
 }
+

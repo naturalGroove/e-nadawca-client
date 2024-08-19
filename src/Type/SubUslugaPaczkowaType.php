@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing SubUslugaPaczkowaType
+ *
  *
  * XSD Type: subUslugaPaczkowaType
  */
@@ -14,52 +13,52 @@ class SubUslugaPaczkowaType extends PrzesylkaType
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var bool $ostroznie
      */
-    protected $ostroznie;
+    protected $ostroznie = null;
 
     /**
      * @var string $opakowanie
      */
-    protected $opakowanie;
+    protected $opakowanie = null;
 
     /**
      * @var bool $ponadgabaryt
      */
-    protected $ponadgabaryt;
+    protected $ponadgabaryt = null;
 
     /**
      * @var string $numerPrzesylkiKlienta
      */
-    protected $numerPrzesylkiKlienta;
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PobranieType $pobranie
      */
-    protected $pobranie;
+    protected $pobranie = null;
 
     /**
      * @var \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
      */
-    protected $ubezpieczenie;
+    protected $ubezpieczenie = null;
 
     /**
      * Gets as numerNadania
@@ -75,13 +74,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -99,13 +96,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -123,13 +118,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -147,13 +140,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new ostroznie
      *
      * @param bool $ostroznie
-     *
      * @return self
      */
     public function setOstroznie($ostroznie)
     {
         $this->ostroznie = $ostroznie;
-
         return $this;
     }
 
@@ -171,13 +162,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new opakowanie
      *
      * @param string $opakowanie
-     *
      * @return self
      */
     public function setOpakowanie($opakowanie)
     {
         $this->opakowanie = $opakowanie;
-
         return $this;
     }
 
@@ -195,13 +184,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new ponadgabaryt
      *
      * @param bool $ponadgabaryt
-     *
      * @return self
      */
     public function setPonadgabaryt($ponadgabaryt)
     {
         $this->ponadgabaryt = $ponadgabaryt;
-
         return $this;
     }
 
@@ -219,13 +206,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new numerPrzesylkiKlienta
      *
      * @param string $numerPrzesylkiKlienta
-     *
      * @return self
      */
     public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
     {
         $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
-
         return $this;
     }
 
@@ -243,13 +228,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -267,13 +250,11 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new pobranie
      *
      * @param \Abryb\ENadawca\Type\PobranieType $pobranie
-     *
      * @return self
      */
-    public function setPobranie(PobranieType $pobranie)
+    public function setPobranie(\Abryb\ENadawca\Type\PobranieType $pobranie)
     {
         $this->pobranie = $pobranie;
-
         return $this;
     }
 
@@ -291,13 +272,12 @@ class SubUslugaPaczkowaType extends PrzesylkaType
      * Sets a new ubezpieczenie
      *
      * @param \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
-     *
      * @return self
      */
-    public function setUbezpieczenie(UbezpieczenieType $ubezpieczenie)
+    public function setUbezpieczenie(\Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie)
     {
         $this->ubezpieczenie = $ubezpieczenie;
-
         return $this;
     }
 }
+

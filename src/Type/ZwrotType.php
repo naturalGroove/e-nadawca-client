@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ZwrotType
+ *
  *
  * XSD Type: zwrotType
  */
@@ -14,17 +13,17 @@ class ZwrotType
     /**
      * @var int $zwrotPoLiczbieDni
      */
-    protected $zwrotPoLiczbieDni;
+    protected $zwrotPoLiczbieDni = null;
 
     /**
      * @var bool $traktowacJakPorzucona
      */
-    protected $traktowacJakPorzucona;
+    protected $traktowacJakPorzucona = null;
 
     /**
      * @var string $sposobZwrotu
      */
-    protected $sposobZwrotu;
+    protected $sposobZwrotu = null;
 
     /**
      * Gets as zwrotPoLiczbieDni
@@ -40,13 +39,11 @@ class ZwrotType
      * Sets a new zwrotPoLiczbieDni
      *
      * @param int $zwrotPoLiczbieDni
-     *
      * @return self
      */
     public function setZwrotPoLiczbieDni($zwrotPoLiczbieDni)
     {
         $this->zwrotPoLiczbieDni = $zwrotPoLiczbieDni;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class ZwrotType
      * Sets a new traktowacJakPorzucona
      *
      * @param bool $traktowacJakPorzucona
-     *
      * @return self
      */
     public function setTraktowacJakPorzucona($traktowacJakPorzucona)
     {
         $this->traktowacJakPorzucona = $traktowacJakPorzucona;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class ZwrotType
      * Sets a new sposobZwrotu
      *
      * @param string $sposobZwrotu
-     *
      * @return self
      */
     public function setSposobZwrotu($sposobZwrotu)
     {
         $this->sposobZwrotu = $sposobZwrotu;
-
         return $this;
     }
 }
+

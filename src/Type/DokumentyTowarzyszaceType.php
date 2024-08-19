@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DokumentyTowarzyszaceType
+ *
  *
  * XSD Type: DokumentyTowarzyszaceType
  */
@@ -14,12 +13,12 @@ class DokumentyTowarzyszaceType
     /**
      * @var string $rodzaj
      */
-    protected $rodzaj;
+    protected $rodzaj = null;
 
     /**
      * @var string $numer
      */
-    protected $numer;
+    protected $numer = null;
 
     /**
      * Gets as rodzaj
@@ -35,13 +34,11 @@ class DokumentyTowarzyszaceType
      * Sets a new rodzaj
      *
      * @param string $rodzaj
-     *
      * @return self
      */
     public function setRodzaj($rodzaj)
     {
         $this->rodzaj = $rodzaj;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class DokumentyTowarzyszaceType
      * Sets a new numer
      *
      * @param string $numer
-     *
      * @return self
      */
     public function setNumer($numer)
     {
         $this->numer = $numer;
-
         return $this;
     }
 }
+

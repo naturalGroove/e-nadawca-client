@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetGuid\GetGuidAType;
 
 /**
  * Class representing GetGuid
  */
-class GetGuid
+class GetGuid extends GetGuidAType
 {
-    /**
-     * @var int $ilosc
-     */
-    protected $ilosc;
-
-    /**
-     * Gets as ilosc
-     *
-     * @return int
-     */
-    public function getIlosc()
-    {
-        return $this->ilosc;
-    }
-
-    /**
-     * Sets a new ilosc
-     *
-     * @param int $ilosc
-     *
-     * @return self
-     */
-    public function setIlosc($ilosc)
-    {
-        $this->ilosc = $ilosc;
-
-        return $this;
-    }
 }
+

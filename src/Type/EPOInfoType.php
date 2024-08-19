@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing EPOInfoType
+ *
  *
  * XSD Type: EPOInfoType
  */
@@ -14,17 +13,17 @@ class EPOInfoType
     /**
      * @var \Abryb\ENadawca\Type\AwizoPrzesylkiType $awizoPrzesylki
      */
-    protected $awizoPrzesylki;
+    protected $awizoPrzesylki = null;
 
     /**
      * @var \Abryb\ENadawca\Type\DoreczeniePrzesylkiType $doreczeniePrzesylki
      */
-    protected $doreczeniePrzesylki;
+    protected $doreczeniePrzesylki = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ZwrotPrzesylkiType $zwrotPrzesylki
      */
-    protected $zwrotPrzesylki;
+    protected $zwrotPrzesylki = null;
 
     /**
      * Gets as awizoPrzesylki
@@ -40,13 +39,11 @@ class EPOInfoType
      * Sets a new awizoPrzesylki
      *
      * @param \Abryb\ENadawca\Type\AwizoPrzesylkiType $awizoPrzesylki
-     *
      * @return self
      */
-    public function setAwizoPrzesylki(AwizoPrzesylkiType $awizoPrzesylki)
+    public function setAwizoPrzesylki(?\Abryb\ENadawca\Type\AwizoPrzesylkiType $awizoPrzesylki = null)
     {
         $this->awizoPrzesylki = $awizoPrzesylki;
-
         return $this;
     }
 
@@ -64,13 +61,11 @@ class EPOInfoType
      * Sets a new doreczeniePrzesylki
      *
      * @param \Abryb\ENadawca\Type\DoreczeniePrzesylkiType $doreczeniePrzesylki
-     *
      * @return self
      */
-    public function setDoreczeniePrzesylki(DoreczeniePrzesylkiType $doreczeniePrzesylki)
+    public function setDoreczeniePrzesylki(?\Abryb\ENadawca\Type\DoreczeniePrzesylkiType $doreczeniePrzesylki = null)
     {
         $this->doreczeniePrzesylki = $doreczeniePrzesylki;
-
         return $this;
     }
 
@@ -88,13 +83,12 @@ class EPOInfoType
      * Sets a new zwrotPrzesylki
      *
      * @param \Abryb\ENadawca\Type\ZwrotPrzesylkiType $zwrotPrzesylki
-     *
      * @return self
      */
-    public function setZwrotPrzesylki(ZwrotPrzesylkiType $zwrotPrzesylki)
+    public function setZwrotPrzesylki(?\Abryb\ENadawca\Type\ZwrotPrzesylkiType $zwrotPrzesylki = null)
     {
         $this->zwrotPrzesylki = $zwrotPrzesylki;
-
         return $this;
     }
 }
+

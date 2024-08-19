@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetJednostkaOrganizacyjna\GetJednostkaOrganizacyjnaAType;
 
 /**
  * Class representing GetJednostkaOrganizacyjna
  */
-class GetJednostkaOrganizacyjna
+class GetJednostkaOrganizacyjna extends GetJednostkaOrganizacyjnaAType
 {
-    /**
-     * @var \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $jednostka
-     */
-    protected $jednostka;
-
-    /**
-     * Gets as jednostka
-     *
-     * @return \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType
-     */
-    public function getJednostka()
-    {
-        return $this->jednostka;
-    }
-
-    /**
-     * Sets a new jednostka
-     *
-     * @param \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $jednostka
-     *
-     * @return self
-     */
-    public function setJednostka(JednostkaOrganizacyjnaType $jednostka)
-    {
-        $this->jednostka = $jednostka;
-
-        return $this;
-    }
 }
+

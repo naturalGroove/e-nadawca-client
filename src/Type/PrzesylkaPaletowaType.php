@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaPaletowaType
+ *
  *
  * XSD Type: przesylkaPaletowaType
  */
@@ -14,159 +13,161 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
     /**
      * @var string $zawartosc
      */
-    protected $zawartosc;
+    protected $zawartosc = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var \DateTime $dataZaladunku
      */
-    protected $dataZaladunku;
+    protected $dataZaladunku = null;
 
     /**
      * @var \DateTime $dataDostawy
      */
-    protected $dataDostawy;
+    protected $dataDostawy = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var int $iloscZwracanychPaletEUR
      */
-    protected $iloscZwracanychPaletEUR;
+    protected $iloscZwracanychPaletEUR = null;
 
     /**
      * @var string $zalaczonaFV
      */
-    protected $zalaczonaFV;
+    protected $zalaczonaFV = null;
 
     /**
      * @var string $zalaczonyWZ
      */
-    protected $zalaczonyWZ;
+    protected $zalaczonyWZ = null;
 
     /**
      * @var string $zalaczoneInne
      */
-    protected $zalaczoneInne;
+    protected $zalaczoneInne = null;
 
     /**
      * @var string $zwracanaFV
      */
-    protected $zwracanaFV;
+    protected $zwracanaFV = null;
 
     /**
      * @var string $zwracanyWZ
      */
-    protected $zwracanyWZ;
+    protected $zwracanyWZ = null;
 
     /**
      * @var string $zwracaneInne
      */
-    protected $zwracaneInne;
+    protected $zwracaneInne = null;
 
     /**
      * @var string $powiadomienieNadawcy
      */
-    protected $powiadomienieNadawcy;
+    protected $powiadomienieNadawcy = null;
 
     /**
      * @var string $powiadomienieOdbiorcy
      */
-    protected $powiadomienieOdbiorcy;
+    protected $powiadomienieOdbiorcy = null;
 
     /**
      * @var bool $dostawaWSobote
      */
-    protected $dostawaWSobote;
+    protected $dostawaWSobote = null;
 
     /**
      * @var bool $przygotowanieDokumentowPrzewozowych
      */
-    protected $przygotowanieDokumentowPrzewozowych;
+    protected $przygotowanieDokumentowPrzewozowych = null;
 
     /**
      * @var bool $dostawaSamochodemDedykowanym
      */
-    protected $dostawaSamochodemDedykowanym;
+    protected $dostawaSamochodemDedykowanym = null;
 
     /**
      * @var bool $zmianaDanychAdresowych
      */
-    protected $zmianaDanychAdresowych;
+    protected $zmianaDanychAdresowych = null;
 
     /**
      * @var bool $ustalenieTerminuDostawy
      */
-    protected $ustalenieTerminuDostawy;
+    protected $ustalenieTerminuDostawy = null;
 
     /**
      * @var bool $samochodZWinda
      */
-    protected $samochodZWinda;
+    protected $samochodZWinda = null;
 
     /**
      * @var bool $zabranieOpakowania
      */
-    protected $zabranieOpakowania;
+    protected $zabranieOpakowania = null;
 
     /**
      * @var bool $wniesienie
      */
-    protected $wniesienie;
+    protected $wniesienie = null;
 
     /**
      * @var bool $awizoSMS
      */
-    protected $awizoSMS;
+    protected $awizoSMS = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $miejsceOdbioru
      */
-    protected $miejsceOdbioru;
+    protected $miejsceOdbioru = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $miejsceDoreczenia
      */
-    protected $miejsceDoreczenia;
+    protected $miejsceDoreczenia = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PaletaType $paleta
      */
-    protected $paleta;
+    protected $paleta = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PlatnikType $platnik
      */
-    protected $platnik;
+    protected $platnik = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PobranieType $pobranie
      */
-    protected $pobranie;
+    protected $pobranie = null;
 
     /**
      * @var \Abryb\ENadawca\Type\SubPrzesylkaPaletowaType[] $subPaleta
      */
     protected $subPaleta = [
+        
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\DaneSentType[] $daneSent
      */
     protected $daneSent = [
+        
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\AwizacjaType $awizacja
      */
-    protected $awizacja;
+    protected $awizacja = null;
 
     /**
      * Gets as zawartosc
@@ -182,13 +183,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zawartosc
      *
      * @param string $zawartosc
-     *
      * @return self
      */
     public function setZawartosc($zawartosc)
     {
         $this->zawartosc = $zawartosc;
-
         return $this;
     }
 
@@ -206,13 +205,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -229,12 +226,12 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
     /**
      * Sets a new dataZaladunku
      *
+     * @param \DateTime $dataZaladunku
      * @return self
      */
     public function setDataZaladunku(\DateTime $dataZaladunku)
     {
         $this->dataZaladunku = $dataZaladunku;
-
         return $this;
     }
 
@@ -251,12 +248,12 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
     /**
      * Sets a new dataDostawy
      *
+     * @param \DateTime $dataDostawy
      * @return self
      */
     public function setDataDostawy(\DateTime $dataDostawy)
     {
         $this->dataDostawy = $dataDostawy;
-
         return $this;
     }
 
@@ -274,13 +271,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -298,13 +293,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new iloscZwracanychPaletEUR
      *
      * @param int $iloscZwracanychPaletEUR
-     *
      * @return self
      */
     public function setIloscZwracanychPaletEUR($iloscZwracanychPaletEUR)
     {
         $this->iloscZwracanychPaletEUR = $iloscZwracanychPaletEUR;
-
         return $this;
     }
 
@@ -322,13 +315,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zalaczonaFV
      *
      * @param string $zalaczonaFV
-     *
      * @return self
      */
     public function setZalaczonaFV($zalaczonaFV)
     {
         $this->zalaczonaFV = $zalaczonaFV;
-
         return $this;
     }
 
@@ -346,13 +337,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zalaczonyWZ
      *
      * @param string $zalaczonyWZ
-     *
      * @return self
      */
     public function setZalaczonyWZ($zalaczonyWZ)
     {
         $this->zalaczonyWZ = $zalaczonyWZ;
-
         return $this;
     }
 
@@ -370,13 +359,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zalaczoneInne
      *
      * @param string $zalaczoneInne
-     *
      * @return self
      */
     public function setZalaczoneInne($zalaczoneInne)
     {
         $this->zalaczoneInne = $zalaczoneInne;
-
         return $this;
     }
 
@@ -394,13 +381,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zwracanaFV
      *
      * @param string $zwracanaFV
-     *
      * @return self
      */
     public function setZwracanaFV($zwracanaFV)
     {
         $this->zwracanaFV = $zwracanaFV;
-
         return $this;
     }
 
@@ -418,13 +403,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zwracanyWZ
      *
      * @param string $zwracanyWZ
-     *
      * @return self
      */
     public function setZwracanyWZ($zwracanyWZ)
     {
         $this->zwracanyWZ = $zwracanyWZ;
-
         return $this;
     }
 
@@ -442,13 +425,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zwracaneInne
      *
      * @param string $zwracaneInne
-     *
      * @return self
      */
     public function setZwracaneInne($zwracaneInne)
     {
         $this->zwracaneInne = $zwracaneInne;
-
         return $this;
     }
 
@@ -466,13 +447,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new powiadomienieNadawcy
      *
      * @param string $powiadomienieNadawcy
-     *
      * @return self
      */
     public function setPowiadomienieNadawcy($powiadomienieNadawcy)
     {
         $this->powiadomienieNadawcy = $powiadomienieNadawcy;
-
         return $this;
     }
 
@@ -490,13 +469,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new powiadomienieOdbiorcy
      *
      * @param string $powiadomienieOdbiorcy
-     *
      * @return self
      */
     public function setPowiadomienieOdbiorcy($powiadomienieOdbiorcy)
     {
         $this->powiadomienieOdbiorcy = $powiadomienieOdbiorcy;
-
         return $this;
     }
 
@@ -514,13 +491,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new dostawaWSobote
      *
      * @param bool $dostawaWSobote
-     *
      * @return self
      */
     public function setDostawaWSobote($dostawaWSobote)
     {
         $this->dostawaWSobote = $dostawaWSobote;
-
         return $this;
     }
 
@@ -538,13 +513,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new przygotowanieDokumentowPrzewozowych
      *
      * @param bool $przygotowanieDokumentowPrzewozowych
-     *
      * @return self
      */
     public function setPrzygotowanieDokumentowPrzewozowych($przygotowanieDokumentowPrzewozowych)
     {
         $this->przygotowanieDokumentowPrzewozowych = $przygotowanieDokumentowPrzewozowych;
-
         return $this;
     }
 
@@ -562,13 +535,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new dostawaSamochodemDedykowanym
      *
      * @param bool $dostawaSamochodemDedykowanym
-     *
      * @return self
      */
     public function setDostawaSamochodemDedykowanym($dostawaSamochodemDedykowanym)
     {
         $this->dostawaSamochodemDedykowanym = $dostawaSamochodemDedykowanym;
-
         return $this;
     }
 
@@ -586,13 +557,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zmianaDanychAdresowych
      *
      * @param bool $zmianaDanychAdresowych
-     *
      * @return self
      */
     public function setZmianaDanychAdresowych($zmianaDanychAdresowych)
     {
         $this->zmianaDanychAdresowych = $zmianaDanychAdresowych;
-
         return $this;
     }
 
@@ -610,13 +579,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new ustalenieTerminuDostawy
      *
      * @param bool $ustalenieTerminuDostawy
-     *
      * @return self
      */
     public function setUstalenieTerminuDostawy($ustalenieTerminuDostawy)
     {
         $this->ustalenieTerminuDostawy = $ustalenieTerminuDostawy;
-
         return $this;
     }
 
@@ -634,13 +601,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new samochodZWinda
      *
      * @param bool $samochodZWinda
-     *
      * @return self
      */
     public function setSamochodZWinda($samochodZWinda)
     {
         $this->samochodZWinda = $samochodZWinda;
-
         return $this;
     }
 
@@ -658,13 +623,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new zabranieOpakowania
      *
      * @param bool $zabranieOpakowania
-     *
      * @return self
      */
     public function setZabranieOpakowania($zabranieOpakowania)
     {
         $this->zabranieOpakowania = $zabranieOpakowania;
-
         return $this;
     }
 
@@ -682,13 +645,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new wniesienie
      *
      * @param bool $wniesienie
-     *
      * @return self
      */
     public function setWniesienie($wniesienie)
     {
         $this->wniesienie = $wniesienie;
-
         return $this;
     }
 
@@ -706,13 +667,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new awizoSMS
      *
      * @param bool $awizoSMS
-     *
      * @return self
      */
     public function setAwizoSMS($awizoSMS)
     {
         $this->awizoSMS = $awizoSMS;
-
         return $this;
     }
 
@@ -730,13 +689,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new miejsceOdbioru
      *
      * @param \Abryb\ENadawca\Type\AdresType $miejsceOdbioru
-     *
      * @return self
      */
-    public function setMiejsceOdbioru(AdresType $miejsceOdbioru)
+    public function setMiejsceOdbioru(?\Abryb\ENadawca\Type\AdresType $miejsceOdbioru = null)
     {
         $this->miejsceOdbioru = $miejsceOdbioru;
-
         return $this;
     }
 
@@ -754,13 +711,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new miejsceDoreczenia
      *
      * @param \Abryb\ENadawca\Type\AdresType $miejsceDoreczenia
-     *
      * @return self
      */
-    public function setMiejsceDoreczenia(AdresType $miejsceDoreczenia)
+    public function setMiejsceDoreczenia(?\Abryb\ENadawca\Type\AdresType $miejsceDoreczenia = null)
     {
         $this->miejsceDoreczenia = $miejsceDoreczenia;
-
         return $this;
     }
 
@@ -778,13 +733,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new paleta
      *
      * @param \Abryb\ENadawca\Type\PaletaType $paleta
-     *
      * @return self
      */
-    public function setPaleta(PaletaType $paleta)
+    public function setPaleta(\Abryb\ENadawca\Type\PaletaType $paleta)
     {
         $this->paleta = $paleta;
-
         return $this;
     }
 
@@ -802,13 +755,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new platnik
      *
      * @param \Abryb\ENadawca\Type\PlatnikType $platnik
-     *
      * @return self
      */
-    public function setPlatnik(PlatnikType $platnik)
+    public function setPlatnik(?\Abryb\ENadawca\Type\PlatnikType $platnik = null)
     {
         $this->platnik = $platnik;
-
         return $this;
     }
 
@@ -826,27 +777,23 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new pobranie
      *
      * @param \Abryb\ENadawca\Type\PobranieType $pobranie
-     *
      * @return self
      */
-    public function setPobranie(PobranieType $pobranie)
+    public function setPobranie(?\Abryb\ENadawca\Type\PobranieType $pobranie = null)
     {
         $this->pobranie = $pobranie;
-
         return $this;
     }
 
     /**
      * Adds as subPaleta
      *
-     * @param \Abryb\ENadawca\Type\SubPrzesylkaPaletowaType $subPaleta
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\SubPrzesylkaPaletowaType $subPaleta
      */
-    public function addToSubPaleta(SubPrzesylkaPaletowaType $subPaleta)
+    public function addToSubPaleta(\Abryb\ENadawca\Type\SubPrzesylkaPaletowaType $subPaleta)
     {
         $this->subPaleta[] = $subPaleta;
-
         return $this;
     }
 
@@ -854,7 +801,6 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * isset subPaleta
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetSubPaleta($index)
@@ -866,6 +812,7 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * unset subPaleta
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetSubPaleta($index)
     {
@@ -886,27 +833,23 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new subPaleta
      *
      * @param \Abryb\ENadawca\Type\SubPrzesylkaPaletowaType[] $subPaleta
-     *
      * @return self
      */
-    public function setSubPaleta(array $subPaleta)
+    public function setSubPaleta(array $subPaleta = null)
     {
         $this->subPaleta = $subPaleta;
-
         return $this;
     }
 
     /**
      * Adds as daneSent
      *
-     * @param \Abryb\ENadawca\Type\DaneSentType $daneSent
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\DaneSentType $daneSent
      */
-    public function addToDaneSent(DaneSentType $daneSent)
+    public function addToDaneSent(\Abryb\ENadawca\Type\DaneSentType $daneSent)
     {
         $this->daneSent[] = $daneSent;
-
         return $this;
     }
 
@@ -914,7 +857,6 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * isset daneSent
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetDaneSent($index)
@@ -926,6 +868,7 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * unset daneSent
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetDaneSent($index)
     {
@@ -946,13 +889,11 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new daneSent
      *
      * @param \Abryb\ENadawca\Type\DaneSentType[] $daneSent
-     *
      * @return self
      */
-    public function setDaneSent(array $daneSent)
+    public function setDaneSent(array $daneSent = null)
     {
         $this->daneSent = $daneSent;
-
         return $this;
     }
 
@@ -970,13 +911,12 @@ class PrzesylkaPaletowaType extends PrzesylkaRejestrowanaType
      * Sets a new awizacja
      *
      * @param \Abryb\ENadawca\Type\AwizacjaType $awizacja
-     *
      * @return self
      */
-    public function setAwizacja(AwizacjaType $awizacja)
+    public function setAwizacja(?\Abryb\ENadawca\Type\AwizacjaType $awizacja = null)
     {
         $this->awizacja = $awizacja;
-
         return $this;
     }
 }
+

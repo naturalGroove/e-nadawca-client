@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\HelloResponse\HelloResponseAType;
 
 /**
  * Class representing HelloResponse
  */
-class HelloResponse
+class HelloResponse extends HelloResponseAType
 {
-    /**
-     * @var string $out
-     */
-    protected $out;
-
-    /**
-     * Gets as out
-     *
-     * @return string
-     */
-    public function getOut()
-    {
-        return $this->out;
-    }
-
-    /**
-     * Sets a new out
-     *
-     * @param string $out
-     *
-     * @return self
-     */
-    public function setOut($out)
-    {
-        $this->out = $out;
-
-        return $this;
-    }
 }
+

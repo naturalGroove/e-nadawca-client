@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaPobraniowaType
+ *
  *
  * XSD Type: przesylkaPobraniowaType
  */
@@ -14,42 +13,42 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $iloscPotwierdzenOdbioru
      */
-    protected $iloscPotwierdzenOdbioru;
+    protected $iloscPotwierdzenOdbioru = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var string $gabaryt
      */
-    protected $gabaryt;
+    protected $gabaryt = null;
 
     /**
      * @var bool $ostroznie
      */
-    protected $ostroznie;
+    protected $ostroznie = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PobranieType $pobranie
      */
-    protected $pobranie;
+    protected $pobranie = null;
 
     /**
      * Gets as posteRestante
@@ -65,13 +64,11 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -89,13 +86,11 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new iloscPotwierdzenOdbioru
      *
      * @param int $iloscPotwierdzenOdbioru
-     *
      * @return self
      */
     public function setIloscPotwierdzenOdbioru($iloscPotwierdzenOdbioru)
     {
         $this->iloscPotwierdzenOdbioru = $iloscPotwierdzenOdbioru;
-
         return $this;
     }
 
@@ -113,13 +108,11 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -137,13 +130,11 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new gabaryt
      *
      * @param string $gabaryt
-     *
      * @return self
      */
     public function setGabaryt($gabaryt)
     {
         $this->gabaryt = $gabaryt;
-
         return $this;
     }
 
@@ -161,13 +152,11 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new ostroznie
      *
      * @param bool $ostroznie
-     *
      * @return self
      */
     public function setOstroznie($ostroznie)
     {
         $this->ostroznie = $ostroznie;
-
         return $this;
     }
 
@@ -185,13 +174,11 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -209,13 +196,11 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -233,13 +218,12 @@ class PrzesylkaPobraniowaType extends PrzesylkaRejestrowanaType
      * Sets a new pobranie
      *
      * @param \Abryb\ENadawca\Type\PobranieType $pobranie
-     *
      * @return self
      */
-    public function setPobranie(PobranieType $pobranie)
+    public function setPobranie(?\Abryb\ENadawca\Type\PobranieType $pobranie = null)
     {
         $this->pobranie = $pobranie;
-
         return $this;
     }
 }
+

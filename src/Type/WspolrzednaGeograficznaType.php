@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing WspolrzednaGeograficznaType
+ *
  *
  * XSD Type: wspolrzednaGeograficznaType
  */
@@ -14,22 +13,22 @@ class WspolrzednaGeograficznaType
     /**
      * @var float $dec
      */
-    protected $dec;
+    protected $dec = null;
 
     /**
      * @var int $stopien
      */
-    protected $stopien;
+    protected $stopien = null;
 
     /**
      * @var int $minuta
      */
-    protected $minuta;
+    protected $minuta = null;
 
     /**
      * @var float $sekunda
      */
-    protected $sekunda;
+    protected $sekunda = null;
 
     /**
      * Gets as dec
@@ -45,13 +44,11 @@ class WspolrzednaGeograficznaType
      * Sets a new dec
      *
      * @param float $dec
-     *
      * @return self
      */
     public function setDec($dec)
     {
         $this->dec = $dec;
-
         return $this;
     }
 
@@ -69,13 +66,11 @@ class WspolrzednaGeograficznaType
      * Sets a new stopien
      *
      * @param int $stopien
-     *
      * @return self
      */
     public function setStopien($stopien)
     {
         $this->stopien = $stopien;
-
         return $this;
     }
 
@@ -93,13 +88,11 @@ class WspolrzednaGeograficznaType
      * Sets a new minuta
      *
      * @param int $minuta
-     *
      * @return self
      */
     public function setMinuta($minuta)
     {
         $this->minuta = $minuta;
-
         return $this;
     }
 
@@ -117,13 +110,12 @@ class WspolrzednaGeograficznaType
      * Sets a new sekunda
      *
      * @param float $sekunda
-     *
      * @return self
      */
     public function setSekunda($sekunda)
     {
         $this->sekunda = $sekunda;
-
         return $this;
     }
 }
+

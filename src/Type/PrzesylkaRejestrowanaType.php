@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaRejestrowanaType
+ *
  *
  * XSD Type: przesylkaRejestrowanaType
  */
@@ -14,37 +13,42 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var string $sygnatura
      */
-    protected $sygnatura;
+    protected $sygnatura = null;
 
     /**
      * @var string $terminSprawy
      */
-    protected $terminSprawy;
+    protected $terminSprawy = null;
 
     /**
      * @var string $rodzaj
      */
-    protected $rodzaj;
+    protected $rodzaj = null;
+
+    /**
+     * @var bool $weryfikacjaPlatnosci
+     */
+    protected $weryfikacjaPlatnosci = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $adres
      */
-    protected $adres;
+    protected $adres = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $nadawca
      */
-    protected $nadawca;
+    protected $nadawca = null;
 
     /**
      * @var \Abryb\ENadawca\Type\RelatedToAllegroType $relatedToAllegro
      */
-    protected $relatedToAllegro;
+    protected $relatedToAllegro = null;
 
     /**
      * Gets as numerNadania
@@ -60,13 +64,11 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -84,13 +86,11 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
      * Sets a new sygnatura
      *
      * @param string $sygnatura
-     *
      * @return self
      */
     public function setSygnatura($sygnatura)
     {
         $this->sygnatura = $sygnatura;
-
         return $this;
     }
 
@@ -108,13 +108,11 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
      * Sets a new terminSprawy
      *
      * @param string $terminSprawy
-     *
      * @return self
      */
     public function setTerminSprawy($terminSprawy)
     {
         $this->terminSprawy = $terminSprawy;
-
         return $this;
     }
 
@@ -132,13 +130,33 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
      * Sets a new rodzaj
      *
      * @param string $rodzaj
-     *
      * @return self
      */
     public function setRodzaj($rodzaj)
     {
         $this->rodzaj = $rodzaj;
+        return $this;
+    }
 
+    /**
+     * Gets as weryfikacjaPlatnosci
+     *
+     * @return bool
+     */
+    public function getWeryfikacjaPlatnosci()
+    {
+        return $this->weryfikacjaPlatnosci;
+    }
+
+    /**
+     * Sets a new weryfikacjaPlatnosci
+     *
+     * @param bool $weryfikacjaPlatnosci
+     * @return self
+     */
+    public function setWeryfikacjaPlatnosci($weryfikacjaPlatnosci)
+    {
+        $this->weryfikacjaPlatnosci = $weryfikacjaPlatnosci;
         return $this;
     }
 
@@ -156,13 +174,11 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
      * Sets a new adres
      *
      * @param \Abryb\ENadawca\Type\AdresType $adres
-     *
      * @return self
      */
-    public function setAdres(AdresType $adres)
+    public function setAdres(?\Abryb\ENadawca\Type\AdresType $adres = null)
     {
         $this->adres = $adres;
-
         return $this;
     }
 
@@ -180,13 +196,11 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
      * Sets a new nadawca
      *
      * @param \Abryb\ENadawca\Type\AdresType $nadawca
-     *
      * @return self
      */
-    public function setNadawca(AdresType $nadawca)
+    public function setNadawca(?\Abryb\ENadawca\Type\AdresType $nadawca = null)
     {
         $this->nadawca = $nadawca;
-
         return $this;
     }
 
@@ -204,13 +218,12 @@ class PrzesylkaRejestrowanaType extends PrzesylkaType
      * Sets a new relatedToAllegro
      *
      * @param \Abryb\ENadawca\Type\RelatedToAllegroType $relatedToAllegro
-     *
      * @return self
      */
-    public function setRelatedToAllegro(RelatedToAllegroType $relatedToAllegro)
+    public function setRelatedToAllegro(?\Abryb\ENadawca\Type\RelatedToAllegroType $relatedToAllegro = null)
     {
         $this->relatedToAllegro = $relatedToAllegro;
-
         return $this;
     }
 }
+

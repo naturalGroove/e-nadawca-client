@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing SzczegolyDeklaracjiCelnejType
+ *
  *
  * XSD Type: szczegolyDeklaracjiCelnejType
  */
@@ -14,32 +13,32 @@ class SzczegolyDeklaracjiCelnejType
     /**
      * @var string $zawartosc
      */
-    protected $zawartosc;
+    protected $zawartosc = null;
 
     /**
      * @var float $ilosc
      */
-    protected $ilosc;
+    protected $ilosc = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var string $numerTaryfowy
      */
-    protected $numerTaryfowy;
+    protected $numerTaryfowy = null;
 
     /**
      * @var string $krajPochodzenia
      */
-    protected $krajPochodzenia;
+    protected $krajPochodzenia = null;
 
     /**
      * Gets as zawartosc
@@ -55,13 +54,11 @@ class SzczegolyDeklaracjiCelnejType
      * Sets a new zawartosc
      *
      * @param string $zawartosc
-     *
      * @return self
      */
     public function setZawartosc($zawartosc)
     {
         $this->zawartosc = $zawartosc;
-
         return $this;
     }
 
@@ -79,13 +76,11 @@ class SzczegolyDeklaracjiCelnejType
      * Sets a new ilosc
      *
      * @param float $ilosc
-     *
      * @return self
      */
     public function setIlosc($ilosc)
     {
         $this->ilosc = $ilosc;
-
         return $this;
     }
 
@@ -103,13 +98,11 @@ class SzczegolyDeklaracjiCelnejType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -127,13 +120,11 @@ class SzczegolyDeklaracjiCelnejType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -151,13 +142,11 @@ class SzczegolyDeklaracjiCelnejType
      * Sets a new numerTaryfowy
      *
      * @param string $numerTaryfowy
-     *
      * @return self
      */
     public function setNumerTaryfowy($numerTaryfowy)
     {
         $this->numerTaryfowy = $numerTaryfowy;
-
         return $this;
     }
 
@@ -175,13 +164,12 @@ class SzczegolyDeklaracjiCelnejType
      * Sets a new krajPochodzenia
      *
      * @param string $krajPochodzenia
-     *
      * @return self
      */
     public function setKrajPochodzenia($krajPochodzenia)
     {
         $this->krajPochodzenia = $krajPochodzenia;
-
         return $this;
     }
 }
+

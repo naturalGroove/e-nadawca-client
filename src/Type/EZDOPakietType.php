@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing EZDOPakietType
+ *
  *
  * XSD Type: EZDOPakietType
  */
@@ -14,17 +13,17 @@ class EZDOPakietType
     /**
      * @var int $idEZDOPakiet
      */
-    protected $idEZDOPakiet;
+    protected $idEZDOPakiet = null;
 
     /**
      * @var \DateTime $exported
      */
-    protected $exported;
+    protected $exported = null;
 
     /**
      * @var string $idEZDOFile
      */
-    protected $idEZDOFile;
+    protected $idEZDOFile = null;
 
     /**
      * Gets as idEZDOPakiet
@@ -40,13 +39,11 @@ class EZDOPakietType
      * Sets a new idEZDOPakiet
      *
      * @param int $idEZDOPakiet
-     *
      * @return self
      */
     public function setIdEZDOPakiet($idEZDOPakiet)
     {
         $this->idEZDOPakiet = $idEZDOPakiet;
-
         return $this;
     }
 
@@ -63,12 +60,12 @@ class EZDOPakietType
     /**
      * Sets a new exported
      *
+     * @param \DateTime $exported
      * @return self
      */
     public function setExported(\DateTime $exported)
     {
         $this->exported = $exported;
-
         return $this;
     }
 
@@ -86,13 +83,12 @@ class EZDOPakietType
      * Sets a new idEZDOFile
      *
      * @param string $idEZDOFile
-     *
      * @return self
      */
     public function setIdEZDOFile($idEZDOFile)
     {
         $this->idEZDOFile = $idEZDOFile;
-
         return $this;
     }
 }
+

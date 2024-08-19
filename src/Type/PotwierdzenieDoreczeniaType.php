@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PotwierdzenieDoreczeniaType
+ *
  *
  * XSD Type: potwierdzenieDoreczeniaType
  */
@@ -14,12 +13,12 @@ class PotwierdzenieDoreczeniaType
     /**
      * @var string $sposob
      */
-    protected $sposob;
+    protected $sposob = null;
 
     /**
      * @var string $kontakt
      */
-    protected $kontakt;
+    protected $kontakt = null;
 
     /**
      * Gets as sposob
@@ -35,13 +34,11 @@ class PotwierdzenieDoreczeniaType
      * Sets a new sposob
      *
      * @param string $sposob
-     *
      * @return self
      */
     public function setSposob($sposob)
     {
         $this->sposob = $sposob;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class PotwierdzenieDoreczeniaType
      * Sets a new kontakt
      *
      * @param string $kontakt
-     *
      * @return self
      */
     public function setKontakt($kontakt)
     {
         $this->kontakt = $kontakt;
-
         return $this;
     }
 }
+

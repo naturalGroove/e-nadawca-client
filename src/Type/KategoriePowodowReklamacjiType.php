@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing KategoriePowodowReklamacjiType
+ *
  *
  * XSD Type: kategoriePowodowReklamacjiType
  */
@@ -14,12 +13,13 @@ class KategoriePowodowReklamacjiType
     /**
      * @var string $nazwa
      */
-    protected $nazwa;
+    protected $nazwa = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PowodReklamacjiType[] $powodReklamacji
      */
     protected $powodReklamacji = [
+        
     ];
 
     /**
@@ -36,27 +36,23 @@ class KategoriePowodowReklamacjiType
      * Sets a new nazwa
      *
      * @param string $nazwa
-     *
      * @return self
      */
     public function setNazwa($nazwa)
     {
         $this->nazwa = $nazwa;
-
         return $this;
     }
 
     /**
      * Adds as powodReklamacji
      *
-     * @param \Abryb\ENadawca\Type\PowodReklamacjiType $powodReklamacji
-     *
      * @return self
+     * @param \Abryb\ENadawca\Type\PowodReklamacjiType $powodReklamacji
      */
-    public function addToPowodReklamacji(PowodReklamacjiType $powodReklamacji)
+    public function addToPowodReklamacji(\Abryb\ENadawca\Type\PowodReklamacjiType $powodReklamacji)
     {
         $this->powodReklamacji[] = $powodReklamacji;
-
         return $this;
     }
 
@@ -64,7 +60,6 @@ class KategoriePowodowReklamacjiType
      * isset powodReklamacji
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetPowodReklamacji($index)
@@ -76,6 +71,7 @@ class KategoriePowodowReklamacjiType
      * unset powodReklamacji
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetPowodReklamacji($index)
     {
@@ -96,13 +92,12 @@ class KategoriePowodowReklamacjiType
      * Sets a new powodReklamacji
      *
      * @param \Abryb\ENadawca\Type\PowodReklamacjiType[] $powodReklamacji
-     *
      * @return self
      */
     public function setPowodReklamacji(array $powodReklamacji)
     {
         $this->powodReklamacji = $powodReklamacji;
-
         return $this;
     }
 }
+

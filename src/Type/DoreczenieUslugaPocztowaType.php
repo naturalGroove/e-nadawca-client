@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing DoreczenieUslugaPocztowaType
+ *
  *
  * XSD Type: doreczenieUslugaPocztowaType
  */
@@ -14,22 +13,22 @@ class DoreczenieUslugaPocztowaType
     /**
      * @var \DateTime $oczekiwanyTerminDoreczenia
      */
-    protected $oczekiwanyTerminDoreczenia;
+    protected $oczekiwanyTerminDoreczenia = null;
 
     /**
      * @var string $oczekiwanaGodzinaDoreczenia
      */
-    protected $oczekiwanaGodzinaDoreczenia;
+    protected $oczekiwanaGodzinaDoreczenia = null;
 
     /**
      * @var bool $wSobote
      */
-    protected $wSobote;
+    protected $wSobote = null;
 
     /**
      * @var bool $doRakWlasnych
      */
-    protected $doRakWlasnych;
+    protected $doRakWlasnych = null;
 
     /**
      * Gets as oczekiwanyTerminDoreczenia
@@ -44,12 +43,12 @@ class DoreczenieUslugaPocztowaType
     /**
      * Sets a new oczekiwanyTerminDoreczenia
      *
+     * @param \DateTime $oczekiwanyTerminDoreczenia
      * @return self
      */
     public function setOczekiwanyTerminDoreczenia(\DateTime $oczekiwanyTerminDoreczenia)
     {
         $this->oczekiwanyTerminDoreczenia = $oczekiwanyTerminDoreczenia;
-
         return $this;
     }
 
@@ -67,13 +66,11 @@ class DoreczenieUslugaPocztowaType
      * Sets a new oczekiwanaGodzinaDoreczenia
      *
      * @param string $oczekiwanaGodzinaDoreczenia
-     *
      * @return self
      */
     public function setOczekiwanaGodzinaDoreczenia($oczekiwanaGodzinaDoreczenia)
     {
         $this->oczekiwanaGodzinaDoreczenia = $oczekiwanaGodzinaDoreczenia;
-
         return $this;
     }
 
@@ -91,13 +88,11 @@ class DoreczenieUslugaPocztowaType
      * Sets a new wSobote
      *
      * @param bool $wSobote
-     *
      * @return self
      */
     public function setWSobote($wSobote)
     {
         $this->wSobote = $wSobote;
-
         return $this;
     }
 
@@ -115,13 +110,12 @@ class DoreczenieUslugaPocztowaType
      * Sets a new doRakWlasnych
      *
      * @param bool $doRakWlasnych
-     *
      * @return self
      */
     public function setDoRakWlasnych($doRakWlasnych)
     {
         $this->doRakWlasnych = $doRakWlasnych;
-
         return $this;
     }
 }
+

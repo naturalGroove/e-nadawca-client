@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ShopEZwrotyInfoType
+ *
  *
  * XSD Type: shopEZwrotyInfoType
  */
@@ -14,22 +13,22 @@ class ShopEZwrotyInfoType
     /**
      * @var int $idShop
      */
-    protected $idShop;
+    protected $idShop = null;
 
     /**
      * @var string $przyjaznaNazwa
      */
-    protected $przyjaznaNazwa;
+    protected $przyjaznaNazwa = null;
 
     /**
      * @var bool $availableOnWebsite
      */
-    protected $availableOnWebsite;
+    protected $availableOnWebsite = null;
 
     /**
      * @var string $nip
      */
-    protected $nip;
+    protected $nip = null;
 
     /**
      * Gets as idShop
@@ -45,13 +44,11 @@ class ShopEZwrotyInfoType
      * Sets a new idShop
      *
      * @param int $idShop
-     *
      * @return self
      */
     public function setIdShop($idShop)
     {
         $this->idShop = $idShop;
-
         return $this;
     }
 
@@ -69,13 +66,11 @@ class ShopEZwrotyInfoType
      * Sets a new przyjaznaNazwa
      *
      * @param string $przyjaznaNazwa
-     *
      * @return self
      */
     public function setPrzyjaznaNazwa($przyjaznaNazwa)
     {
         $this->przyjaznaNazwa = $przyjaznaNazwa;
-
         return $this;
     }
 
@@ -93,13 +88,11 @@ class ShopEZwrotyInfoType
      * Sets a new availableOnWebsite
      *
      * @param bool $availableOnWebsite
-     *
      * @return self
      */
     public function setAvailableOnWebsite($availableOnWebsite)
     {
         $this->availableOnWebsite = $availableOnWebsite;
-
         return $this;
     }
 
@@ -117,13 +110,12 @@ class ShopEZwrotyInfoType
      * Sets a new nip
      *
      * @param string $nip
-     *
      * @return self
      */
     public function setNip($nip)
     {
         $this->nip = $nip;
-
         return $this;
     }
 }
+

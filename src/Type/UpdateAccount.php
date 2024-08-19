@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\UpdateAccount\UpdateAccountAType;
 
 /**
  * Class representing UpdateAccount
  */
-class UpdateAccount
+class UpdateAccount extends UpdateAccountAType
 {
-    /**
-     * @var \Abryb\ENadawca\Type\AccountType $account
-     */
-    protected $account;
-
-    /**
-     * Gets as account
-     *
-     * @return \Abryb\ENadawca\Type\AccountType
-     */
-    public function getAccount()
-    {
-        return $this->account;
-    }
-
-    /**
-     * Sets a new account
-     *
-     * @param \Abryb\ENadawca\Type\AccountType $account
-     *
-     * @return self
-     */
-    public function setAccount(AccountType $account)
-    {
-        $this->account = $account;
-
-        return $this;
-    }
 }
+

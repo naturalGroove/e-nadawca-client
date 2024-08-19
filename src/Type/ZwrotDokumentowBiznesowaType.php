@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ZwrotDokumentowBiznesowaType
+ *
  *
  * XSD Type: zwrotDokumentowBiznesowaType
  */
@@ -14,12 +13,12 @@ class ZwrotDokumentowBiznesowaType
     /**
      * @var string $rodzaj
      */
-    protected $rodzaj;
+    protected $rodzaj = null;
 
     /**
      * @var int $idDokumentyZwrotneAdresy
      */
-    protected $idDokumentyZwrotneAdresy;
+    protected $idDokumentyZwrotneAdresy = null;
 
     /**
      * Gets as rodzaj
@@ -35,13 +34,11 @@ class ZwrotDokumentowBiznesowaType
      * Sets a new rodzaj
      *
      * @param string $rodzaj
-     *
      * @return self
      */
     public function setRodzaj($rodzaj)
     {
         $this->rodzaj = $rodzaj;
-
         return $this;
     }
 
@@ -59,13 +56,12 @@ class ZwrotDokumentowBiznesowaType
      * Sets a new idDokumentyZwrotneAdresy
      *
      * @param int $idDokumentyZwrotneAdresy
-     *
      * @return self
      */
     public function setIdDokumentyZwrotneAdresy($idDokumentyZwrotneAdresy)
     {
         $this->idDokumentyZwrotneAdresy = $idDokumentyZwrotneAdresy;
-
         return $this;
     }
 }
+

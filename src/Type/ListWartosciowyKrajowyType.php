@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing ListWartosciowyKrajowyType
+ *
  *
  * XSD Type: listWartosciowyKrajowyType
  */
@@ -14,49 +13,57 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * @var int $wartosc
      */
-    protected $wartosc;
+    protected $wartosc = null;
 
     /**
      * @var int $iloscPotwierdzenOdbioru
      */
-    protected $iloscPotwierdzenOdbioru;
+    protected $iloscPotwierdzenOdbioru = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * Format przesyłki
      *
      * @var string $format
      */
-    protected $format;
+    protected $format = null;
 
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var string $numerWewnetrznyPrzesylki
      */
-    protected $numerWewnetrznyPrzesylki;
+    protected $numerWewnetrznyPrzesylki = null;
 
     /**
      * @var bool $egzemplarzBiblioteczny
      */
-    protected $egzemplarzBiblioteczny;
+    protected $egzemplarzBiblioteczny = null;
 
     /**
      * @var bool $dlaOciemnialych
      */
-    protected $dlaOciemnialych;
+    protected $dlaOciemnialych = null;
+
+    /**
+     * Identifier library for legal deposit from
+     *  list downloaded using the getLibrariesForLegalDeposits method
+     *
+     * @var string $idLibraryForLegalDeposit
+     */
+    protected $idLibraryForLegalDeposit = null;
 
     /**
      * Gets as posteRestante
@@ -72,13 +79,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -96,13 +101,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new wartosc
      *
      * @param int $wartosc
-     *
      * @return self
      */
     public function setWartosc($wartosc)
     {
         $this->wartosc = $wartosc;
-
         return $this;
     }
 
@@ -120,13 +123,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new iloscPotwierdzenOdbioru
      *
      * @param int $iloscPotwierdzenOdbioru
-     *
      * @return self
      */
     public function setIloscPotwierdzenOdbioru($iloscPotwierdzenOdbioru)
     {
         $this->iloscPotwierdzenOdbioru = $iloscPotwierdzenOdbioru;
-
         return $this;
     }
 
@@ -144,13 +145,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -172,13 +171,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Format przesyłki
      *
      * @param string $format
-     *
      * @return self
      */
     public function setFormat($format)
     {
         $this->format = $format;
-
         return $this;
     }
 
@@ -196,13 +193,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -220,13 +215,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new numerWewnetrznyPrzesylki
      *
      * @param string $numerWewnetrznyPrzesylki
-     *
      * @return self
      */
     public function setNumerWewnetrznyPrzesylki($numerWewnetrznyPrzesylki)
     {
         $this->numerWewnetrznyPrzesylki = $numerWewnetrznyPrzesylki;
-
         return $this;
     }
 
@@ -244,13 +237,11 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new egzemplarzBiblioteczny
      *
      * @param bool $egzemplarzBiblioteczny
-     *
      * @return self
      */
     public function setEgzemplarzBiblioteczny($egzemplarzBiblioteczny)
     {
         $this->egzemplarzBiblioteczny = $egzemplarzBiblioteczny;
-
         return $this;
     }
 
@@ -268,13 +259,40 @@ class ListWartosciowyKrajowyType extends PrzesylkaRejestrowanaType
      * Sets a new dlaOciemnialych
      *
      * @param bool $dlaOciemnialych
-     *
      * @return self
      */
     public function setDlaOciemnialych($dlaOciemnialych)
     {
         $this->dlaOciemnialych = $dlaOciemnialych;
+        return $this;
+    }
 
+    /**
+     * Gets as idLibraryForLegalDeposit
+     *
+     * Identifier library for legal deposit from
+     *  list downloaded using the getLibrariesForLegalDeposits method
+     *
+     * @return string
+     */
+    public function getIdLibraryForLegalDeposit()
+    {
+        return $this->idLibraryForLegalDeposit;
+    }
+
+    /**
+     * Sets a new idLibraryForLegalDeposit
+     *
+     * Identifier library for legal deposit from
+     *  list downloaded using the getLibrariesForLegalDeposits method
+     *
+     * @param string $idLibraryForLegalDeposit
+     * @return self
+     */
+    public function setIdLibraryForLegalDeposit($idLibraryForLegalDeposit)
+    {
+        $this->idLibraryForLegalDeposit = $idLibraryForLegalDeposit;
         return $this;
     }
 }
+

@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\UpdateShopEZwroty\UpdateShopEZwrotyAType;
 
 /**
  * Class representing UpdateShopEZwroty
  */
-class UpdateShopEZwroty
+class UpdateShopEZwroty extends UpdateShopEZwrotyAType
 {
-    /**
-     * @var \Abryb\ENadawca\Type\ShopEZwrotyType $shop
-     */
-    protected $shop;
-
-    /**
-     * Gets as shop
-     *
-     * @return \Abryb\ENadawca\Type\ShopEZwrotyType
-     */
-    public function getShop()
-    {
-        return $this->shop;
-    }
-
-    /**
-     * Sets a new shop
-     *
-     * @param \Abryb\ENadawca\Type\ShopEZwrotyType $shop
-     *
-     * @return self
-     */
-    public function setShop(ShopEZwrotyType $shop)
-    {
-        $this->shop = $shop;
-
-        return $this;
-    }
 }
+

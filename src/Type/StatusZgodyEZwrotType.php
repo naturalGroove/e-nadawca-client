@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing StatusZgodyEZwrotType
+ *
  *
  * XSD Type: statusZgodyEZwrotType
  */
@@ -14,34 +13,35 @@ class StatusZgodyEZwrotType
     /**
      * @var string $guidZgodaEZwrot
      */
-    protected $guidZgodaEZwrot;
+    protected $guidZgodaEZwrot = null;
 
     /**
      * @var string $status
      */
-    protected $status;
+    protected $status = null;
 
     /**
      * @var bool $platnoscZaPrzesylke
      */
-    protected $platnoscZaPrzesylke;
+    protected $platnoscZaPrzesylke = null;
 
     /**
      * Kwota w groszach
      *
      * @var int $kosztKontrahenta
      */
-    protected $kosztKontrahenta;
+    protected $kosztKontrahenta = null;
 
     /**
      * @var \DateTime $dataWygasnieciaZgody
      */
-    protected $dataWygasnieciaZgody;
+    protected $dataWygasnieciaZgody = null;
 
     /**
      * @var string[] $eZwrotPrzesylki
      */
     protected $eZwrotPrzesylki = [
+        
     ];
 
     /**
@@ -58,13 +58,11 @@ class StatusZgodyEZwrotType
      * Sets a new guidZgodaEZwrot
      *
      * @param string $guidZgodaEZwrot
-     *
      * @return self
      */
     public function setGuidZgodaEZwrot($guidZgodaEZwrot)
     {
         $this->guidZgodaEZwrot = $guidZgodaEZwrot;
-
         return $this;
     }
 
@@ -82,13 +80,11 @@ class StatusZgodyEZwrotType
      * Sets a new status
      *
      * @param string $status
-     *
      * @return self
      */
     public function setStatus($status)
     {
         $this->status = $status;
-
         return $this;
     }
 
@@ -106,13 +102,11 @@ class StatusZgodyEZwrotType
      * Sets a new platnoscZaPrzesylke
      *
      * @param bool $platnoscZaPrzesylke
-     *
      * @return self
      */
     public function setPlatnoscZaPrzesylke($platnoscZaPrzesylke)
     {
         $this->platnoscZaPrzesylke = $platnoscZaPrzesylke;
-
         return $this;
     }
 
@@ -134,13 +128,11 @@ class StatusZgodyEZwrotType
      * Kwota w groszach
      *
      * @param int $kosztKontrahenta
-     *
      * @return self
      */
     public function setKosztKontrahenta($kosztKontrahenta)
     {
         $this->kosztKontrahenta = $kosztKontrahenta;
-
         return $this;
     }
 
@@ -157,26 +149,24 @@ class StatusZgodyEZwrotType
     /**
      * Sets a new dataWygasnieciaZgody
      *
+     * @param \DateTime $dataWygasnieciaZgody
      * @return self
      */
     public function setDataWygasnieciaZgody(\DateTime $dataWygasnieciaZgody)
     {
         $this->dataWygasnieciaZgody = $dataWygasnieciaZgody;
-
         return $this;
     }
 
     /**
      * Adds as eZwrotPrzesylki
      *
-     * @param string $eZwrotPrzesylki
-     *
      * @return self
+     * @param string $eZwrotPrzesylki
      */
     public function addToEZwrotPrzesylki($eZwrotPrzesylki)
     {
         $this->eZwrotPrzesylki[] = $eZwrotPrzesylki;
-
         return $this;
     }
 
@@ -184,7 +174,6 @@ class StatusZgodyEZwrotType
      * isset eZwrotPrzesylki
      *
      * @param int|string $index
-     *
      * @return bool
      */
     public function issetEZwrotPrzesylki($index)
@@ -196,6 +185,7 @@ class StatusZgodyEZwrotType
      * unset eZwrotPrzesylki
      *
      * @param int|string $index
+     * @return void
      */
     public function unsetEZwrotPrzesylki($index)
     {
@@ -216,13 +206,12 @@ class StatusZgodyEZwrotType
      * Sets a new eZwrotPrzesylki
      *
      * @param string $eZwrotPrzesylki
-     *
      * @return self
      */
     public function setEZwrotPrzesylki(array $eZwrotPrzesylki)
     {
         $this->eZwrotPrzesylki = $eZwrotPrzesylki;
-
         return $this;
     }
 }
+

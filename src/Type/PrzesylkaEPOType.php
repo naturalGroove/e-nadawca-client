@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing PrzesylkaEPOType
+ *
  *
  * XSD Type: przesylkaEPOType
  */
@@ -14,32 +13,32 @@ class PrzesylkaEPOType
     /**
      * @var string $guid
      */
-    protected $guid;
+    protected $guid = null;
 
     /**
      * @var string $numerNadania
      */
-    protected $numerNadania;
+    protected $numerNadania = null;
 
     /**
      * @var string $statusEPO
      */
-    protected $statusEPO;
+    protected $statusEPO = null;
 
     /**
      * @var \Abryb\ENadawca\Type\EPOInfoType $ePOInfo
      */
-    protected $ePOInfo;
+    protected $ePOInfo = null;
 
     /**
-     * @var mixed $biometricSignatureContent
+     * @var string $biometricSignatureContent
      */
-    protected $biometricSignatureContent;
+    protected $biometricSignatureContent = null;
 
     /**
      * @var int $version
      */
-    protected $version;
+    protected $version = null;
 
     /**
      * Gets as guid
@@ -55,13 +54,11 @@ class PrzesylkaEPOType
      * Sets a new guid
      *
      * @param string $guid
-     *
      * @return self
      */
     public function setGuid($guid)
     {
         $this->guid = $guid;
-
         return $this;
     }
 
@@ -79,13 +76,11 @@ class PrzesylkaEPOType
      * Sets a new numerNadania
      *
      * @param string $numerNadania
-     *
      * @return self
      */
     public function setNumerNadania($numerNadania)
     {
         $this->numerNadania = $numerNadania;
-
         return $this;
     }
 
@@ -103,13 +98,11 @@ class PrzesylkaEPOType
      * Sets a new statusEPO
      *
      * @param string $statusEPO
-     *
      * @return self
      */
     public function setStatusEPO($statusEPO)
     {
         $this->statusEPO = $statusEPO;
-
         return $this;
     }
 
@@ -127,18 +120,18 @@ class PrzesylkaEPOType
      * Sets a new ePOInfo
      *
      * @param \Abryb\ENadawca\Type\EPOInfoType $ePOInfo
-     *
      * @return self
      */
-    public function setEPOInfo(EPOInfoType $ePOInfo)
+    public function setEPOInfo(?\Abryb\ENadawca\Type\EPOInfoType $ePOInfo = null)
     {
         $this->ePOInfo = $ePOInfo;
-
         return $this;
     }
 
     /**
      * Gets as biometricSignatureContent
+     *
+     * @return string
      */
     public function getBiometricSignatureContent()
     {
@@ -148,12 +141,12 @@ class PrzesylkaEPOType
     /**
      * Sets a new biometricSignatureContent
      *
+     * @param string $biometricSignatureContent
      * @return self
      */
     public function setBiometricSignatureContent($biometricSignatureContent)
     {
         $this->biometricSignatureContent = $biometricSignatureContent;
-
         return $this;
     }
 
@@ -171,13 +164,12 @@ class PrzesylkaEPOType
      * Sets a new version
      *
      * @param int $version
-     *
      * @return self
      */
     public function setVersion($version)
     {
         $this->version = $version;
-
         return $this;
     }
 }
+

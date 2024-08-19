@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
  * Class representing GlobalExpresType
+ *
  *
  * XSD Type: globalExpresType
  */
@@ -14,54 +13,54 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
     /**
      * @var int $masa
      */
-    protected $masa;
+    protected $masa = null;
 
     /**
      * @var bool $posteRestante
      */
-    protected $posteRestante;
+    protected $posteRestante = null;
 
     /**
      * Element określający zawartość przesyłki.
-     * Aktualnie dopuszczalne wartości:
-     * KORESPONDENCJA
-     * DOKUMENTY_PONIZEJ_250G
-     * DOKUMENTY_POWYZEJ_250G
-     * TOWARY
+     *  Aktualnie dopuszczalne wartości:
+     *  KORESPONDENCJA
+     *  DOKUMENTY_PONIZEJ_250G
+     *  DOKUMENTY_POWYZEJ_250G
+     *  TOWARY
      *
      * @var string $zawartosc
      */
-    protected $zawartosc;
+    protected $zawartosc = null;
 
     /**
      * @var string $kategoria
      */
-    protected $kategoria;
+    protected $kategoria = null;
 
     /**
      * @var string $numerPrzesylkiKlienta
      */
-    protected $numerPrzesylkiKlienta;
+    protected $numerPrzesylkiKlienta = null;
 
     /**
      * @var \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
      */
-    protected $ubezpieczenie;
+    protected $ubezpieczenie = null;
 
     /**
      * @var \Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia
      */
-    protected $potwierdzenieDoreczenia;
+    protected $potwierdzenieDoreczenia = null;
 
     /**
      * @var \Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2
      */
-    protected $deklaracjaCelna2;
+    protected $deklaracjaCelna2 = null;
 
     /**
      * @var \Abryb\ENadawca\Type\SposobDoreczeniaType $sposobDoreczenia
      */
-    protected $sposobDoreczenia;
+    protected $sposobDoreczenia = null;
 
     /**
      * Gets as masa
@@ -77,13 +76,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new masa
      *
      * @param int $masa
-     *
      * @return self
      */
     public function setMasa($masa)
     {
         $this->masa = $masa;
-
         return $this;
     }
 
@@ -101,13 +98,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new posteRestante
      *
      * @param bool $posteRestante
-     *
      * @return self
      */
     public function setPosteRestante($posteRestante)
     {
         $this->posteRestante = $posteRestante;
-
         return $this;
     }
 
@@ -115,11 +110,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Gets as zawartosc
      *
      * Element określający zawartość przesyłki.
-     * Aktualnie dopuszczalne wartości:
-     * KORESPONDENCJA
-     * DOKUMENTY_PONIZEJ_250G
-     * DOKUMENTY_POWYZEJ_250G
-     * TOWARY
+     *  Aktualnie dopuszczalne wartości:
+     *  KORESPONDENCJA
+     *  DOKUMENTY_PONIZEJ_250G
+     *  DOKUMENTY_POWYZEJ_250G
+     *  TOWARY
      *
      * @return string
      */
@@ -132,20 +127,18 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new zawartosc
      *
      * Element określający zawartość przesyłki.
-     * Aktualnie dopuszczalne wartości:
-     * KORESPONDENCJA
-     * DOKUMENTY_PONIZEJ_250G
-     * DOKUMENTY_POWYZEJ_250G
-     * TOWARY
+     *  Aktualnie dopuszczalne wartości:
+     *  KORESPONDENCJA
+     *  DOKUMENTY_PONIZEJ_250G
+     *  DOKUMENTY_POWYZEJ_250G
+     *  TOWARY
      *
      * @param string $zawartosc
-     *
      * @return self
      */
     public function setZawartosc($zawartosc)
     {
         $this->zawartosc = $zawartosc;
-
         return $this;
     }
 
@@ -163,13 +156,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new kategoria
      *
      * @param string $kategoria
-     *
      * @return self
      */
     public function setKategoria($kategoria)
     {
         $this->kategoria = $kategoria;
-
         return $this;
     }
 
@@ -187,13 +178,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new numerPrzesylkiKlienta
      *
      * @param string $numerPrzesylkiKlienta
-     *
      * @return self
      */
     public function setNumerPrzesylkiKlienta($numerPrzesylkiKlienta)
     {
         $this->numerPrzesylkiKlienta = $numerPrzesylkiKlienta;
-
         return $this;
     }
 
@@ -211,13 +200,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new ubezpieczenie
      *
      * @param \Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie
-     *
      * @return self
      */
-    public function setUbezpieczenie(UbezpieczenieType $ubezpieczenie)
+    public function setUbezpieczenie(?\Abryb\ENadawca\Type\UbezpieczenieType $ubezpieczenie = null)
     {
         $this->ubezpieczenie = $ubezpieczenie;
-
         return $this;
     }
 
@@ -235,13 +222,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new potwierdzenieDoreczenia
      *
      * @param \Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia
-     *
      * @return self
      */
-    public function setPotwierdzenieDoreczenia(PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia)
+    public function setPotwierdzenieDoreczenia(?\Abryb\ENadawca\Type\PotwierdzenieDoreczeniaType $potwierdzenieDoreczenia = null)
     {
         $this->potwierdzenieDoreczenia = $potwierdzenieDoreczenia;
-
         return $this;
     }
 
@@ -259,13 +244,11 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new deklaracjaCelna2
      *
      * @param \Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2
-     *
      * @return self
      */
-    public function setDeklaracjaCelna2(DeklaracjaCelna2Type $deklaracjaCelna2)
+    public function setDeklaracjaCelna2(?\Abryb\ENadawca\Type\DeklaracjaCelna2Type $deklaracjaCelna2 = null)
     {
         $this->deklaracjaCelna2 = $deklaracjaCelna2;
-
         return $this;
     }
 
@@ -283,13 +266,12 @@ class GlobalExpresType extends PrzesylkaRejestrowanaType
      * Sets a new sposobDoreczenia
      *
      * @param \Abryb\ENadawca\Type\SposobDoreczeniaType $sposobDoreczenia
-     *
      * @return self
      */
-    public function setSposobDoreczenia(SposobDoreczeniaType $sposobDoreczenia)
+    public function setSposobDoreczenia(?\Abryb\ENadawca\Type\SposobDoreczeniaType $sposobDoreczenia = null)
     {
         $this->sposobDoreczenia = $sposobDoreczenia;
-
         return $this;
     }
 }
+

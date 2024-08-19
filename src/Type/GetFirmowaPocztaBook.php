@@ -1,40 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
+
+use Abryb\ENadawca\Type\GetFirmowaPocztaBook\GetFirmowaPocztaBookAType;
 
 /**
  * Class representing GetFirmowaPocztaBook
  */
-class GetFirmowaPocztaBook
+class GetFirmowaPocztaBook extends GetFirmowaPocztaBookAType
 {
-    /**
-     * @var int $idEnvelope
-     */
-    protected $idEnvelope;
-
-    /**
-     * Gets as idEnvelope
-     *
-     * @return int
-     */
-    public function getIdEnvelope()
-    {
-        return $this->idEnvelope;
-    }
-
-    /**
-     * Sets a new idEnvelope
-     *
-     * @param int $idEnvelope
-     *
-     * @return self
-     */
-    public function setIdEnvelope($idEnvelope)
-    {
-        $this->idEnvelope = $idEnvelope;
-
-        return $this;
-    }
 }
+

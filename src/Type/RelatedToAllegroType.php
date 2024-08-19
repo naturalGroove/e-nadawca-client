@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Abryb\ENadawca\Type;
 
 /**
@@ -19,33 +17,35 @@ class RelatedToAllegroType
      *
      * @var string $id
      */
-    protected $id;
+    protected $id = null;
 
     /**
      * Identyfikator sprzedającego w serwisie Allegro.
      *
      * @var string $sellerId
      */
-    protected $sellerId;
+    protected $sellerId = null;
 
     /**
      * Źródło identyfikatora: MS - Menedżer
-     *  Sprzedaży Allegro, WEB_API - WebAPI Allegro,
+     *  Sprzedaży
+     *  Allegro, WEB_API - WebAPI Allegro,
      *  REST_API - RestAPI Allegro.
      *
      * @var string $channel
      */
-    protected $channel;
+    protected $channel = null;
 
     /**
      * Identyfikator rodzaju dostawy, gdzie dla
      *  źródła: MS - nazwa rodzaju dostawy, WEB_API
-     *  - id postaci liczby, REST_API - id postaci
+     *  - id postaci liczby,
+     *  REST_API - id postaci
      *  guid
      *
      * @var string $deliveryMethod
      */
-    protected $deliveryMethod;
+    protected $deliveryMethod = null;
 
     /**
      * Gets as id
@@ -67,13 +67,11 @@ class RelatedToAllegroType
      *  (RestAPI)
      *
      * @param string $id
-     *
      * @return self
      */
     public function setId($id)
     {
         $this->id = $id;
-
         return $this;
     }
 
@@ -95,13 +93,11 @@ class RelatedToAllegroType
      * Identyfikator sprzedającego w serwisie Allegro.
      *
      * @param string $sellerId
-     *
      * @return self
      */
     public function setSellerId($sellerId)
     {
         $this->sellerId = $sellerId;
-
         return $this;
     }
 
@@ -109,7 +105,8 @@ class RelatedToAllegroType
      * Gets as channel
      *
      * Źródło identyfikatora: MS - Menedżer
-     *  Sprzedaży Allegro, WEB_API - WebAPI Allegro,
+     *  Sprzedaży
+     *  Allegro, WEB_API - WebAPI Allegro,
      *  REST_API - RestAPI Allegro.
      *
      * @return string
@@ -123,17 +120,16 @@ class RelatedToAllegroType
      * Sets a new channel
      *
      * Źródło identyfikatora: MS - Menedżer
-     *  Sprzedaży Allegro, WEB_API - WebAPI Allegro,
+     *  Sprzedaży
+     *  Allegro, WEB_API - WebAPI Allegro,
      *  REST_API - RestAPI Allegro.
      *
      * @param string $channel
-     *
      * @return self
      */
     public function setChannel($channel)
     {
         $this->channel = $channel;
-
         return $this;
     }
 
@@ -142,7 +138,8 @@ class RelatedToAllegroType
      *
      * Identyfikator rodzaju dostawy, gdzie dla
      *  źródła: MS - nazwa rodzaju dostawy, WEB_API
-     *  - id postaci liczby, REST_API - id postaci
+     *  - id postaci liczby,
+     *  REST_API - id postaci
      *  guid
      *
      * @return string
@@ -157,17 +154,17 @@ class RelatedToAllegroType
      *
      * Identyfikator rodzaju dostawy, gdzie dla
      *  źródła: MS - nazwa rodzaju dostawy, WEB_API
-     *  - id postaci liczby, REST_API - id postaci
+     *  - id postaci liczby,
+     *  REST_API - id postaci
      *  guid
      *
      * @param string $deliveryMethod
-     *
      * @return self
      */
     public function setDeliveryMethod($deliveryMethod)
     {
         $this->deliveryMethod = $deliveryMethod;
-
         return $this;
     }
 }
+
