@@ -10,7 +10,7 @@ class GetPlacowkiPocztoweAType
     /**
      * @var string $idWojewodztwo
      */
-    private $idWojewodztwo = null;
+    protected $idWojewodztwo = null;
 
     /**
      * Gets as idWojewodztwo

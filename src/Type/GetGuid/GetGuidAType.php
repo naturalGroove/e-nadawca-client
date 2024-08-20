@@ -10,7 +10,7 @@ class GetGuidAType
     /**
      * @var int $ilosc
      */
-    private $ilosc = null;
+    protected $ilosc = null;
 
     /**
      * Gets as ilosc

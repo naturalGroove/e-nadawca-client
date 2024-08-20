@@ -10,7 +10,7 @@ class UpdateParcelContentResponseAType
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

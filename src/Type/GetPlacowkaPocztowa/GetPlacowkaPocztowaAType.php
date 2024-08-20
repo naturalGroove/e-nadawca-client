@@ -10,7 +10,7 @@ class GetPlacowkaPocztowaAType
     /**
      * @var int[] $pni
      */
-    private $pni = [
+    protected $pni = [
         
     ];
 

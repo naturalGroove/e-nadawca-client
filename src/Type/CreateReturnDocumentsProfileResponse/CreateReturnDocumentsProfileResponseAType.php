@@ -10,17 +10,17 @@ class CreateReturnDocumentsProfileResponseAType
     /**
      * @var bool $result
      */
-    private $result = null;
+    protected $result = null;
 
     /**
      * @var int $idProfile
      */
-    private $idProfile = null;
+    protected $idProfile = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

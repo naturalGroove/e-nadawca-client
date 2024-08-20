@@ -10,7 +10,7 @@ class GetParcelContentListAType
     /**
      * @var int $idKarta
      */
-    private $idKarta = null;
+    protected $idKarta = null;
 
     /**
      * Gets as idKarta

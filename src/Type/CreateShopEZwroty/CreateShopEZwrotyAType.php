@@ -10,7 +10,7 @@ class CreateShopEZwrotyAType
     /**
      * @var \Abryb\ENadawca\Type\ShopEZwrotyType $shop
      */
-    private $shop = null;
+    protected $shop = null;
 
     /**
      * Gets as shop

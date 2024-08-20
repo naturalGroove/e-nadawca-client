@@ -10,7 +10,7 @@ class GetAddressLabelAType
     /**
      * @var int $idEnvelope
      */
-    private $idEnvelope = null;
+    protected $idEnvelope = null;
 
     /**
      * Gets as idEnvelope

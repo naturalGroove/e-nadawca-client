@@ -10,7 +10,7 @@ class GetUrzedyWydajaceEPrzesylkiResponseAType
     /**
      * @var \Abryb\ENadawca\Type\UrzadWydaniaEPrzesylkiType[] $urzadWydaniaEPrzesylki
      */
-    private $urzadWydaniaEPrzesylki = [
+    protected $urzadWydaniaEPrzesylki = [
         
     ];
 

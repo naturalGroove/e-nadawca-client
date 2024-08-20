@@ -10,7 +10,7 @@ class GetChecklistTemplateListAType
     /**
      * @var int[] $idChecklistTemplate
      */
-    private $idChecklistTemplate = [
+    protected $idChecklistTemplate = [
         
     ];
 

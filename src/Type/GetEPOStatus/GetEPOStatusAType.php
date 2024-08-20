@@ -18,24 +18,24 @@ class GetEPOStatusAType
      *
      * @var bool $withBioepo
      */
-    private $withBioepo = null;
+    protected $withBioepo = null;
 
     /**
      * @var string[] $guid
      */
-    private $guid = [
+    protected $guid = [
         
     ];
 
     /**
      * @var bool $endedOnly
      */
-    private $endedOnly = null;
+    protected $endedOnly = null;
 
     /**
      * @var int $idEnvelope
      */
-    private $idEnvelope = null;
+    protected $idEnvelope = null;
 
     /**
      * Gets as withBioepo

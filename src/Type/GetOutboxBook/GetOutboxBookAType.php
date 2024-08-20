@@ -10,12 +10,12 @@ class GetOutboxBookAType
     /**
      * @var int $idEnvelope
      */
-    private $idEnvelope = null;
+    protected $idEnvelope = null;
 
     /**
      * @var bool $includeNierejestrowane
      */
-    private $includeNierejestrowane = null;
+    protected $includeNierejestrowane = null;
 
     /**
      * Gets as idEnvelope

@@ -10,14 +10,14 @@ class GetWplatyCKPResponseAType
     /**
      * @var \Abryb\ENadawca\Type\WplataCKPType[] $wplaty
      */
-    private $wplaty = [
+    protected $wplaty = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

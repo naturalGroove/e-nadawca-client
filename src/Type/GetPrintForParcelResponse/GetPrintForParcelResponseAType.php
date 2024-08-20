@@ -10,14 +10,14 @@ class GetPrintForParcelResponseAType
     /**
      * @var \Abryb\ENadawca\Type\PrintResultType[] $printResult
      */
-    private $printResult = [
+    protected $printResult = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

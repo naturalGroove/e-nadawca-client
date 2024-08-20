@@ -10,7 +10,7 @@ class GetEZDOAType
     /**
      * @var int $idEZDOPakiet
      */
-    private $idEZDOPakiet = null;
+    protected $idEZDOPakiet = null;
 
     /**
      * Gets as idEZDOPakiet

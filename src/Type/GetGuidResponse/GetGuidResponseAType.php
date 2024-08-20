@@ -10,7 +10,7 @@ class GetGuidResponseAType
     /**
      * @var string[] $guid
      */
-    private $guid = [
+    protected $guid = [
         
     ];
 

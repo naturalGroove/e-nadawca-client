@@ -10,7 +10,7 @@ class SetStatusZgodyNaEZwrotAType
     /**
      * @var \Abryb\ENadawca\Type\StatusZgodyEZwrotType[] $statusZgody
      */
-    private $statusZgody = [
+    protected $statusZgody = [
         
     ];
 

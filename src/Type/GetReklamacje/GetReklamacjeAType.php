@@ -10,17 +10,17 @@ class GetReklamacjeAType
     /**
      * @var \DateTime $dataRozpatrzenia
      */
-    private $dataRozpatrzenia = null;
+    protected $dataRozpatrzenia = null;
 
     /**
      * @var string $guidPrzesylki
      */
-    private $guidPrzesylki = null;
+    protected $guidPrzesylki = null;
 
     /**
      * @var \Abryb\ENadawca\Type\DataZlozeniaType $dataZlozenia
      */
-    private $dataZlozenia = null;
+    protected $dataZlozenia = null;
 
     /**
      * Gets as dataRozpatrzenia

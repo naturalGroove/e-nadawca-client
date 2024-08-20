@@ -10,7 +10,7 @@ class GetZapowiedziFakturResponseAType
     /**
      * @var string[] $zapowiedzFakturyZipFile
      */
-    private $zapowiedzFakturyZipFile = [
+    protected $zapowiedzFakturyZipFile = [
         
     ];
 

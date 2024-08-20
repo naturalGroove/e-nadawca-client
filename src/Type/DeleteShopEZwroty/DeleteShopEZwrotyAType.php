@@ -10,7 +10,7 @@ class DeleteShopEZwrotyAType
     /**
      * @var int $idShop
      */
-    private $idShop = null;
+    protected $idShop = null;
 
     /**
      * Gets as idShop

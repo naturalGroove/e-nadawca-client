@@ -10,7 +10,7 @@ class GetPasswordExpiredDateResponseAType
     /**
      * @var \DateTime $dataWygasniecia
      */
-    private $dataWygasniecia = null;
+    protected $dataWygasniecia = null;
 
     /**
      * Gets as dataWygasniecia

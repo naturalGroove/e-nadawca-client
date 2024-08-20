@@ -10,7 +10,7 @@ class DeleteReturnDocumentsProfileAType
     /**
      * @var int $idProfile
      */
-    private $idProfile = null;
+    protected $idProfile = null;
 
     /**
      * Gets as idProfile

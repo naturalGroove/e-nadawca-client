@@ -10,37 +10,37 @@ class ZamowKurieraAType
     /**
      * @var \Abryb\ENadawca\Type\AdresType $miejsceOdbioru
      */
-    private $miejsceOdbioru = null;
+    protected $miejsceOdbioru = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AdresType $nadawca
      */
-    private $nadawca = null;
+    protected $nadawca = null;
 
     /**
      * @var string $oczekiwanaDataOdbioru
      */
-    private $oczekiwanaDataOdbioru = null;
+    protected $oczekiwanaDataOdbioru = null;
 
     /**
      * @var string $oczekiwanaGodzinaOdbioru
      */
-    private $oczekiwanaGodzinaOdbioru = null;
+    protected $oczekiwanaGodzinaOdbioru = null;
 
     /**
      * @var string $szacowanaIloscPrzeslek
      */
-    private $szacowanaIloscPrzeslek = null;
+    protected $szacowanaIloscPrzeslek = null;
 
     /**
      * @var string $szacowanaLacznaMasaPrzesylek
      */
-    private $szacowanaLacznaMasaPrzesylek = null;
+    protected $szacowanaLacznaMasaPrzesylek = null;
 
     /**
      * @var string $potwierdzenieZamowieniaEmail
      */
-    private $potwierdzenieZamowieniaEmail = null;
+    protected $potwierdzenieZamowieniaEmail = null;
 
     /**
      * Gets as miejsceOdbioru

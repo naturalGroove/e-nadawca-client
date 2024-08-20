@@ -10,14 +10,14 @@ class GetKartyResponseAType
     /**
      * @var \Abryb\ENadawca\Type\KartaType[] $karta
      */
-    private $karta = [
+    protected $karta = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

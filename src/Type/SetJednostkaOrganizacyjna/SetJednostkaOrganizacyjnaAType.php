@@ -10,7 +10,7 @@ class SetJednostkaOrganizacyjnaAType
     /**
      * @var \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType[] $jednostkaOrganizacyjna
      */
-    private $jednostkaOrganizacyjna = [
+    protected $jednostkaOrganizacyjna = [
         
     ];
 

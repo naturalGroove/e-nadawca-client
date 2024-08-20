@@ -10,12 +10,12 @@ class DownloadIWDContentResponseAType
     /**
      * @var string $iWDContent
      */
-    private $iWDContent = null;
+    protected $iWDContent = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

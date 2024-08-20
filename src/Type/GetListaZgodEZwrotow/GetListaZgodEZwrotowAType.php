@@ -10,12 +10,12 @@ class GetListaZgodEZwrotowAType
     /**
      * @var string $status
      */
-    private $status = null;
+    protected $status = null;
 
     /**
      * @var int $idShop
      */
-    private $idShop = null;
+    protected $idShop = null;
 
     /**
      * Gets as status

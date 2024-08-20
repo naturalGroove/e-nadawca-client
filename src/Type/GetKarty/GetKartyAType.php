@@ -10,7 +10,7 @@ class GetKartyAType
     /**
      * @var int[] $idKarta
      */
-    private $idKarta = [
+    protected $idKarta = [
         
     ];
 

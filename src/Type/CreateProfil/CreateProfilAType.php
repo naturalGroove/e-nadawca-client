@@ -10,7 +10,7 @@ class CreateProfilAType
     /**
      * @var \Abryb\ENadawca\Type\ProfilType $profil
      */
-    private $profil = null;
+    protected $profil = null;
 
     /**
      * Gets as profil

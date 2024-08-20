@@ -10,7 +10,7 @@ class GetLibrariesForLegalDepositsResponseAType
     /**
      * @var \Abryb\ENadawca\Type\LibraryForLegalDepositType[] $libraryForLegalDeposit
      */
-    private $libraryForLegalDeposit = [
+    protected $libraryForLegalDeposit = [
         
     ];
 

@@ -10,7 +10,7 @@ class IsMiejscowaAType
     /**
      * @var \Abryb\ENadawca\Type\TrasaRequestType[] $trasaRequest
      */
-    private $trasaRequest = [
+    protected $trasaRequest = [
         
     ];
 

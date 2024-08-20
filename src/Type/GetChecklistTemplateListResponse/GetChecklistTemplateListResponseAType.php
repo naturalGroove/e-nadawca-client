@@ -10,14 +10,14 @@ class GetChecklistTemplateListResponseAType
     /**
      * @var \Abryb\ENadawca\Type\ChecklistTemplateType[] $checklistTemplate
      */
-    private $checklistTemplate = [
+    protected $checklistTemplate = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

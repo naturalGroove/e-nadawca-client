@@ -10,7 +10,7 @@ class AddShipmentResponseAType
     /**
      * @var \Abryb\ENadawca\Type\AddShipmentResponseItemType[] $retval
      */
-    private $retval = [
+    public $retval = [
         
     ];
 

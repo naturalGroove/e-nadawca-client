@@ -46,7 +46,7 @@ echo "created types\n";
 chdir($TYPE_DIR); // probably add some error handling around this
 foreach (glob('*.php') as $typeClassFile) {
     $code = file_get_contents($typeClassFile);
-    $code = str_replace('private $', 'protected $', $code);
+    $code = str_replace('protected $', 'protected $', $code);
     file_put_contents($typeClassFile, $code);
 }
 echo "changed types private properties to protected\n";

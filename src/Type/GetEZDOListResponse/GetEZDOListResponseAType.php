@@ -10,7 +10,7 @@ class GetEZDOListResponseAType
     /**
      * @var \Abryb\ENadawca\Type\EZDOPakietType[] $eZDOPakiet
      */
-    private $eZDOPakiet = [
+    protected $eZDOPakiet = [
         
     ];
 

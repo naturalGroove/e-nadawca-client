@@ -10,7 +10,7 @@ class AddRozbieznoscDoZapowiedziFakturAType
     /**
      * @var string[] $rozbieznosciZipFile
      */
-    private $rozbieznosciZipFile = [
+    protected $rozbieznosciZipFile = [
         
     ];
 

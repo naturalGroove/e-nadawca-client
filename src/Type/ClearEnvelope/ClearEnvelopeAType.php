@@ -10,7 +10,7 @@ class ClearEnvelopeAType
     /**
      * @var int $idBufor
      */
-    private $idBufor = null;
+    protected $idBufor = null;
 
     /**
      * Gets as idBufor

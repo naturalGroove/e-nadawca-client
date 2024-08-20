@@ -10,12 +10,12 @@ class UploadIWDContentAType
     /**
      * @var int $urzadNadania
      */
-    private $urzadNadania = null;
+    protected $urzadNadania = null;
 
     /**
      * @var string $iWDContent
      */
-    private $iWDContent = null;
+    protected $iWDContent = null;
 
     /**
      * Gets as urzadNadania

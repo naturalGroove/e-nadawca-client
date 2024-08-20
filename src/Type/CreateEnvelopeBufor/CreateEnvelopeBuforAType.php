@@ -10,7 +10,7 @@ class CreateEnvelopeBuforAType
     /**
      * @var \Abryb\ENadawca\Type\BuforType[] $bufor
      */
-    private $bufor = [
+    protected $bufor = [
         
     ];
 

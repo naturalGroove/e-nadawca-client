@@ -10,7 +10,7 @@ class GetJednostkaOrganizacyjnaAType
     /**
      * @var \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType $jednostka
      */
-    private $jednostka = null;
+    protected $jednostka = null;
 
     /**
      * Gets as jednostka

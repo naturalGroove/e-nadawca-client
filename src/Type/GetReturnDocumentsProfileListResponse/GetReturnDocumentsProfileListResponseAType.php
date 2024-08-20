@@ -10,14 +10,14 @@ class GetReturnDocumentsProfileListResponseAType
     /**
      * @var \Abryb\ENadawca\Type\ReturnDocumentProfileType[] $profile
      */
-    private $profile = [
+    protected $profile = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

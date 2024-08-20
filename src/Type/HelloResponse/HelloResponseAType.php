@@ -10,7 +10,7 @@ class HelloResponseAType
     /**
      * @var string $out
      */
-    private $out = null;
+    protected $out = null;
 
     /**
      * Gets as out

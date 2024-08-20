@@ -10,24 +10,24 @@ class OrderEasyReturnSolutionLabelAType
     /**
      * @var \Abryb\ENadawca\Type\AddressType $senderAddress
      */
-    private $senderAddress = null;
+    protected $senderAddress = null;
 
     /**
      * @var \Abryb\ENadawca\Type\AddressType $recipientAddress
      */
-    private $recipientAddress = null;
+    protected $recipientAddress = null;
 
     /**
      * Shipment weight [g].
      *
      * @var int $weight
      */
-    private $weight = null;
+    protected $weight = null;
 
     /**
      * @var \Abryb\ENadawca\Type\CustomsDeclarationType $customsDeclaration
      */
-    private $customsDeclaration = null;
+    protected $customsDeclaration = null;
 
     /**
      * If not set, getPrintForParcel method should
@@ -35,7 +35,7 @@ class OrderEasyReturnSolutionLabelAType
      *
      * @var \Abryb\ENadawca\Type\DeliveryMethodType $deliveryMethod
      */
-    private $deliveryMethod = null;
+    protected $deliveryMethod = null;
 
     /**
      * Description.
@@ -43,7 +43,7 @@ class OrderEasyReturnSolutionLabelAType
      *
      * @var string $description
      */
-    private $description = null;
+    protected $description = null;
 
     /**
      * Gets as senderAddress

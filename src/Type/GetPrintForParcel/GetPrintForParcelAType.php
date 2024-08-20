@@ -12,7 +12,7 @@ class GetPrintForParcelAType
      *
      * @var string[] $guid
      */
-    private $guid = [
+    protected $guid = [
         
     ];
 
@@ -21,7 +21,7 @@ class GetPrintForParcelAType
      *
      * @var \Abryb\ENadawca\Type\PrintType $type
      */
-    private $type = null;
+    protected $type = null;
 
     /**
      * Adds as guid

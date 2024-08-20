@@ -10,14 +10,14 @@ class GetParcelContentListResponseAType
     /**
      * @var \Abryb\ENadawca\Type\ParcelContentType[] $parcelContent
      */
-    private $parcelContent = [
+    protected $parcelContent = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

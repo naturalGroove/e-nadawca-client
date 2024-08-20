@@ -10,7 +10,7 @@ class GetPlacowkaPocztowaResponseAType
     /**
      * @var \Abryb\ENadawca\Type\PlacowkaPocztowaType[] $placowka
      */
-    private $placowka = [
+    protected $placowka = [
         
     ];
 

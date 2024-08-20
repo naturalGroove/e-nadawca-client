@@ -10,12 +10,12 @@ class GetAddresLabelByGuidCompactResponseAType
     /**
      * @var string $pdfContent
      */
-    private $pdfContent = null;
+    protected $pdfContent = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

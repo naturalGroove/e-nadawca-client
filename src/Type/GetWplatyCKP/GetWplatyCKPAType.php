@@ -10,17 +10,17 @@ class GetWplatyCKPAType
     /**
      * @var string $numerNadania
      */
-    private $numerNadania = null;
+    protected $numerNadania = null;
 
     /**
      * @var \DateTime $startDate
      */
-    private $startDate = null;
+    protected $startDate = null;
 
     /**
      * @var \DateTime $stopDate
      */
-    private $stopDate = null;
+    protected $stopDate = null;
 
     /**
      * Gets as numerNadania

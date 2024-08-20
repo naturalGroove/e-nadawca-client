@@ -10,7 +10,7 @@ class CreateChecklistTemplateAType
     /**
      * @var \Abryb\ENadawca\Type\ChecklistTemplateType[] $checklistTemplate
      */
-    private $checklistTemplate = [
+    protected $checklistTemplate = [
         
     ];
 

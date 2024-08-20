@@ -10,7 +10,7 @@ class GetEnvelopeContentFullResponseAType
     /**
      * @var \Abryb\ENadawca\Type\PrzesylkaFullType[] $przesylka
      */
-    private $przesylka = [
+    protected $przesylka = [
         
     ];
 

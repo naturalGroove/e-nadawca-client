@@ -10,7 +10,7 @@ class GetReklamacjeResponseAType
     /**
      * @var \Abryb\ENadawca\Type\ReklamacjaRozpatrzonaType[] $reklamacja
      */
-    private $reklamacja = [
+    protected $reklamacja = [
         
     ];
 

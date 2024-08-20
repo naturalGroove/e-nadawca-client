@@ -10,7 +10,7 @@ class ChangePasswordAType
     /**
      * @var string $newPassword
      */
-    private $newPassword = null;
+    protected $newPassword = null;
 
     /**
      * Gets as newPassword

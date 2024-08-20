@@ -10,7 +10,7 @@ class HelloAType
     /**
      * @var string $in
      */
-    private $in = null;
+    protected $in = null;
 
     /**
      * Gets as in

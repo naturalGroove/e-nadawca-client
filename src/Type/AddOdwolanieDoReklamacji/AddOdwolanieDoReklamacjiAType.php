@@ -10,7 +10,7 @@ class AddOdwolanieDoReklamacjiAType
     /**
      * @var \Abryb\ENadawca\Type\ReklamowanaPrzesylkaType[] $reklamacja
      */
-    private $reklamacja = [
+    protected $reklamacja = [
         
     ];
 

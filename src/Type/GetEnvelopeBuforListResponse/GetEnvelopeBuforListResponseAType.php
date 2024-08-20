@@ -10,14 +10,14 @@ class GetEnvelopeBuforListResponseAType
     /**
      * @var \Abryb\ENadawca\Type\BuforType[] $bufor
      */
-    private $bufor = [
+    protected $bufor = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

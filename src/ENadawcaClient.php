@@ -16,7 +16,7 @@ class ENadawcaClient
     /**
      * @var \SoapClient
      */
-    private $client;
+    protected $client;
 
     public function __construct(\SoapClient $client)
     {

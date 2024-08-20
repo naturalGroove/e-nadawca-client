@@ -10,14 +10,14 @@ class GetEnvelopeBuforResponseAType
     /**
      * @var \Abryb\ENadawca\Type\PrzesylkaType[] $przesylka
      */
-    private $przesylka = [
+    protected $przesylka = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

@@ -10,7 +10,7 @@ class CreateAccountAType
     /**
      * @var \Abryb\ENadawca\Type\AccountType $account
      */
-    private $account = null;
+    protected $account = null;
 
     /**
      * Gets as account

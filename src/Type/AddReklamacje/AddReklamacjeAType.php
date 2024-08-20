@@ -10,7 +10,7 @@ class AddReklamacjeAType
     /**
      * @var \Abryb\ENadawca\Type\ReklamowanaPrzesylkaType[] $reklamowanaPrzesylka
      */
-    private $reklamowanaPrzesylka = [
+    protected $reklamowanaPrzesylka = [
         
     ];
 

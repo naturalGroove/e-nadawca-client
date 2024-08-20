@@ -10,7 +10,7 @@ class GetShopEZwrotyListResponseAType
     /**
      * @var \Abryb\ENadawca\Type\ShopEZwrotyInfoType[] $shops
      */
-    private $shops = [
+    protected $shops = [
         
     ];
 

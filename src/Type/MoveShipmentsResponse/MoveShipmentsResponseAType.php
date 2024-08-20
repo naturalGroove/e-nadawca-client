@@ -10,14 +10,14 @@ class MoveShipmentsResponseAType
     /**
      * @var string[] $notMovedGuid
      */
-    private $notMovedGuid = [
+    protected $notMovedGuid = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

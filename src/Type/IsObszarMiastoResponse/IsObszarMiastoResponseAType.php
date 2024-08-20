@@ -10,7 +10,7 @@ class IsObszarMiastoResponseAType
     /**
      * @var \Abryb\ENadawca\Type\ObszarAdresowyResponseType[] $obszarAdresowy
      */
-    private $obszarAdresowy = [
+    protected $obszarAdresowy = [
         
     ];
 

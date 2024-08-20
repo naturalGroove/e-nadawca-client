@@ -10,12 +10,12 @@ class CreateShopEZwrotyResponseAType
     /**
      * @var int $idShop
      */
-    private $idShop = null;
+    protected $idShop = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

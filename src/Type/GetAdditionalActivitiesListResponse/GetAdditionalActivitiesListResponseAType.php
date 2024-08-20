@@ -10,14 +10,14 @@ class GetAdditionalActivitiesListResponseAType
     /**
      * @var \Abryb\ENadawca\Type\AdditionalActivityType[] $additionalActivity
      */
-    private $additionalActivity = [
+    protected $additionalActivity = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

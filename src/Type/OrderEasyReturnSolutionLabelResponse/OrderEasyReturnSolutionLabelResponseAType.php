@@ -10,12 +10,12 @@ class OrderEasyReturnSolutionLabelResponseAType
     /**
      * @var string $guid
      */
-    private $guid = null;
+    protected $guid = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

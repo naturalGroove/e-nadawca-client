@@ -10,7 +10,7 @@ class UpdateReturnDocumentsProfileAType
     /**
      * @var \Abryb\ENadawca\Type\ReturnDocumentProfileType $profile
      */
-    private $profile = null;
+    protected $profile = null;
 
     /**
      * Gets as profile

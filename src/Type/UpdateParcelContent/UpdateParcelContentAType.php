@@ -10,7 +10,7 @@ class UpdateParcelContentAType
     /**
      * @var \Abryb\ENadawca\Type\ParcelContentType[] $parcelContent
      */
-    private $parcelContent = [
+    protected $parcelContent = [
         
     ];
 

@@ -10,12 +10,12 @@ class GetKierunkiAType
     /**
      * @var string $plan
      */
-    private $plan = null;
+    protected $plan = null;
 
     /**
      * @var string $prefixKodPocztowy
      */
-    private $prefixKodPocztowy = null;
+    protected $prefixKodPocztowy = null;
 
     /**
      * Gets as plan

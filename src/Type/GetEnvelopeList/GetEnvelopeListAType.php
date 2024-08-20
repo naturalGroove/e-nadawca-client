@@ -10,12 +10,12 @@ class GetEnvelopeListAType
     /**
      * @var \DateTime $startDate
      */
-    private $startDate = null;
+    protected $startDate = null;
 
     /**
      * @var \DateTime $endDate
      */
-    private $endDate = null;
+    protected $endDate = null;
 
     /**
      * Gets as startDate

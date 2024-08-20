@@ -10,7 +10,7 @@ class GetKierunkiInfoAType
     /**
      * @var string $plan
      */
-    private $plan = null;
+    protected $plan = null;
 
     /**
      * Gets as plan

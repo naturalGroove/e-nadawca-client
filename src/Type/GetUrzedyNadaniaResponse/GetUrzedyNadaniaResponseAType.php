@@ -10,7 +10,7 @@ class GetUrzedyNadaniaResponseAType
     /**
      * @var \Abryb\ENadawca\Type\UrzadNadaniaFullType[] $urzedyNadania
      */
-    private $urzedyNadania = [
+    protected $urzedyNadania = [
         
     ];
 

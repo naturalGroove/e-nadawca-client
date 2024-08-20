@@ -10,14 +10,14 @@ class GetAddresLabelByGuidAType
     /**
      * @var string[] $guid
      */
-    private $guid = [
+    protected $guid = [
         
     ];
 
     /**
      * @var int $idBufor
      */
-    private $idBufor = null;
+    protected $idBufor = null;
 
     /**
      * Adds as guid

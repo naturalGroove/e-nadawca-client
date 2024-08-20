@@ -12,19 +12,19 @@ final class RequestInfo
     /**
      * @var string
      */
-    private $requestBody;
+    protected $requestBody;
     /**
      * @var string
      */
-    private $responseBody;
+    protected $responseBody;
     /**
      * @var string
      */
-    private $requestHeaders;
+    protected $requestHeaders;
     /**
      * @var string
      */
-    private $responseHeaders;
+    protected $responseHeaders;
 
     public function __construct(
         string $requestBody,

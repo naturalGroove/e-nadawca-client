@@ -10,14 +10,14 @@ class GetJednostkaOrganizacyjnaResponseAType
     /**
      * @var \Abryb\ENadawca\Type\JednostkaOrganizacyjnaType[] $jednostkaOrganizacyjna
      */
-    private $jednostkaOrganizacyjna = [
+    protected $jednostkaOrganizacyjna = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

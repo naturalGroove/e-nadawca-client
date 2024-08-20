@@ -10,14 +10,14 @@ class AddShipmentAType
     /**
      * @var \Abryb\ENadawca\Type\PrzesylkaType[] $przesylki
      */
-    private $przesylki = [
+    public $przesylki = [
         
     ];
 
     /**
      * @var int $idBufor
      */
-    private $idBufor = null;
+    public $idBufor = null;
 
     /**
      * Adds as przesylki

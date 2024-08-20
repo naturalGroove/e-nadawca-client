@@ -10,7 +10,7 @@ class GetZapowiedziFakturAType
     /**
      * @var \DateTime $data
      */
-    private $data = null;
+    protected $data = null;
 
     /**
      * Gets as data

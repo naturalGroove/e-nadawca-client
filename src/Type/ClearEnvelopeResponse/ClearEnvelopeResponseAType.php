@@ -10,12 +10,12 @@ class ClearEnvelopeResponseAType
     /**
      * @var bool $retval
      */
-    private $retval = null;
+    protected $retval = null;
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

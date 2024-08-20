@@ -10,14 +10,14 @@ class GetBlankietPobraniaByGuidsResponseAType
     /**
      * @var \Abryb\ENadawca\Type\AddressLabelContentType[] $content
      */
-    private $content = [
+    protected $content = [
         
     ];
 
     /**
      * @var \Abryb\ENadawca\Type\ErrorType[] $error
      */
-    private $error = [
+    protected $error = [
         
     ];
 

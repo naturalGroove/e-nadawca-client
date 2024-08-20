@@ -10,7 +10,7 @@ class GetUbezpieczeniaInfoResponseAType
     /**
      * @var \Abryb\ENadawca\Type\UbezpieczeniaInfoType[] $poziomyUbezpieczenia
      */
-    private $poziomyUbezpieczenia = [
+    protected $poziomyUbezpieczenia = [
         
     ];
 
