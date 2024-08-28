@@ -8,7 +8,7 @@ namespace Abryb\ENadawca\Type\GetPrintForParcelResponse;
 class GetPrintForParcelResponseAType
 {
     /**
-     * @var \Abryb\ENadawca\Type\PrintResultType[] $printResult
+     * @var \Abryb\ENadawca\Type\PrintResultType | \Abryb\ENadawca\Type\PrintResultType[] $printResult
      */
     protected $printResult = [
         
