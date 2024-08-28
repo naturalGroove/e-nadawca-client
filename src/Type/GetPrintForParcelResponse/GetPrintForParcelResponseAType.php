@@ -58,7 +58,7 @@ class GetPrintForParcelResponseAType
     /**
      * Gets as printResult
      *
-     * @return \Abryb\ENadawca\Type\PrintResultType | \Abryb\ENadawca\Type\PrintResultType[]
+     * @return stdClass | \Abryb\ENadawca\Type\PrintResultType | \Abryb\ENadawca\Type\PrintResultType[]
      */
     public function getPrintResult()
     {
