@@ -58,7 +58,7 @@ class GetPrintForParcelResponseAType
     /**
      * Gets as printResult
      *
-     * @return \Abryb\ENadawca\Type\PrintResultType[]
+     * @return \Abryb\ENadawca\Type\PrintResultType | \Abryb\ENadawca\Type\PrintResultType[]
      */
     public function getPrintResult()
     {
@@ -68,7 +68,7 @@ class GetPrintForParcelResponseAType
     /**
      * Sets a new printResult
      *
-     * @param \Abryb\ENadawca\Type\PrintResultType[] $printResult
+     * @param \Abryb\ENadawca\Type\PrintResultType | \Abryb\ENadawca\Type\PrintResultType[] $printResult
      * @return self
      */
     public function setPrintResult(array $printResult = null)
