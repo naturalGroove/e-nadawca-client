@@ -15,7 +15,7 @@ class GetBlankietPobraniaByGuidsResponseAType
     ];
 
     /**
-     * @var \Abryb\ENadawca\Type\ErrorType[] $error
+     * @var  \Abryb\ENadawca\Type\ErrorType|\Abryb\ENadawca\Type\ErrorType[] $error
      */
     protected $error = [
         
@@ -114,7 +114,7 @@ class GetBlankietPobraniaByGuidsResponseAType
     /**
      * Gets as error
      *
-     * @return \Abryb\ENadawca\Type\ErrorType[]
+     * @return \Abryb\ENadawca\Type\ErrorType|\Abryb\ENadawca\Type\ErrorType[]
      */
     public function getError()
     {
@@ -124,7 +124,7 @@ class GetBlankietPobraniaByGuidsResponseAType
     /**
      * Sets a new error
      *
-     * @param \Abryb\ENadawca\Type\ErrorType[] $error
+     * @param \Abryb\ENadawca\Type\ErrorType|\Abryb\ENadawca\Type\ErrorType[] $error
      * @return self
      */
     public function setError(array $error = null)

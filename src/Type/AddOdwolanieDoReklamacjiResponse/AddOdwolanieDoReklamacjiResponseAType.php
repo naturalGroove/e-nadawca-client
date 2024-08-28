@@ -8,7 +8,7 @@ namespace Abryb\ENadawca\Type\AddOdwolanieDoReklamacjiResponse;
 class AddOdwolanieDoReklamacjiResponseAType
 {
     /**
-     * @var \Abryb\ENadawca\Type\ErrorType[] $error
+     * @var  \Abryb\ENadawca\Type\ErrorType|\Abryb\ENadawca\Type\ErrorType[] $error
      */
     protected $error = [
         
@@ -58,7 +58,7 @@ class AddOdwolanieDoReklamacjiResponseAType
     /**
      * Gets as error
      *
-     * @return \Abryb\ENadawca\Type\ErrorType[]
+     * @return \Abryb\ENadawca\Type\ErrorType|\Abryb\ENadawca\Type\ErrorType[]
      */
     public function getError()
     {
@@ -68,7 +68,7 @@ class AddOdwolanieDoReklamacjiResponseAType
     /**
      * Sets a new error
      *
-     * @param \Abryb\ENadawca\Type\ErrorType[] $error
+     * @param \Abryb\ENadawca\Type\ErrorType|\Abryb\ENadawca\Type\ErrorType[] $error
      * @return self
      */
     public function setError(array $error = null)
